@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\bulkyweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:bulkyweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,111 +25,59 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 281,
+          "DockedWidth": 200,
           "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-30T14:47:46.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-30T14:44:44.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-30T14:25:23.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BulkyWeb",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\BulkyWeb.csproj",
-              "RelativeDocumentMoniker": "BulkyWeb.csproj",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\BulkyWeb.csproj",
-              "RelativeToolTip": "BulkyWeb.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-30T14:16:00.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBYAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T14:02:42.975Z",
+              "WhenOpened": "2025-07-01T14:45:41.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-30T14:06:41.723Z",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T14:42:13.816Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-30T14:06:34.013Z",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-01T14:39:11.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "DocumentIndex": 3,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-30T14:06:28.717Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T14:36:02.249Z",
               "EditorCaption": ""
             }
           ]
