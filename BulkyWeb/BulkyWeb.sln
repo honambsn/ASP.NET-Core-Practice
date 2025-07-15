@@ -4,14 +4,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.11.35431.28
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkyWeb", "BulkyWeb.csproj", "{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}"
+	ProjectSection(ProjectDependencies) = postProject
+		{36ABB90F-CFAD-41B0-8544-D6D830481F6E} = {36ABB90F-CFAD-41B0-8544-D6D830481F6E}
+		{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F} = {75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}
+		{D09FB303-A595-42FC-A46C-4D65741648DE} = {D09FB303-A595-42FC-A46C-4D65741648DE}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkyWebRazor_Temp", "..\BulkyWebRazor_Temp\BulkyWebRazor_Temp.csproj", "{53DD464C-9865-43E4-A4ED-59C8CB6B46BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bulky.DataAccess", "..\Bulky.DataAccess\Bulky.DataAccess.csproj", "{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bulky.DataAccess", "..\Bulky.DataAccess\Bulky.DataAccess.csproj", "{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bulky.Models", "..\Bulky.Models\Bulky.Models.csproj", "{D09FB303-A595-42FC-A46C-4D65741648DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bulky.Models", "..\Bulky.Models\Bulky.Models.csproj", "{D09FB303-A595-42FC-A46C-4D65741648DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bulky.Utility", "..\Bulky.Utility\Bulky.Utility.csproj", "{36ABB90F-CFAD-41B0-8544-D6D830481F6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bulky.Utility", "..\Bulky.Utility\Bulky.Utility.csproj", "{36ABB90F-CFAD-41B0-8544-D6D830481F6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

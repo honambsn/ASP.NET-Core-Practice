@@ -7,28 +7,60 @@
       "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D09FB303-A595-42FC-A46C-4D65741648DE}|..\\Bulky.Models\\Bulky.Models.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{36ABB90F-CFAD-41B0-8544-D6D830481F6E}|..\\Bulky.Utility\\Bulky.Utility.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.utility\\bulky.utility.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}|..\\Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.dataaccess\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}|..\\Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.dataaccess\\migrations\\20250702141842_seedcategorytable.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}|..\\Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.dataaccess\\migrations\\20250702134937_addcategorytabletodb.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}|..\\Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}|..\\Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.dataaccess\\migrations\\20250702134937_addcategorytabletodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}|..\\Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.dataaccess\\migrations\\20250702141842_seedcategorytable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D09FB303-A595-42FC-A46C-4D65741648DE}|..\\Bulky.Models\\Bulky.Models.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}|..\\Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.dataaccess\\bulky.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36ABB90F-CFAD-41B0-8544-D6D830481F6E}|..\\Bulky.Utility\\Bulky.Utility.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.utility\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D09FB303-A595-42FC-A46C-4D65741648DE}|..\\Bulky.Models\\Bulky.Models.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.models\\bulky.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,8 +73,17 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Category\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\Edit.cshtml",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Category\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Category\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-15T14:47:24.672Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -52,87 +93,217 @@
               "RelativeDocumentMoniker": "Views\\Category\\Index.cshtml",
               "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Category\\Index.cshtml",
               "RelativeToolTip": "Views\\Category\\Index.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAswA4AAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAG0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-14T14:28:36.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Category\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\Edit.cshtml",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Category\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Category\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-14T14:28:25.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Category\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\Delete.cshtml",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Category\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Category\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-14T14:26:08.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAABMAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-14T13:37:36.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Category\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\Create.cshtml",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Category\\Create.cshtml",
-              "RelativeToolTip": "Views\\Category\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-14T13:32:55.443Z",
+              "WhenOpened": "2025-07-15T14:43:59.928Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAgCAAAAAAAAAADwvycCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-11T13:52:53.743Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T14:41:02.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T14:28:36.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Models\\Category.cs",
+              "RelativeDocumentMoniker": "..\\Bulky.Models\\Category.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Models\\Category.cs",
+              "RelativeToolTip": "..\\Bulky.Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T13:52:32.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-15T14:47:11.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "..\\Bulky.DataAccess\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "..\\Bulky.DataAccess\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T14:02:21.321Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "bootstrap.css",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "RelativeToolTip": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "ViewState": "AgIAACkxAAAAAAAAAADwv0gxAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-11T13:49:55.578Z",
+              "Title": "Bulky.Utility",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Utility\\Bulky.Utility.csproj",
+              "RelativeDocumentMoniker": "..\\Bulky.Utility\\Bulky.Utility.csproj",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Utility\\Bulky.Utility.csproj",
+              "RelativeToolTip": "..\\Bulky.Utility\\Bulky.Utility.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-15T13:54:30.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20250702141842_SeedCategoryTable.Designer.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250702141842_SeedCategoryTable.Designer.cs",
+              "RelativeDocumentMoniker": "..\\Bulky.DataAccess\\Migrations\\20250702141842_SeedCategoryTable.Designer.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250702141842_SeedCategoryTable.Designer.cs",
+              "RelativeToolTip": "..\\Bulky.DataAccess\\Migrations\\20250702141842_SeedCategoryTable.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T14:08:27.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20250702134937_AddCategoryTableToDb.Designer.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250702134937_AddCategoryTableToDb.Designer.cs",
+              "RelativeDocumentMoniker": "..\\Bulky.DataAccess\\Migrations\\20250702134937_AddCategoryTableToDb.Designer.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250702134937_AddCategoryTableToDb.Designer.cs",
+              "RelativeToolTip": "..\\Bulky.DataAccess\\Migrations\\20250702134937_AddCategoryTableToDb.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T14:07:25.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T13:47:51.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250702134937_AddCategoryTableToDb.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250702134937_AddCategoryTableToDb.cs",
+              "RelativeDocumentMoniker": "..\\Bulky.DataAccess\\Migrations\\20250702134937_AddCategoryTableToDb.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250702134937_AddCategoryTableToDb.cs",
+              "RelativeToolTip": "..\\Bulky.DataAccess\\Migrations\\20250702134937_AddCategoryTableToDb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T14:06:13.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20250702141842_SeedCategoryTable.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250702141842_SeedCategoryTable.cs",
+              "RelativeDocumentMoniker": "..\\Bulky.DataAccess\\Migrations\\20250702141842_SeedCategoryTable.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250702141842_SeedCategoryTable.cs",
+              "RelativeToolTip": "..\\Bulky.DataAccess\\Migrations\\20250702141842_SeedCategoryTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T14:06:24.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T14:26:31.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "..\\Bulky.Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "..\\Bulky.Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T13:57:44.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Bulky.DataAccess",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Bulky.DataAccess.csproj",
+              "RelativeDocumentMoniker": "..\\Bulky.DataAccess\\Bulky.DataAccess.csproj",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Bulky.DataAccess.csproj",
+              "RelativeToolTip": "..\\Bulky.DataAccess\\Bulky.DataAccess.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-15T13:54:27.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SD.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Utility\\SD.cs",
+              "RelativeDocumentMoniker": "..\\Bulky.Utility\\SD.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Utility\\SD.cs",
+              "RelativeToolTip": "..\\Bulky.Utility\\SD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T13:57:46.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Bulky.Models",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Models\\Bulky.Models.csproj",
+              "RelativeDocumentMoniker": "..\\Bulky.Models\\Bulky.Models.csproj",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Models\\Bulky.Models.csproj",
+              "RelativeToolTip": "..\\Bulky.Models\\Bulky.Models.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-15T13:54:23.586Z",
               "EditorCaption": ""
             }
           ]

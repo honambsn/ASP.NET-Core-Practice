@@ -1,4 +1,5 @@
-﻿using BulkyWeb.Data;
+﻿using BulkyWeb.DataAccess.Data;
+using Bulky.Utility;
 using BulkyWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -14,11 +15,44 @@ namespace BulkyWeb.Controllers
             // Constructor logic can be added here if needed
             _db = db;
         }
-        public IActionResult Index()
+        public IActionResult Index(int pageNumber = 1, int pageSize = 5)
         {
-            List<Category> objCategoryList = _db.Categories.ToList();
+            //List<Category> objCategoryList = _db.Categories.ToList();
 
-            return View(objCategoryList);
+            //return View(objCategoryList);
+
+            int totalCategories = _db.Categories.Count();
+            int totalPages = (int)Math.Ceiling((double)totalCategories / pageSize);
+
+            var paginatedCategories = _db.Categories
+                .OrderBy(c => c.DisplayOrder) // Order by Name or any other property
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            ViewBag.TotalPages = totalPages;
+            ViewBag.CurrentPage = pageNumber;
+            
+            return View(paginatedCategories);
+        }
+
+        //
+        public IActionResult Details(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+
+            Category? categoryFromDb = _db.Categories.Find(id);
+            //Category? categoryFromDb1 = _db.Categories.FirstOrDefault(u => u.ID== id);
+            //Category? categoryFromDb2 = _db.Categories.Where(u => u.ID == id).FirstOrDefault();
+
+            if (categoryFromDb == null)
+            {
+                return NotFound();
+            }
+            return View(categoryFromDb);
         }
 
         public IActionResult Create()

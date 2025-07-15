@@ -530,6 +530,12 @@ D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\bin\Debug\net8.0\run
 D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\bin\Debug\net8.0\Bulky.DataAccess.dll
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\bin\Debug\net8.0\Bulky.Models.dll
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\bin\Debug\net8.0\Bulky.Utility.dll
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\bin\Debug\net8.0\Bulky.DataAccess.pdb
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\bin\Debug\net8.0\Bulky.Models.pdb
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\bin\Debug\net8.0\Bulky.Utility.pdb
 D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\obj\Debug\net8.0\BulkyWeb.csproj.AssemblyReference.cache
 D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\obj\Debug\net8.0\BulkyWeb.GeneratedMSBuildEditorConfig.editorconfig
 D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\obj\Debug\net8.0\BulkyWeb.AssemblyInfoInputs.cache
