@@ -18,7 +18,7 @@
  
  @model Product
 
-<div class="card shadow border mt-4">
+<div class="card shadow border my-4">
     <div class="card-header bg-secondary bg-gradient m-lg-0 py-3">
         <div class="row">
             <div class="col-12 text-center">
@@ -40,7 +40,7 @@
 
                 <div class="form-floating py-2 col-12">
                     @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
-                    <input asp-for="Description" class="form-control border-0 shadow" />
+                    <textarea asp-for="Description" class="form-control border-0 shadow" style="height: 100px;"></textarea>
                     <label asp-for="Description" class="ms-2">Description</label>
                     <span asp-validation-for="Description" class="text-danger"></span>
                 </div>
