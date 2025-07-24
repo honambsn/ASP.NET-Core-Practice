@@ -8,6 +8,8 @@ using Bulky.DataAccess.Repository.IRepository;
 using System.Net.NetworkInformation;
 using Bulky.DataAccess.Repository;
 using Bulky.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Bulky.Models.ViewModels;
 
 namespace BulkyWeb.Areas.Admin.Controllers
 {
@@ -34,7 +36,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
             //List<Product> objProductList = _db.Categories.ToList();
 
             //return View(objProductList);
-
+            
             int totalProducts = _unitOfWork.Product.Count();
             int totalPages = (int)Math.Ceiling((double)totalProducts / pageSize);
 
@@ -68,11 +70,25 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
-            return View();
+            //ViewBag.CategoryList = CategoryList;
+            //ViewData["CategoryList"] = CategoryList;
+            ProductVM productVM = new()
+            {
+                CategoryList = _unitOfWork.Category.GetAll()
+                .Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.ID.ToString()
+                }),
+                Product = new Product() // Initialize the Product property
+            };
+
+            return View(productVM);
         }
 
         [HttpPost]
-        public IActionResult Create(Product obj)
+        //public IActionResult Create(Product obj)
+        public IActionResult Create(ProductVM productVM)
         {
 
             //if (obj.ID.ToString() == obj.ID.ToString())
@@ -83,14 +99,25 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
-                _unitOfWork.Product.Add(obj);
+                _unitOfWork.Product.Add(productVM.Product);
                 _unitOfWork.Save();
                 TempData["success"] = "Product created successfully";
 
                 return RedirectToAction("Index");
             }
+            else
+            {
+                productVM.CategoryList = _unitOfWork.Category.GetAll()
+                    .Select(i => new SelectListItem
+                    {
+                        Text = i.Name,
+                        Value = i.ID.ToString()
+                    });
 
-            return View();
+                return View(productVM);
+            }
+
+            //return View();
 
         }
 

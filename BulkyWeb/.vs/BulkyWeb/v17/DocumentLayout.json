@@ -7,16 +7,17 @@
       "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250723144547_addImageUrlToProduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}|..\\Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D09FB303-A595-42FC-A46C-4D65741648DE}|..\\Bulky.Models\\Bulky.Models.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.models\\viewmodels\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D09FB303-A595-42FC-A46C-4D65741648DE}|..\\Bulky.Models\\Bulky.Models.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250723144207_addForeignKeyForCategoryProductRelation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}|..\\Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}|..\\Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.dataaccess\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -37,8 +38,10 @@
       "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:areas\\admin\\views\\product\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulkyweb\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47419EDF-9299-4B45-A1EC-CDE1B1CA8B09}|BulkyWeb.csproj|solutionrelative:areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}|..\\Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.dataaccess\\migrations\\20250723144547_addimageurltoproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75DA37A1-ACF6-4EDD-A3FC-79EEB3AB544F}|..\\Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\ba nam\\own project\\practice\\c#\\asp.net core mvc\\bulky.dataaccess\\migrations\\20250723144207_addforeignkeyforcategoryproductrelation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,8 +51,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductVM.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Models\\ViewModels\\ProductVM.cs",
+              "RelativeDocumentMoniker": "..\\Bulky.Models\\ViewModels\\ProductVM.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Models\\ViewModels\\ProductVM.cs",
+              "RelativeToolTip": "..\\Bulky.Models\\ViewModels\\ProductVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T13:58:23.008Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -58,40 +74,14 @@
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ProductController.cs",
               "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Areas\\Admin\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAwHQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-23T14:47:01.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20250723144547_addImageUrlToProduct.cs",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250723144547_addImageUrlToProduct.cs",
-              "RelativeDocumentMoniker": "..\\Bulky.DataAccess\\Migrations\\20250723144547_addImageUrlToProduct.cs",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250723144547_addImageUrlToProduct.cs",
-              "RelativeToolTip": "..\\Bulky.DataAccess\\Migrations\\20250723144547_addImageUrlToProduct.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T14:45:47.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "20250723144207_addForeignKeyForCategoryProductRelation.cs",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250723144207_addForeignKeyForCategoryProductRelation.cs",
-              "RelativeDocumentMoniker": "..\\Bulky.DataAccess\\Migrations\\20250723144207_addForeignKeyForCategoryProductRelation.cs",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250723144207_addForeignKeyForCategoryProductRelation.cs",
-              "RelativeToolTip": "..\\Bulky.DataAccess\\Migrations\\20250723144207_addForeignKeyForCategoryProductRelation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T14:42:07.865Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "..\\Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
@@ -99,8 +89,57 @@
               "RelativeToolTip": "..\\Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAYwHEAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T14:41:22.98Z",
+              "WhenOpened": "2025-07-23T14:41:22.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAAYwFsAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-22T14:13:38.063Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250723144207_addForeignKeyForCategoryProductRelation.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250723144207_addForeignKeyForCategoryProductRelation.cs",
+              "RelativeDocumentMoniker": "..\\Bulky.DataAccess\\Migrations\\20250723144207_addForeignKeyForCategoryProductRelation.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250723144207_addForeignKeyForCategoryProductRelation.cs",
+              "RelativeToolTip": "..\\Bulky.DataAccess\\Migrations\\20250723144207_addForeignKeyForCategoryProductRelation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:42:07.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Models\\Product.cs",
+              "RelativeDocumentMoniker": "..\\Bulky.Models\\Product.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Models\\Product.cs",
+              "RelativeToolTip": "..\\Bulky.Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:36:16.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20250723144547_addImageUrlToProduct.cs",
+              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250723144547_addImageUrlToProduct.cs",
+              "RelativeDocumentMoniker": "..\\Bulky.DataAccess\\Migrations\\20250723144547_addImageUrlToProduct.cs",
+              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.DataAccess\\Migrations\\20250723144547_addImageUrlToProduct.cs",
+              "RelativeToolTip": "..\\Bulky.DataAccess\\Migrations\\20250723144547_addImageUrlToProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:45:47.139Z"
             },
             {
               "$type": "Document",
@@ -112,8 +151,7 @@
               "RelativeToolTip": "..\\Bulky.DataAccess\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "ViewState": "AgIAAFUAAAAAAAAAAAAAAFUAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T14:39:52.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T14:39:52.519Z"
             },
             {
               "$type": "Document",
@@ -125,21 +163,7 @@
               "RelativeToolTip": "..\\Bulky.DataAccess\\Migrations\\20250723143834_addForeignKeyForCategoryProductRelation.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T14:38:34.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Models\\Product.cs",
-              "RelativeDocumentMoniker": "..\\Bulky.Models\\Product.cs",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\Bulky.Models\\Product.cs",
-              "RelativeToolTip": "..\\Bulky.Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T14:36:16.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T14:38:34.665Z"
             },
             {
               "$type": "Document",
@@ -151,8 +175,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T14:13:39.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T14:13:39.673Z"
             },
             {
               "$type": "Document",
@@ -164,8 +187,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Index.cshtml",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAAD4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T14:13:40.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T14:13:40.271Z"
             },
             {
               "$type": "Document",
@@ -177,21 +199,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T14:13:38.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ToolTip": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T14:13:38.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T14:13:38.914Z"
             }
           ]
         }
