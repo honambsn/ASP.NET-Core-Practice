@@ -68,7 +68,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
             return View(ProductFromDb);
         }
 
-        public IActionResult Create()
+        public IActionResult Upsert(int? id) // update & insert
         {
             //ViewBag.CategoryList = CategoryList;
             //ViewData["CategoryList"] = CategoryList;
@@ -83,12 +83,24 @@ namespace BulkyWeb.Areas.Admin.Controllers
                 Product = new Product() // Initialize the Product property
             };
 
-            return View(productVM);
+            if (id == null || id == 0)
+            {
+                // create -> insert
+                return View(productVM);
+            }
+            else
+            {
+                // update
+                productVM.Product = _unitOfWork.Product.Get(u => u.ID == id);
+                return View(productVM);
+            }
+
+            
         }
 
         [HttpPost]
         //public IActionResult Create(Product obj)
-        public IActionResult Create(ProductVM productVM)
+        public IActionResult Upsert(ProductVM productVM, IFormFile? file)
         {
 
             //if (obj.ID.ToString() == obj.ID.ToString())
@@ -121,52 +133,52 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
         }
 
-        public IActionResult Edit(int? id)
-        {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
+        //public IActionResult Edit(int? id)
+        //{
+        //    if (id == null || id == 0)
+        //    {
+        //        return NotFound();
+        //    }
 
-            //Product? ProductFromDb = _ProductRepository.GetById(id); // good and faster but not used for complex queries
+        //    //Product? ProductFromDb = _ProductRepository.GetById(id); // good and faster but not used for complex queries
 
 
-            //Product? ProductFromDb = _db.Categories.Find(id);
-            Product? ProductFromDb = _unitOfWork.Product.Get(u => u.ID == id);
-            //Product? ProductFromDb1 = _db.Categories.FirstOrDefault(u => u.ID== id);
-            //Product? ProductFromDb2 = _db.Categories.Where(u => u.ID == id).FirstOrDefault();
+        //    //Product? ProductFromDb = _db.Categories.Find(id);
+        //    Product? ProductFromDb = _unitOfWork.Product.Get(u => u.ID == id);
+        //    //Product? ProductFromDb1 = _db.Categories.FirstOrDefault(u => u.ID== id);
+        //    //Product? ProductFromDb2 = _db.Categories.Where(u => u.ID == id).FirstOrDefault();
 
-            if (ProductFromDb == null)
-            {
-                return NotFound();
-            }
-            return View(ProductFromDb);
-        }
+        //    if (ProductFromDb == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return View(ProductFromDb);
+        //}
 
-        [HttpPost]
-        public IActionResult Edit(Product obj)
-        {
+        //[HttpPost]
+        //public IActionResult Edit(Product obj)
+        //{
 
-            //if (obj.ID.ToString() == obj.ID.ToString())
-            //{
-            //    Debug.WriteLine("error equals");
-            //    ModelState.AddModelError("name", "The DisplayOrder cannot exactly match the Name.");
-            //}
+        //    //if (obj.ID.ToString() == obj.ID.ToString())
+        //    //{
+        //    //    Debug.WriteLine("error equals");
+        //    //    ModelState.AddModelError("name", "The DisplayOrder cannot exactly match the Name.");
+        //    //}
 
-            if (ModelState.IsValid)
-            {
-                //_db.Categories.Update(obj);
-                _unitOfWork.Product.Update(obj);
-                //_db.SaveChanges();
-                _unitOfWork.Save();
+        //    if (ModelState.IsValid)
+        //    {
+        //        //_db.Categories.Update(obj);
+        //        _unitOfWork.Product.Update(obj);
+        //        //_db.SaveChanges();
+        //        _unitOfWork.Save();
 
-                TempData["success"] = "Product updated successfully";
+        //        TempData["success"] = "Product updated successfully";
 
-                return RedirectToAction("Index");
-            }
+        //        return RedirectToAction("Index");
+        //    }
 
-            return View();
-        }
+        //    return View();
+        //}
 
 
         public IActionResult Delete(int? id)
