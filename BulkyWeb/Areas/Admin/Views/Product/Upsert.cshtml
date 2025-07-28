@@ -18,102 +18,112 @@
     <div class="card-body p-4">
         <form method="post" class="row" enctype="multipart/form-data">
             <input asp-for="Product.ID" hidden />
-            <div class="border p-3">
+            <input asp-for="Product.ImageUrl" hidden />
+            <div class="row">
+                <div class="col-10">
+                    <div class="border p-3">
 
-                @* <div class="mb-3 row p-1"> *@
-                <div class="form-floating py-2 col-12">
-                    <input asp-for="Product.Title" class="form-control border-0 shadow" />
-                    <label asp-for="Product.Title" class="ms-2">Title</label>
-                    <span asp-validation-for="Product.Title" class="text-danger"></span>
-                </div>
+                        @* <div class="mb-3 row p-1"> *@
+                        <div class="form-floating py-2 col-12">
+                            <input asp-for="Product.Title" class="form-control border-0 shadow" />
+                            <label asp-for="Product.Title" class="ms-2">Title</label>
+                            <span asp-validation-for="Product.Title" class="text-danger"></span>
+                        </div>
 
-                <div class="py-2 col-12">
-                    @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
-                    <label asp-for="Product.Description" class="ms-2 text-muted"/>
-                    <textarea asp-for="Product.Description" class="form-control border-0 shadow"></textarea>
-                    @* <label asp-for="Product.Description" class="ms-2">Description</label> *@
-                    @* <span asp-validation-for="Product.Description" class="text-danger"></span> *@
-                </div>
-                
-                <div class="form-floating py-2 col-12">
-                    @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
-                    <input asp-for="Product.ISBN" class="form-control border-0 shadow" />
-                    <label asp-for="Product.ISBN" class="ms-2">ISBN</label>
-                    <span asp-validation-for="Product.ISBN" class="text-danger"></span>
-                </div>
-                
-                <div class="form-floating py-2 col-12">
-                    @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
-                    <input asp-for="Product.Author" class="form-control border-0 shadow" />
-                    <label asp-for="Product.Author" class="ms-2">Author</label>
-                    <span asp-validation-for="Product.Author" class="text-danger"></span>
-                </div>
-                
-                <div class="form-floating py-2 col-12">
-                    @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
-                    <input asp-for="Product.ListPrice" class="form-control border-0 shadow" />
-                    <label asp-for="Product.ListPrice" class="ms-2">List Price</label>
-                    <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
-                </div>
-                
-                <div class="form-floating py-2 col-12">
-                    @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
-                    <input asp-for="Product.Price" class="form-control border-0 shadow" />
-                    <label asp-for="Product.Price" class="ms-2">Price</label>
-                    <span asp-validation-for="Product.Price" class="text-danger"></span>
-                </div>
-                
-                <div class="form-floating py-2 col-12">
-                    @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
-                    <input asp-for="Product.Price50" class="form-control border-0 shadow" />
-                    <label asp-for="Product.Price50" class="ms-2">Price50</label>
-                    <span asp-validation-for="Product.Price" class="text-danger"></span>
-                </div>
-                
-                <div class="form-floating py-2 col-12">
-                    @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
-                    <input asp-for="Product.Price100" class="form-control border-0 shadow" />
-                    <label asp-for="Product.Price100" class="ms-2">Price100</label>
-                    <span asp-validation-for="Product.Price100" class="text-danger"></span>
-                </div>
+                        <div class="py-2 col-12">
+                            @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
+                            <label asp-for="Product.Description" class="ms-2 text-muted" />
+                            <textarea asp-for="Product.Description" class="form-control border-0 shadow"></textarea>
+                            @* <label asp-for="Product.Description" class="ms-2">Description</label> *@
+                            @* <span asp-validation-for="Product.Description" class="text-danger"></span> *@
+                        </div>
+
+                        <div class="form-floating py-2 col-12">
+                            @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
+                            <input asp-for="Product.ISBN" class="form-control border-0 shadow" />
+                            <label asp-for="Product.ISBN" class="ms-2">ISBN</label>
+                            <span asp-validation-for="Product.ISBN" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating py-2 col-12">
+                            @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
+                            <input asp-for="Product.Author" class="form-control border-0 shadow" />
+                            <label asp-for="Product.Author" class="ms-2">Author</label>
+                            <span asp-validation-for="Product.Author" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating py-2 col-12">
+                            @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
+                            <input asp-for="Product.ListPrice" class="form-control border-0 shadow" />
+                            <label asp-for="Product.ListPrice" class="ms-2">List Price</label>
+                            <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating py-2 col-12">
+                            @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
+                            <input asp-for="Product.Price" class="form-control border-0 shadow" />
+                            <label asp-for="Product.Price" class="ms-2">Price</label>
+                            <span asp-validation-for="Product.Price" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating py-2 col-12">
+                            @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
+                            <input asp-for="Product.Price50" class="form-control border-0 shadow" />
+                            <label asp-for="Product.Price50" class="ms-2">Price50</label>
+                            <span asp-validation-for="Product.Price" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating py-2 col-12">
+                            @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
+                            <input asp-for="Product.Price100" class="form-control border-0 shadow" />
+                            <label asp-for="Product.Price100" class="ms-2">Price100</label>
+                            <span asp-validation-for="Product.Price100" class="text-danger"></span>
+                        </div>
 
 
-                <div class="form-floating py-2 col-12">
-                    @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
-                    <select asp-for="@Model.Product.CategoryID" asp-items="@Model.CategoryList"
-                            class="form-select border-0 shadow" style="cursor: pointer;">
-                        <option disabled selected>--Select Category--</option>
-                    </select>
-                    <label asp-for="Product.CategoryID" class="ms-2">Price100</label>
-                    <span asp-validation-for="Product.CategoryID" class="text-danger"></span>
-                </div>
+                        <div class="form-floating py-2 col-12">
+                            @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
+                            <select asp-for="@Model.Product.CategoryID" asp-items="@Model.CategoryList"
+                                    class="form-select border-0 shadow" style="cursor: pointer;">
+                                <option disabled selected>--Select Category--</option>
+                            </select>
+                            <label asp-for="Product.CategoryID" class="ms-2">Price100</label>
+                            <span asp-validation-for="Product.CategoryID" class="text-danger"></span>
+                        </div>
 
-                <div class="form-floating py-2 col-12">
-                    @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
-                    @* <input asp-for="Product.ImageUrl" class="form-control border-0 shadow" /> *@
-                    <input type="file" class="form-control border-0 shadow"/>
-                    <label asp-for="Product.ImageUrl" class="ms-2">Image</label>
-                    @* <span asp-validation-for="Product.ImageUrl" class="text-danger"></span> *@
-                </div>
+                        <div class="form-floating py-2 col-12">
+                            @* <label asp-for="DisplayOrder" class="pb-0">Display Order</label> *@
+                            @* <input asp-for="Product.ImageUrl" class="form-control border-0 shadow" /> *@
+                            <input type="file" name="file" class="form-control border-0 shadow" />
+                            <label asp-for="Product.ImageUrl" class="ms-2">Image</label>
+                            @* <span asp-validation-for="Product.ImageUrl" class="text-danger"></span> *@
+                        </div>
 
-                <div class="row pt-4">
-                    <div class="col-6 col-md-3">
-                        @if(Model.Product.ID != 0)
-                        {
-                            <button type="submit" class="btn btn-primary form-control">Update</button>
-                        }
-                        else
-                        {
-                            <button type="submit" class="btn btn-primary form-control">Create</button>
-                        }
+                        <div class="row pt-4">
+                            <div class="col-6 col-md-3">
+                                @if (Model.Product.ID != 0)
+                                {
+                                    <button type="submit" class="btn btn-primary form-control">Update</button>
+                                }
+                                else
+                                {
+                                    <button type="submit" class="btn btn-primary form-control">Create</button>
+                                }
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a asp-controller="Product" asp-action="Index" class="btn btn-outline-secondary border form-control">
+                                    Back to List
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-6 col-md-3">
-                        <a asp-controller="Product" asp-action="Index" class="btn btn-outline-secondary border form-control">
-                            Back to List
-                        </a>
-                    </div>
+                </div>
+
+                <div class="col-2">
+                    <img src="@Model.Product.ImageUrl" width="100%" style="border-radius: 10px; border: 1px solid #bbb9b9;" class="image-display"/>
                 </div>
             </div>
+            
         </form>
     </div>
 </div>
@@ -125,6 +135,22 @@
 <style>
     .alert-danger:empty {
         display: none;
+    }
+
+    img{
+        transition: transform 0.5s ease, box-shadow 0.3s ease, all 0.3s ease-in-out;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3),
+                    -10px -10px 30px rgba(255, 255, 255, 0.3);
+        transform: perspective(800px); /* rotateX(10deg) rotateY(10deg); */        
+        user-select: none;
+    }
+
+    .image-display:hover{
+        /* transform: scale(1.1); */
+        transform: perspective(800px) scale(1.1); /* rotateX(10deg) rotateY(10deg); */
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4), -20px -20px 50px rgba(255, 255, 255, 0.4);
+        border: 2px;
+        cursor: pointer;
     }
 </style>
 
