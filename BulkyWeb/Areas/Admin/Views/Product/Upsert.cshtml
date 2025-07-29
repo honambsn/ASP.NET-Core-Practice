@@ -120,7 +120,30 @@
                 </div>
 
                 <div class="col-2">
-                    <img src="@Model.Product.ImageUrl" width="100%" style="border-radius: 10px; border: 1px solid #bbb9b9;" class="image-display"/>
+                    @if (string.IsNullOrEmpty(Model.Product.ImageUrl))
+                    {
+                        <p class="no-img">No image yet</p>
+                    }
+                    else
+                    {
+                        <img src="@Model.Product.ImageUrl" id="image"
+                        width="100%"
+                        style="border-radius: 10px; border: 1px solid #bbb9b9;" 
+                        class="image-display"
+                        onclick="showModal(this)"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+                        <p class="no-img" style="display: none;">No image yet</p>
+                    }
+                </div>
+
+                @* <div id="imageModal" class="modal" onclick="hideModal()">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalImg" />
+                </div> *@
+
+                <div id="imageModal" class="modal" onclick="hideModal()">
+                    <span class="close" onclick="hideModal()">&times;</span>
+                    <img id="modalImg" class="modal-content" onclick="event.stopPropagation();" />
                 </div>
             </div>
             
@@ -152,6 +175,88 @@
         border: 2px;
         cursor: pointer;
     }
+    
+/*     .modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.8);
+        text-align: center;
+    }
+
+    .modal-content {
+        max-width: 80%;
+        max-height: 80%;
+        margin: auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .close {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+ */
+    .modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.0);
+        opacity: 0;
+        transition: background-color 0.3s ease, opacity 0.3s ease;
+        pointer-events: none;
+    }
+
+    .modal.show {
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .modal-content {
+        max-height: 90vh;
+        max-width: auto;
+        height: auto;
+        width: auto;
+        border-radius: 10px;
+        transform: scale(0.8);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+        object-fit: contain;
+    }
+
+    .modal.show .modal-content {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+
 </style>
 
 
@@ -166,8 +271,37 @@
             plugins: 'advlist autolink lists link image charmap preview anchor searchreplace visualblocks code fullscreen insertdatetime media table code help wordcount',
             toolbar: 'undo redo | blocks fontfamily fontsize | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help'
         })
+
+        // function showModal(img) { 
+        //     const modal = document.getElementById("imageModal");
+        //     const modalImg = document.getElementById("modalImg");
+        //     modal.style.display = "block";
+        //     modalImg.src = img.src;
+        //     modalImg.style.width = "100%";
+        //     modalImg.style.height = auto;
+        // }
+
+        // function hideModal() {
+        //     document.getElementById("imageModal").style.display = "none";
+        // }
+
+        // modalImg.onclick = function (e) {
+        //     e.stopPropagation();
+        // }
+
+        function showModal(imgElement) {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImg");
+            modalImg.src = imgElement.src;
+            modal.classList.add("show");
+        }
+
+        function hideModal() {
+            const modal = document.getElementById("imageModal");
+            modal.classList.remove("show");
+        }
     </script>
     @{
-        <partial name="_ValidationScriptsPartial" />
+                    <partial name="_ValidationScriptsPartial" />
     }
 }
