@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "c9IZvxLfAB3A7osbTbpTDjPQ6NdnkWsKZ7W0B2D5tKE=",
+  "Hash": "u7283VZfGl0jAnUDJJBqmq9n8mgCf3v5JmfGsYburTI=",
   "Source": "BulkyWeb",
   "BasePath": "_content/BulkyWeb",
   "Mode": "Default",
@@ -93,12 +93,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\wwwroot\\images\\product\\f94a5e8d-34c3-4200-849a-b25cf9bbe198.jpg",
+      "Identity": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\wwwroot\\images\\product\\46f42933-3d8a-4f51-ab97-f329db53caca.jpeg",
       "SourceId": "BulkyWeb",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\wwwroot\\",
       "BasePath": "_content/BulkyWeb",
-      "RelativePath": "images/product/f94a5e8d-34c3-4200-849a-b25cf9bbe198.jpg",
+      "RelativePath": "images/product/46f42933-3d8a-4f51-ab97-f329db53caca.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,7 +109,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\f94a5e8d-34c3-4200-849a-b25cf9bbe198.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\product\\46f42933-3d8a-4f51-ab97-f329db53caca.jpeg"
     },
     {
       "Identity": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb\\wwwroot\\js\\site.js",

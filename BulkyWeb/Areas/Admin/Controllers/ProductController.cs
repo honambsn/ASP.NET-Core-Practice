@@ -34,22 +34,51 @@ namespace BulkyWeb.Areas.Admin.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
+        //public IActionResult Index(int pageNumber = 1, int pageSize = 5)
+        //public IActionResult Index()
+        //{
+        //    List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
+        //    return View(objProductList);
+
+        //    //List<Product> objProductList = _db.Categories.ToList();
+
+        //    //return View(objProductList);
+
+
+        //    //int totalProducts = _unitOfWork.Product.Count();
+        //    //int totalPages = (int)Math.Ceiling((double)totalProducts / pageSize);
+
+        //    //var paginatedCategories = _unitOfWork.Product.GetPaginatedCategories(pageNumber, pageSize);
+
+        //    //ViewBag.TotalPages = totalPages;
+        //    //ViewBag.CurrentPage = pageNumber;
+
+        //    //return View(paginatedCategories);
+        //}
+
         public IActionResult Index(int pageNumber = 1, int pageSize = 5)
         {
             //List<Product> objProductList = _db.Categories.ToList();
 
             //return View(objProductList);
-            
             int totalProducts = _unitOfWork.Product.Count();
             int totalPages = (int)Math.Ceiling((double)totalProducts / pageSize);
 
-            var paginatedCategories = _unitOfWork.Product.GetPaginatedCategories(pageNumber, pageSize);
+            //var paginatedProducts = _unitOfWork.Product.GetAll(includeProperties: "Category")
+            //    .Skip((pageNumber - 1) * pageSize)
+            //    .Take(pageSize)
+            //    .ToList();
+
+            var paginatedProducts = _unitOfWork.Product.GetPaginatedCategories(pageNumber, pageSize);
+
 
             ViewBag.TotalPages = totalPages;
             ViewBag.CurrentPage = pageNumber;
 
-            return View(paginatedCategories);
+            return View(paginatedProducts);
         }
+
+
 
         //
         public IActionResult Details(int? id)
