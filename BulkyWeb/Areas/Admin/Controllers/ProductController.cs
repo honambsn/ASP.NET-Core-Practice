@@ -249,25 +249,26 @@ namespace BulkyWeb.Areas.Admin.Controllers
         //    return View();
         //}
 
+        #region old ver
+        ////public IActionResult Delete(int? id)
+        ////{
+        ////    if (id == null || id == 0)
+        ////    {
+        ////        return NotFound();
+        ////    }
 
-        public IActionResult Delete(int? id)
-        {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
+        ////    //Product? ProductFromDb = _db.Categories.Find(id);
+        ////    Product? ProductFromDb = _unitOfWork.Product.GetById(id);
+        ////    //Product? ProductFromDb1 = _db.Categories.FirstOrDefault(u => u.ID== id);
+        ////    //Product? ProductFromDb2 = _db.Categories.Where(u => u.ID == id).FirstOrDefault();
 
-            //Product? ProductFromDb = _db.Categories.Find(id);
-            Product? ProductFromDb = _unitOfWork.Product.GetById(id);
-            //Product? ProductFromDb1 = _db.Categories.FirstOrDefault(u => u.ID== id);
-            //Product? ProductFromDb2 = _db.Categories.Where(u => u.ID == id).FirstOrDefault();
-
-            if (ProductFromDb == null)
-            {
-                return NotFound();
-            }
-            return View(ProductFromDb);
-        }
+        ////    if (ProductFromDb == null)
+        ////    {
+        ////        return NotFound();
+        ////    }
+        ////    return View(ProductFromDb);
+        ////}
+        #endregion
 
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePOST(int? id)
@@ -288,6 +289,39 @@ namespace BulkyWeb.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
+        #region API CALLS
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
+            return Json(new { data = objProductList });
+        }
 
+        
+        public IActionResult Delete(int? id)
+        {
+            var productToBeDeleted = _unitOfWork.Product.Get(u => u.ID == id);
+
+            if (productToBeDeleted == null)
+                return Json(new { success = false, message = "Error while deleting" });
+
+
+            var oldImagePath =
+                            Path.Combine(_webHostEnvironment.WebRootPath, 
+                            productToBeDeleted.ImageUrl.TrimStart('\\'));
+
+            if (System.IO.File.Exists(oldImagePath))
+            {
+                System.IO.File.Delete(oldImagePath);
+            }
+
+            _unitOfWork.Product.Remove(productToBeDeleted);
+            _unitOfWork.Save();
+
+            //List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
+            //return Json(new { data = objProductList });
+            return Json(new { success = true, message = "Delete successful" });
+        }
+        #endregion
     }
 }

@@ -36,7 +36,7 @@
         </div>
 
 
-        <table class="table table-bordered table-striped">
+        <table id="tblData" class="table table-bordered table-striped" style="width: 100%;">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -48,7 +48,11 @@
                     <th></th>
                 </tr>
             </thead>
-            <tbody>
+
+            <!-- #region old ver -->
+            @* <tbody>
+
+                
                 @foreach (var obj in Model.OrderBy(u => u.ID))
                 {
                     <tr>
@@ -85,16 +89,12 @@
                         </td>
                     </tr>
                 }
-                @* <tr>
-                <td>
-                Name
-                </td>
+                
 
-                <td>
-                Display Order
-                </td>
-                </tr> *@
-            </tbody>
+
+            </tbody> *@
+
+            <!-- #endregion -->
         </table>
 
         @* <nav aria-label="Page navigation example">
@@ -146,3 +146,7 @@
 <hr style="border: none; height: 2px; background-color: #333;">
 
  *@
+
+ @section Scripts{
+     <script src="~/js//product.js"></script>
+ }

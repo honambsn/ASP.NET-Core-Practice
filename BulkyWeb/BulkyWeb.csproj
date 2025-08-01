@@ -26,4 +26,8 @@
   <ItemGroup>
     <Folder Include="wwwroot\images\product\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\js\product.js" />
+  </ItemGroup>
 </Project>
