@@ -117,6 +117,9 @@
         </nav> *@
         @if (ViewBag.TotalPages > 1)
         {
+            <p>Current Page: @ViewBag.CurrentPage</p>
+            <p>Total Pages: @ViewBag.TotalPages</p>
+
             <nav aria-label="Page navigation">
                 <ul class="pagination justify-content-center">
                     <li class="page-item @(ViewBag.CurrentPage == 1 ? "disabled" : "")">
@@ -150,3 +153,4 @@
  @section Scripts{
      <script src="~/js//product.js"></script>
  }
+

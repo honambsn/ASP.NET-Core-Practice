@@ -59,7 +59,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
         public IActionResult Index(int pageNumber = 1, int pageSize = 5)
         {
             //List<Product> objProductList = _db.Categories.ToList();
-
+            //Debug.WriteLine("Page Number: " + pageNumber);
             //return View(objProductList);
             int totalProducts = _unitOfWork.Product.Count();
             int totalPages = (int)Math.Ceiling((double)totalProducts / pageSize);
