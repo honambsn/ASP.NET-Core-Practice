@@ -1,0 +1,10 @@
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\obj\Debug\net9.0\BulkyWeb.csproj.AssemblyReference.cache
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\obj\Debug\net9.0\BulkyWeb.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\obj\Debug\net9.0\BulkyWeb.AssemblyInfoInputs.cache
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\obj\Debug\net9.0\BulkyWeb.AssemblyInfo.cs
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\obj\Debug\net9.0\BulkyWeb.csproj.CoreCompileInputs.cache
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\obj\Debug\net9.0\BulkyWeb.MvcApplicationPartsAssemblyInfo.cs
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\obj\Debug\net9.0\BulkyWeb.MvcApplicationPartsAssemblyInfo.cache
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\obj\Debug\net9.0\BulkyWeb.RazorAssemblyInfo.cache
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\obj\Debug\net9.0\BulkyWeb.RazorAssemblyInfo.cs
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\BulkyWeb\obj\Debug\net9.0\BulkyWeb.sourcelink.json
