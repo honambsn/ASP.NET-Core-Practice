@@ -20,6 +20,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bulky.Utility", "..\Bulky.U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_Service_Lifetime", "..\DI_Service_Lifetime\DI_Service_Lifetime.csproj", "{6A2DA5D2-120B-4157-BC23-FED86FC8FE01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "..\Test\Test.csproj", "{7E1E6C6B-A919-4917-BF5A-9497D4C47EAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{6A2DA5D2-120B-4157-BC23-FED86FC8FE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A2DA5D2-120B-4157-BC23-FED86FC8FE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A2DA5D2-120B-4157-BC23-FED86FC8FE01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E1E6C6B-A919-4917-BF5A-9497D4C47EAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1E6C6B-A919-4917-BF5A-9497D4C47EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1E6C6B-A919-4917-BF5A-9497D4C47EAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1E6C6B-A919-4917-BF5A-9497D4C47EAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

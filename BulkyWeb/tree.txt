@@ -248,3 +248,1827 @@ D:.
                 jquery.validate.unobtrusive.min.js
                 LICENSE.txt
                 
+Folder PATH listing for volume New Volume
+Volume serial number is D428-1106
+D:.
+|   appsettings.Development.json
+|   appsettings.json
+|   BulkyWeb.csproj
+|   BulkyWeb.csproj.user
+|   BulkyWeb.sln
+|   Program.cs
+|   ScaffoldingReadMe.txt
+|   tree.txt
+|   
++---Areas
+|   +---Admin
+|   |   +---Controllers
+|   |   |       CategoryController.cs
+|   |   |       ProductController.cs
+|   |   |       
+|   |   \---Views
+|   |       |   _ViewImports.cshtml
+|   |       |   _ViewStart.cshtml
+|   |       |   
+|   |       +---Category
+|   |       |       Create.cshtml
+|   |       |       Delete.cshtml
+|   |       |       Edit.cshtml
+|   |       |       Index.cshtml
+|   |       |       
+|   |       \---Product
+|   |               Edit.cshtml
+|   |               Index.cshtml
+|   |               old_Delete.cshtml
+|   |               Upsert.cshtml
+|   |               
+|   \---Customer
+|       |   _ViewImports.cshtml
+|       |   _ViewStart.cshtml
+|       |   
+|       +---Controllers
+|       |       HomeController.cs
+|       |       
+|       \---Views
+|           \---Home
+|                   Details.cshtml
+|                   Index.cshtml
+|                   Privacy.cshtml
+|                   
++---bin
+|   \---Debug
+|       +---net8.0
+|       |   |   appsettings.Development.json
+|       |   |   appsettings.json
+|       |   |   Azure.Core.dll
+|       |   |   Azure.Identity.dll
+|       |   |   Bulky.DataAccess.dll
+|       |   |   Bulky.DataAccess.pdb
+|       |   |   Bulky.Models.dll
+|       |   |   Bulky.Models.pdb
+|       |   |   Bulky.Utility.dll
+|       |   |   Bulky.Utility.pdb
+|       |   |   BulkyWeb.deps.json
+|       |   |   BulkyWeb.dll
+|       |   |   BulkyWeb.exe
+|       |   |   BulkyWeb.pdb
+|       |   |   BulkyWeb.runtimeconfig.json
+|       |   |   BulkyWeb.staticwebassets.runtime.json
+|       |   |   dotnet-aspnet-codegenerator-design.dll
+|       |   |   Humanizer.dll
+|       |   |   Microsoft.AspNetCore.Cryptography.Internal.dll
+|       |   |   Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+|       |   |   Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+|       |   |   Microsoft.AspNetCore.Identity.UI.dll
+|       |   |   Microsoft.AspNetCore.JsonPatch.dll
+|       |   |   Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+|       |   |   Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+|       |   |   Microsoft.AspNetCore.Razor.Language.dll
+|       |   |   Microsoft.Bcl.AsyncInterfaces.dll
+|       |   |   Microsoft.Build.dll
+|       |   |   Microsoft.Build.Framework.dll
+|       |   |   Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+|       |   |   Microsoft.CodeAnalysis.CSharp.dll
+|       |   |   Microsoft.CodeAnalysis.CSharp.Features.dll
+|       |   |   Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+|       |   |   Microsoft.CodeAnalysis.dll
+|       |   |   Microsoft.CodeAnalysis.Elfie.dll
+|       |   |   Microsoft.CodeAnalysis.Features.dll
+|       |   |   Microsoft.CodeAnalysis.Razor.dll
+|       |   |   Microsoft.CodeAnalysis.Scripting.dll
+|       |   |   Microsoft.CodeAnalysis.Workspaces.dll
+|       |   |   Microsoft.Data.SqlClient.dll
+|       |   |   Microsoft.DiaSymReader.dll
+|       |   |   Microsoft.DotNet.Scaffolding.Shared.dll
+|       |   |   Microsoft.EntityFrameworkCore.Abstractions.dll
+|       |   |   Microsoft.EntityFrameworkCore.Design.dll
+|       |   |   Microsoft.EntityFrameworkCore.dll
+|       |   |   Microsoft.EntityFrameworkCore.Relational.dll
+|       |   |   Microsoft.EntityFrameworkCore.SqlServer.dll
+|       |   |   Microsoft.Extensions.Caching.Memory.dll
+|       |   |   Microsoft.Extensions.DependencyInjection.Abstractions.dll
+|       |   |   Microsoft.Extensions.DependencyInjection.dll
+|       |   |   Microsoft.Extensions.DependencyModel.dll
+|       |   |   Microsoft.Extensions.Diagnostics.Abstractions.dll
+|       |   |   Microsoft.Extensions.FileProviders.Embedded.dll
+|       |   |   Microsoft.Extensions.Hosting.Abstractions.dll
+|       |   |   Microsoft.Extensions.Identity.Core.dll
+|       |   |   Microsoft.Extensions.Identity.Stores.dll
+|       |   |   Microsoft.Extensions.Localization.Abstractions.dll
+|       |   |   Microsoft.Extensions.Localization.dll
+|       |   |   Microsoft.Extensions.Logging.Abstractions.dll
+|       |   |   Microsoft.Extensions.Logging.dll
+|       |   |   Microsoft.Extensions.ObjectPool.dll
+|       |   |   Microsoft.Extensions.Options.dll
+|       |   |   Microsoft.Extensions.WebEncoders.dll
+|       |   |   Microsoft.Identity.Client.dll
+|       |   |   Microsoft.Identity.Client.Extensions.Msal.dll
+|       |   |   Microsoft.IdentityModel.Abstractions.dll
+|       |   |   Microsoft.IdentityModel.JsonWebTokens.dll
+|       |   |   Microsoft.IdentityModel.Logging.dll
+|       |   |   Microsoft.IdentityModel.Protocols.dll
+|       |   |   Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+|       |   |   Microsoft.IdentityModel.Tokens.dll
+|       |   |   Microsoft.NET.StringTools.dll
+|       |   |   Microsoft.SqlServer.Server.dll
+|       |   |   Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+|       |   |   Microsoft.VisualStudio.Web.CodeGeneration.dll
+|       |   |   Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+|       |   |   Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+|       |   |   Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+|       |   |   Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+|       |   |   Microsoft.Win32.SystemEvents.dll
+|       |   |   Mono.TextTemplating.dll
+|       |   |   Newtonsoft.Json.Bson.dll
+|       |   |   Newtonsoft.Json.dll
+|       |   |   NuGet.Common.dll
+|       |   |   NuGet.Configuration.dll
+|       |   |   NuGet.DependencyResolver.Core.dll
+|       |   |   NuGet.Frameworks.dll
+|       |   |   NuGet.LibraryModel.dll
+|       |   |   NuGet.Packaging.dll
+|       |   |   NuGet.ProjectModel.dll
+|       |   |   NuGet.Protocol.dll
+|       |   |   NuGet.Versioning.dll
+|       |   |   System.ClientModel.dll
+|       |   |   System.CodeDom.dll
+|       |   |   System.Composition.AttributedModel.dll
+|       |   |   System.Composition.Convention.dll
+|       |   |   System.Composition.Hosting.dll
+|       |   |   System.Composition.Runtime.dll
+|       |   |   System.Composition.TypedParts.dll
+|       |   |   System.Configuration.ConfigurationManager.dll
+|       |   |   System.Diagnostics.DiagnosticSource.dll
+|       |   |   System.Drawing.Common.dll
+|       |   |   System.Formats.Asn1.dll
+|       |   |   System.IdentityModel.Tokens.Jwt.dll
+|       |   |   System.Memory.Data.dll
+|       |   |   System.Reflection.MetadataLoadContext.dll
+|       |   |   System.Runtime.Caching.dll
+|       |   |   System.Security.Cryptography.Pkcs.dll
+|       |   |   System.Security.Cryptography.ProtectedData.dll
+|       |   |   System.Security.Cryptography.Xml.dll
+|       |   |   System.Security.Permissions.dll
+|       |   |   System.Windows.Extensions.dll
+|       |   |   
+|       |   +---af
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---ar
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---az
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---bg
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---bn-BD
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---cs
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---da
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---de
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---el
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---es
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---fa
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---fi-FI
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---fr
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---fr-BE
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---he
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---hr
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---hu
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---hy
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---id
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---is
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---it
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---ja
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---ko
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---ko-KR
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---ku
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---lv
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---ms-MY
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---mt
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---nb
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---nb-NO
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---nl
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---pl
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---pt
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---pt-BR
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---refs
+|       |   |       Microsoft.AspNetCore.Antiforgery.dll
+|       |   |       Microsoft.AspNetCore.Authentication.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Authentication.BearerToken.dll
+|       |   |       Microsoft.AspNetCore.Authentication.Cookies.dll
+|       |   |       Microsoft.AspNetCore.Authentication.Core.dll
+|       |   |       Microsoft.AspNetCore.Authentication.dll
+|       |   |       Microsoft.AspNetCore.Authentication.OAuth.dll
+|       |   |       Microsoft.AspNetCore.Authorization.dll
+|       |   |       Microsoft.AspNetCore.Authorization.Policy.dll
+|       |   |       Microsoft.AspNetCore.Components.Authorization.dll
+|       |   |       Microsoft.AspNetCore.Components.dll
+|       |   |       Microsoft.AspNetCore.Components.Endpoints.dll
+|       |   |       Microsoft.AspNetCore.Components.Forms.dll
+|       |   |       Microsoft.AspNetCore.Components.Server.dll
+|       |   |       Microsoft.AspNetCore.Components.Web.dll
+|       |   |       Microsoft.AspNetCore.Connections.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.CookiePolicy.dll
+|       |   |       Microsoft.AspNetCore.Cors.dll
+|       |   |       Microsoft.AspNetCore.DataProtection.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.DataProtection.dll
+|       |   |       Microsoft.AspNetCore.DataProtection.Extensions.dll
+|       |   |       Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Diagnostics.dll
+|       |   |       Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+|       |   |       Microsoft.AspNetCore.dll
+|       |   |       Microsoft.AspNetCore.HostFiltering.dll
+|       |   |       Microsoft.AspNetCore.Hosting.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Hosting.dll
+|       |   |       Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Html.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Http.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Http.Connections.Common.dll
+|       |   |       Microsoft.AspNetCore.Http.Connections.dll
+|       |   |       Microsoft.AspNetCore.Http.dll
+|       |   |       Microsoft.AspNetCore.Http.Extensions.dll
+|       |   |       Microsoft.AspNetCore.Http.Features.dll
+|       |   |       Microsoft.AspNetCore.Http.Results.dll
+|       |   |       Microsoft.AspNetCore.HttpLogging.dll
+|       |   |       Microsoft.AspNetCore.HttpOverrides.dll
+|       |   |       Microsoft.AspNetCore.HttpsPolicy.dll
+|       |   |       Microsoft.AspNetCore.Identity.dll
+|       |   |       Microsoft.AspNetCore.Localization.dll
+|       |   |       Microsoft.AspNetCore.Localization.Routing.dll
+|       |   |       Microsoft.AspNetCore.Metadata.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Core.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Cors.dll
+|       |   |       Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+|       |   |       Microsoft.AspNetCore.Mvc.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Localization.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Razor.dll
+|       |   |       Microsoft.AspNetCore.Mvc.RazorPages.dll
+|       |   |       Microsoft.AspNetCore.Mvc.TagHelpers.dll
+|       |   |       Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+|       |   |       Microsoft.AspNetCore.OutputCaching.dll
+|       |   |       Microsoft.AspNetCore.RateLimiting.dll
+|       |   |       Microsoft.AspNetCore.Razor.dll
+|       |   |       Microsoft.AspNetCore.Razor.Runtime.dll
+|       |   |       Microsoft.AspNetCore.RequestDecompression.dll
+|       |   |       Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.ResponseCaching.dll
+|       |   |       Microsoft.AspNetCore.ResponseCompression.dll
+|       |   |       Microsoft.AspNetCore.Rewrite.dll
+|       |   |       Microsoft.AspNetCore.Routing.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Routing.dll
+|       |   |       Microsoft.AspNetCore.Server.HttpSys.dll
+|       |   |       Microsoft.AspNetCore.Server.IIS.dll
+|       |   |       Microsoft.AspNetCore.Server.IISIntegration.dll
+|       |   |       Microsoft.AspNetCore.Server.Kestrel.Core.dll
+|       |   |       Microsoft.AspNetCore.Server.Kestrel.dll
+|       |   |       Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll
+|       |   |       Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+|       |   |       Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+|       |   |       Microsoft.AspNetCore.Session.dll
+|       |   |       Microsoft.AspNetCore.SignalR.Common.dll
+|       |   |       Microsoft.AspNetCore.SignalR.Core.dll
+|       |   |       Microsoft.AspNetCore.SignalR.dll
+|       |   |       Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+|       |   |       Microsoft.AspNetCore.StaticFiles.dll
+|       |   |       Microsoft.AspNetCore.WebSockets.dll
+|       |   |       Microsoft.AspNetCore.WebUtilities.dll
+|       |   |       Microsoft.CSharp.dll
+|       |   |       Microsoft.Extensions.Caching.Abstractions.dll
+|       |   |       Microsoft.Extensions.Configuration.Abstractions.dll
+|       |   |       Microsoft.Extensions.Configuration.Binder.dll
+|       |   |       Microsoft.Extensions.Configuration.CommandLine.dll
+|       |   |       Microsoft.Extensions.Configuration.dll
+|       |   |       Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+|       |   |       Microsoft.Extensions.Configuration.FileExtensions.dll
+|       |   |       Microsoft.Extensions.Configuration.Ini.dll
+|       |   |       Microsoft.Extensions.Configuration.Json.dll
+|       |   |       Microsoft.Extensions.Configuration.KeyPerFile.dll
+|       |   |       Microsoft.Extensions.Configuration.UserSecrets.dll
+|       |   |       Microsoft.Extensions.Configuration.Xml.dll
+|       |   |       Microsoft.Extensions.Diagnostics.dll
+|       |   |       Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+|       |   |       Microsoft.Extensions.Diagnostics.HealthChecks.dll
+|       |   |       Microsoft.Extensions.Features.dll
+|       |   |       Microsoft.Extensions.FileProviders.Abstractions.dll
+|       |   |       Microsoft.Extensions.FileProviders.Composite.dll
+|       |   |       Microsoft.Extensions.FileProviders.Physical.dll
+|       |   |       Microsoft.Extensions.FileSystemGlobbing.dll
+|       |   |       Microsoft.Extensions.Hosting.dll
+|       |   |       Microsoft.Extensions.Http.dll
+|       |   |       Microsoft.Extensions.Logging.Configuration.dll
+|       |   |       Microsoft.Extensions.Logging.Console.dll
+|       |   |       Microsoft.Extensions.Logging.Debug.dll
+|       |   |       Microsoft.Extensions.Logging.EventLog.dll
+|       |   |       Microsoft.Extensions.Logging.EventSource.dll
+|       |   |       Microsoft.Extensions.Logging.TraceSource.dll
+|       |   |       Microsoft.Extensions.Options.ConfigurationExtensions.dll
+|       |   |       Microsoft.Extensions.Options.DataAnnotations.dll
+|       |   |       Microsoft.Extensions.Primitives.dll
+|       |   |       Microsoft.JSInterop.dll
+|       |   |       Microsoft.Net.Http.Headers.dll
+|       |   |       Microsoft.VisualBasic.Core.dll
+|       |   |       Microsoft.VisualBasic.dll
+|       |   |       Microsoft.Win32.Primitives.dll
+|       |   |       Microsoft.Win32.Registry.dll
+|       |   |       mscorlib.dll
+|       |   |       netstandard.dll
+|       |   |       System.AppContext.dll
+|       |   |       System.Buffers.dll
+|       |   |       System.Collections.Concurrent.dll
+|       |   |       System.Collections.dll
+|       |   |       System.Collections.Immutable.dll
+|       |   |       System.Collections.NonGeneric.dll
+|       |   |       System.Collections.Specialized.dll
+|       |   |       System.ComponentModel.Annotations.dll
+|       |   |       System.ComponentModel.DataAnnotations.dll
+|       |   |       System.ComponentModel.dll
+|       |   |       System.ComponentModel.EventBasedAsync.dll
+|       |   |       System.ComponentModel.Primitives.dll
+|       |   |       System.ComponentModel.TypeConverter.dll
+|       |   |       System.Configuration.dll
+|       |   |       System.Console.dll
+|       |   |       System.Core.dll
+|       |   |       System.Data.Common.dll
+|       |   |       System.Data.DataSetExtensions.dll
+|       |   |       System.Data.dll
+|       |   |       System.Diagnostics.Contracts.dll
+|       |   |       System.Diagnostics.Debug.dll
+|       |   |       System.Diagnostics.EventLog.dll
+|       |   |       System.Diagnostics.FileVersionInfo.dll
+|       |   |       System.Diagnostics.Process.dll
+|       |   |       System.Diagnostics.StackTrace.dll
+|       |   |       System.Diagnostics.TextWriterTraceListener.dll
+|       |   |       System.Diagnostics.Tools.dll
+|       |   |       System.Diagnostics.TraceSource.dll
+|       |   |       System.Diagnostics.Tracing.dll
+|       |   |       System.dll
+|       |   |       System.Drawing.dll
+|       |   |       System.Drawing.Primitives.dll
+|       |   |       System.Dynamic.Runtime.dll
+|       |   |       System.Formats.Tar.dll
+|       |   |       System.Globalization.Calendars.dll
+|       |   |       System.Globalization.dll
+|       |   |       System.Globalization.Extensions.dll
+|       |   |       System.IO.Compression.Brotli.dll
+|       |   |       System.IO.Compression.dll
+|       |   |       System.IO.Compression.FileSystem.dll
+|       |   |       System.IO.Compression.ZipFile.dll
+|       |   |       System.IO.dll
+|       |   |       System.IO.FileSystem.AccessControl.dll
+|       |   |       System.IO.FileSystem.dll
+|       |   |       System.IO.FileSystem.DriveInfo.dll
+|       |   |       System.IO.FileSystem.Primitives.dll
+|       |   |       System.IO.FileSystem.Watcher.dll
+|       |   |       System.IO.IsolatedStorage.dll
+|       |   |       System.IO.MemoryMappedFiles.dll
+|       |   |       System.IO.Pipelines.dll
+|       |   |       System.IO.Pipes.AccessControl.dll
+|       |   |       System.IO.Pipes.dll
+|       |   |       System.IO.UnmanagedMemoryStream.dll
+|       |   |       System.Linq.dll
+|       |   |       System.Linq.Expressions.dll
+|       |   |       System.Linq.Parallel.dll
+|       |   |       System.Linq.Queryable.dll
+|       |   |       System.Memory.dll
+|       |   |       System.Net.dll
+|       |   |       System.Net.Http.dll
+|       |   |       System.Net.Http.Json.dll
+|       |   |       System.Net.HttpListener.dll
+|       |   |       System.Net.Mail.dll
+|       |   |       System.Net.NameResolution.dll
+|       |   |       System.Net.NetworkInformation.dll
+|       |   |       System.Net.Ping.dll
+|       |   |       System.Net.Primitives.dll
+|       |   |       System.Net.Quic.dll
+|       |   |       System.Net.Requests.dll
+|       |   |       System.Net.Security.dll
+|       |   |       System.Net.ServicePoint.dll
+|       |   |       System.Net.Sockets.dll
+|       |   |       System.Net.WebClient.dll
+|       |   |       System.Net.WebHeaderCollection.dll
+|       |   |       System.Net.WebProxy.dll
+|       |   |       System.Net.WebSockets.Client.dll
+|       |   |       System.Net.WebSockets.dll
+|       |   |       System.Numerics.dll
+|       |   |       System.Numerics.Vectors.dll
+|       |   |       System.ObjectModel.dll
+|       |   |       System.Reflection.DispatchProxy.dll
+|       |   |       System.Reflection.dll
+|       |   |       System.Reflection.Emit.dll
+|       |   |       System.Reflection.Emit.ILGeneration.dll
+|       |   |       System.Reflection.Emit.Lightweight.dll
+|       |   |       System.Reflection.Extensions.dll
+|       |   |       System.Reflection.Metadata.dll
+|       |   |       System.Reflection.Primitives.dll
+|       |   |       System.Reflection.TypeExtensions.dll
+|       |   |       System.Resources.Reader.dll
+|       |   |       System.Resources.ResourceManager.dll
+|       |   |       System.Resources.Writer.dll
+|       |   |       System.Runtime.CompilerServices.Unsafe.dll
+|       |   |       System.Runtime.CompilerServices.VisualC.dll
+|       |   |       System.Runtime.dll
+|       |   |       System.Runtime.Extensions.dll
+|       |   |       System.Runtime.Handles.dll
+|       |   |       System.Runtime.InteropServices.dll
+|       |   |       System.Runtime.InteropServices.JavaScript.dll
+|       |   |       System.Runtime.InteropServices.RuntimeInformation.dll
+|       |   |       System.Runtime.Intrinsics.dll
+|       |   |       System.Runtime.Loader.dll
+|       |   |       System.Runtime.Numerics.dll
+|       |   |       System.Runtime.Serialization.dll
+|       |   |       System.Runtime.Serialization.Formatters.dll
+|       |   |       System.Runtime.Serialization.Json.dll
+|       |   |       System.Runtime.Serialization.Primitives.dll
+|       |   |       System.Runtime.Serialization.Xml.dll
+|       |   |       System.Security.AccessControl.dll
+|       |   |       System.Security.Claims.dll
+|       |   |       System.Security.Cryptography.Algorithms.dll
+|       |   |       System.Security.Cryptography.Cng.dll
+|       |   |       System.Security.Cryptography.Csp.dll
+|       |   |       System.Security.Cryptography.dll
+|       |   |       System.Security.Cryptography.Encoding.dll
+|       |   |       System.Security.Cryptography.OpenSsl.dll
+|       |   |       System.Security.Cryptography.Primitives.dll
+|       |   |       System.Security.Cryptography.X509Certificates.dll
+|       |   |       System.Security.dll
+|       |   |       System.Security.Principal.dll
+|       |   |       System.Security.Principal.Windows.dll
+|       |   |       System.Security.SecureString.dll
+|       |   |       System.ServiceModel.Web.dll
+|       |   |       System.ServiceProcess.dll
+|       |   |       System.Text.Encoding.CodePages.dll
+|       |   |       System.Text.Encoding.dll
+|       |   |       System.Text.Encoding.Extensions.dll
+|       |   |       System.Text.Encodings.Web.dll
+|       |   |       System.Text.Json.dll
+|       |   |       System.Text.RegularExpressions.dll
+|       |   |       System.Threading.Channels.dll
+|       |   |       System.Threading.dll
+|       |   |       System.Threading.Overlapped.dll
+|       |   |       System.Threading.RateLimiting.dll
+|       |   |       System.Threading.Tasks.Dataflow.dll
+|       |   |       System.Threading.Tasks.dll
+|       |   |       System.Threading.Tasks.Extensions.dll
+|       |   |       System.Threading.Tasks.Parallel.dll
+|       |   |       System.Threading.Thread.dll
+|       |   |       System.Threading.ThreadPool.dll
+|       |   |       System.Threading.Timer.dll
+|       |   |       System.Transactions.dll
+|       |   |       System.Transactions.Local.dll
+|       |   |       System.ValueTuple.dll
+|       |   |       System.Web.dll
+|       |   |       System.Web.HttpUtility.dll
+|       |   |       System.Windows.dll
+|       |   |       System.Xml.dll
+|       |   |       System.Xml.Linq.dll
+|       |   |       System.Xml.ReaderWriter.dll
+|       |   |       System.Xml.Serialization.dll
+|       |   |       System.Xml.XDocument.dll
+|       |   |       System.Xml.XmlDocument.dll
+|       |   |       System.Xml.XmlSerializer.dll
+|       |   |       System.Xml.XPath.dll
+|       |   |       System.Xml.XPath.XDocument.dll
+|       |   |       WindowsBase.dll
+|       |   |       
+|       |   +---ro
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---ru
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---runtimes
+|       |   |   +---browser
+|       |   |   |   \---lib
+|       |   |   |       \---net8.0
+|       |   |   +---unix
+|       |   |   |   \---lib
+|       |   |   |       \---net6.0
+|       |   |   |               Microsoft.Data.SqlClient.dll
+|       |   |   |               
+|       |   |   +---win
+|       |   |   |   \---lib
+|       |   |   |       +---net6.0
+|       |   |   |       |       Microsoft.Data.SqlClient.dll
+|       |   |   |       |       System.Runtime.Caching.dll
+|       |   |   |       |       
+|       |   |   |       +---net7.0
+|       |   |   |       |       Microsoft.Win32.SystemEvents.dll
+|       |   |   |       |       System.Drawing.Common.dll
+|       |   |   |       |       System.Security.Cryptography.ProtectedData.dll
+|       |   |   |       |       System.Windows.Extensions.dll
+|       |   |   |       |       
+|       |   |   |       \---net8.0
+|       |   |   |               System.Security.Cryptography.Pkcs.dll
+|       |   |   |               
+|       |   |   +---win-arm
+|       |   |   |   \---native
+|       |   |   |           Microsoft.Data.SqlClient.SNI.dll
+|       |   |   |           
+|       |   |   +---win-arm64
+|       |   |   |   \---native
+|       |   |   |           Microsoft.Data.SqlClient.SNI.dll
+|       |   |   |           
+|       |   |   +---win-x64
+|       |   |   |   \---native
+|       |   |   |           Microsoft.Data.SqlClient.SNI.dll
+|       |   |   |           
+|       |   |   \---win-x86
+|       |   |       \---native
+|       |   |               Microsoft.Data.SqlClient.SNI.dll
+|       |   |               
+|       |   +---sk
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---sl
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---sr
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---sr-Latn
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---sv
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---th-TH
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---tr
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---uk
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---uz-Cyrl-UZ
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---uz-Latn-UZ
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---vi
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---zh-CN
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---zh-Hans
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   \---zh-Hant
+|       |           Humanizer.resources.dll
+|       |           Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |           Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |           Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |           Microsoft.CodeAnalysis.Features.resources.dll
+|       |           Microsoft.CodeAnalysis.resources.dll
+|       |           Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |           Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |           
+|       \---net9.0
++---obj
+|   |   BulkyWeb.csproj.codegeneration.targets
+|   |   BulkyWeb.csproj.nuget.dgspec.json
+|   |   BulkyWeb.csproj.nuget.g.props
+|   |   BulkyWeb.csproj.nuget.g.targets
+|   |   project.assets.json
+|   |   project.nuget.cache
+|   |   
+|   \---Debug
+|       +---net8.0
+|       |   |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+|       |   |   ApiEndpoints.json
+|       |   |   apphost.exe
+|       |   |   BulkyWeb.AssemblyInfo.cs
+|       |   |   BulkyWeb.AssemblyInfoInputs.cache
+|       |   |   BulkyWeb.assets.cache
+|       |   |   BulkyWeb.csproj.AssemblyReference.cache
+|       |   |   BulkyWeb.csproj.BuildWithSkipAnalyzers
+|       |   |   BulkyWeb.csproj.CoreCompileInputs.cache
+|       |   |   BulkyWeb.csproj.FileListAbsolute.txt
+|       |   |   BulkyWeb.csproj.Up2Date
+|       |   |   BulkyWeb.dll
+|       |   |   BulkyWeb.GeneratedMSBuildEditorConfig.editorconfig
+|       |   |   BulkyWeb.genruntimeconfig.cache
+|       |   |   BulkyWeb.GlobalUsings.g.cs
+|       |   |   BulkyWeb.MvcApplicationPartsAssemblyInfo.cache
+|       |   |   BulkyWeb.MvcApplicationPartsAssemblyInfo.cs
+|       |   |   BulkyWeb.pdb
+|       |   |   BulkyWeb.RazorAssemblyInfo.cache
+|       |   |   BulkyWeb.RazorAssemblyInfo.cs
+|       |   |   BulkyWeb.sourcelink.json
+|       |   |   staticwebassets.build.json
+|       |   |   staticwebassets.development.json
+|       |   |   staticwebassets.pack.json
+|       |   |   
+|       |   +---ref
+|       |   |       BulkyWeb.dll
+|       |   |       
+|       |   +---refint
+|       |   |       BulkyWeb.dll
+|       |   |       
+|       |   +---scopedcss
+|       |   |   +---bundle
+|       |   |   |       BulkyWeb.styles.css
+|       |   |   |       
+|       |   |   +---projectbundle
+|       |   |   |       BulkyWeb.bundle.scp.css
+|       |   |   |       
+|       |   |   \---Views
+|       |   |       \---Shared
+|       |   |               _Layout.cshtml.rz.scp.css
+|       |   |               
+|       |   \---staticwebassets
+|       |           msbuild.build.BulkyWeb.props
+|       |           msbuild.buildMultiTargeting.BulkyWeb.props
+|       |           msbuild.buildTransitive.BulkyWeb.props
+|       |           msbuild.BulkyWeb.Microsoft.AspNetCore.StaticWebAssets.props
+|       |           
+|       \---net9.0
+|           |   .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+|           |   BulkyWeb.AssemblyInfo.cs
+|           |   BulkyWeb.AssemblyInfoInputs.cache
+|           |   BulkyWeb.assets.cache
+|           |   BulkyWeb.csproj.AssemblyReference.cache
+|           |   BulkyWeb.csproj.CoreCompileInputs.cache
+|           |   BulkyWeb.csproj.FileListAbsolute.txt
+|           |   BulkyWeb.GeneratedMSBuildEditorConfig.editorconfig
+|           |   BulkyWeb.GlobalUsings.g.cs
+|           |   BulkyWeb.MvcApplicationPartsAssemblyInfo.cache
+|           |   BulkyWeb.MvcApplicationPartsAssemblyInfo.cs
+|           |   BulkyWeb.RazorAssemblyInfo.cache
+|           |   BulkyWeb.RazorAssemblyInfo.cs
+|           |   BulkyWeb.sourcelink.json
+|           |   
+|           +---ref
+|           +---refint
+|           \---staticwebassets
++---Properties
+|       launchSettings.json
+|       
++---Views
+|   |   _ViewImports.cshtml
+|   |   _ViewStart.cshtml
+|   |   
+|   \---Shared
+|           Error.cshtml
+|           _Layout.cshtml
+|           _Layout.cshtml.css
+|           _Notification.cshtml
+|           _ValidationScriptsPartial.cshtml
+|           
+\---wwwroot
+    |   favicon.ico
+    |   
+    +---css
+    |       site.css
+    |       
+    +---images
+    |   \---product
+    |           46f42933-3d8a-4f51-ab97-f329db53caca.jpeg
+    |           48ee8093-bd7b-4e55-a0c2-93e45e7efd4f.jpg
+    |           4ef40d64-9de8-4909-9f5d-bec5e61ba3c4.jpg
+    |           7422adf2-efd4-4920-b7da-2c794f735745.jpg
+    |           a61e8b88-4f3c-496f-bd46-ebcadea1f06f.jpg
+    |           da1b1974-7791-4014-bb74-124259d622a0.jpg
+    |           ee1c8202-5c59-4d05-992a-87f7e3481ca6.jpg
+    |           
+    +---js
+    |       product.js
+    |       site.js
+    |       
+    \---lib
+        +---bootstrap
+        |   |   LICENSE
+        |   |   
+        |   \---dist
+        |       +---css
+        |       |       bootstrap-grid.css
+        |       |       bootstrap-grid.css.map
+        |       |       bootstrap-grid.min.css
+        |       |       bootstrap-grid.min.css.map
+        |       |       bootstrap-grid.rtl.css
+        |       |       bootstrap-grid.rtl.css.map
+        |       |       bootstrap-grid.rtl.min.css
+        |       |       bootstrap-grid.rtl.min.css.map
+        |       |       bootstrap-reboot.css
+        |       |       bootstrap-reboot.css.map
+        |       |       bootstrap-reboot.min.css
+        |       |       bootstrap-reboot.min.css.map
+        |       |       bootstrap-reboot.rtl.css
+        |       |       bootstrap-reboot.rtl.css.map
+        |       |       bootstrap-reboot.rtl.min.css
+        |       |       bootstrap-reboot.rtl.min.css.map
+        |       |       bootstrap-utilities.css
+        |       |       bootstrap-utilities.css.map
+        |       |       bootstrap-utilities.min.css
+        |       |       bootstrap-utilities.min.css.map
+        |       |       bootstrap-utilities.rtl.css
+        |       |       bootstrap-utilities.rtl.css.map
+        |       |       bootstrap-utilities.rtl.min.css
+        |       |       bootstrap-utilities.rtl.min.css.map
+        |       |       bootstrap.css
+        |       |       bootstrap.css.map
+        |       |       bootstrap.min.css
+        |       |       bootstrap.min.css.map
+        |       |       bootstrap.rtl.css
+        |       |       bootstrap.rtl.css.map
+        |       |       bootstrap.rtl.min.css
+        |       |       bootstrap.rtl.min.css.map
+        |       |       
+        |       \---js
+        |               bootstrap.bundle.js
+        |               bootstrap.bundle.js.map
+        |               bootstrap.bundle.min.js
+        |               bootstrap.bundle.min.js.map
+        |               bootstrap.esm.js
+        |               bootstrap.esm.js.map
+        |               bootstrap.esm.min.js
+        |               bootstrap.esm.min.js.map
+        |               bootstrap.js
+        |               bootstrap.js.map
+        |               bootstrap.min.js
+        |               bootstrap.min.js.map
+        |               
+        +---jquery
+        |   |   LICENSE.txt
+        |   |   
+        |   \---dist
+        |           jquery.js
+        |           jquery.min.js
+        |           jquery.min.map
+        |           
+        +---jquery-validation
+        |   |   LICENSE.md
+        |   |   
+        |   \---dist
+        |           additional-methods.js
+        |           additional-methods.min.js
+        |           jquery.validate.js
+        |           jquery.validate.min.js
+        |           
+        \---jquery-validation-unobtrusive
+                jquery.validate.unobtrusive.js
+                jquery.validate.unobtrusive.min.js
+                LICENSE.txt
+                
+Folder PATH listing for volume New Volume
+Volume serial number is D428-1106
+D:.
+|   appsettings.Development.json
+|   appsettings.json
+|   BulkyWeb.csproj
+|   BulkyWeb.csproj.user
+|   BulkyWeb.sln
+|   Program.cs
+|   ScaffoldingReadMe.txt
+|   tree.txt
+|   
++---Areas
+|   +---Admin
+|   |   +---Controllers
+|   |   |       CategoryController.cs
+|   |   |       ProductController.cs
+|   |   |       
+|   |   \---Views
+|   |       |   _ViewImports.cshtml
+|   |       |   _ViewStart.cshtml
+|   |       |   
+|   |       +---Category
+|   |       |       Create.cshtml
+|   |       |       Delete.cshtml
+|   |       |       Edit.cshtml
+|   |       |       Index.cshtml
+|   |       |       
+|   |       \---Product
+|   |               Edit.cshtml
+|   |               Index.cshtml
+|   |               old_Delete.cshtml
+|   |               Upsert.cshtml
+|   |               
+|   \---Customer
+|       |   _ViewImports.cshtml
+|       |   _ViewStart.cshtml
+|       |   
+|       +---Controllers
+|       |       HomeController.cs
+|       |       
+|       \---Views
+|           \---Home
+|                   Details.cshtml
+|                   Index.cshtml
+|                   Privacy.cshtml
+|                   
++---bin
+|   \---Debug
+|       +---net8.0
+|       |   |   appsettings.Development.json
+|       |   |   appsettings.json
+|       |   |   Azure.Core.dll
+|       |   |   Azure.Identity.dll
+|       |   |   Bulky.DataAccess.dll
+|       |   |   Bulky.DataAccess.pdb
+|       |   |   Bulky.Models.dll
+|       |   |   Bulky.Models.pdb
+|       |   |   Bulky.Utility.dll
+|       |   |   Bulky.Utility.pdb
+|       |   |   BulkyWeb.deps.json
+|       |   |   BulkyWeb.dll
+|       |   |   BulkyWeb.exe
+|       |   |   BulkyWeb.pdb
+|       |   |   BulkyWeb.runtimeconfig.json
+|       |   |   BulkyWeb.staticwebassets.runtime.json
+|       |   |   dotnet-aspnet-codegenerator-design.dll
+|       |   |   Humanizer.dll
+|       |   |   Microsoft.AspNetCore.Cryptography.Internal.dll
+|       |   |   Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+|       |   |   Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+|       |   |   Microsoft.AspNetCore.Identity.UI.dll
+|       |   |   Microsoft.AspNetCore.JsonPatch.dll
+|       |   |   Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+|       |   |   Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+|       |   |   Microsoft.AspNetCore.Razor.Language.dll
+|       |   |   Microsoft.Bcl.AsyncInterfaces.dll
+|       |   |   Microsoft.Build.dll
+|       |   |   Microsoft.Build.Framework.dll
+|       |   |   Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+|       |   |   Microsoft.CodeAnalysis.CSharp.dll
+|       |   |   Microsoft.CodeAnalysis.CSharp.Features.dll
+|       |   |   Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+|       |   |   Microsoft.CodeAnalysis.dll
+|       |   |   Microsoft.CodeAnalysis.Elfie.dll
+|       |   |   Microsoft.CodeAnalysis.Features.dll
+|       |   |   Microsoft.CodeAnalysis.Razor.dll
+|       |   |   Microsoft.CodeAnalysis.Scripting.dll
+|       |   |   Microsoft.CodeAnalysis.Workspaces.dll
+|       |   |   Microsoft.Data.SqlClient.dll
+|       |   |   Microsoft.DiaSymReader.dll
+|       |   |   Microsoft.DotNet.Scaffolding.Shared.dll
+|       |   |   Microsoft.EntityFrameworkCore.Abstractions.dll
+|       |   |   Microsoft.EntityFrameworkCore.Design.dll
+|       |   |   Microsoft.EntityFrameworkCore.dll
+|       |   |   Microsoft.EntityFrameworkCore.Relational.dll
+|       |   |   Microsoft.EntityFrameworkCore.SqlServer.dll
+|       |   |   Microsoft.Extensions.Caching.Memory.dll
+|       |   |   Microsoft.Extensions.DependencyInjection.Abstractions.dll
+|       |   |   Microsoft.Extensions.DependencyInjection.dll
+|       |   |   Microsoft.Extensions.DependencyModel.dll
+|       |   |   Microsoft.Extensions.Diagnostics.Abstractions.dll
+|       |   |   Microsoft.Extensions.FileProviders.Embedded.dll
+|       |   |   Microsoft.Extensions.Hosting.Abstractions.dll
+|       |   |   Microsoft.Extensions.Identity.Core.dll
+|       |   |   Microsoft.Extensions.Identity.Stores.dll
+|       |   |   Microsoft.Extensions.Localization.Abstractions.dll
+|       |   |   Microsoft.Extensions.Localization.dll
+|       |   |   Microsoft.Extensions.Logging.Abstractions.dll
+|       |   |   Microsoft.Extensions.Logging.dll
+|       |   |   Microsoft.Extensions.ObjectPool.dll
+|       |   |   Microsoft.Extensions.Options.dll
+|       |   |   Microsoft.Extensions.WebEncoders.dll
+|       |   |   Microsoft.Identity.Client.dll
+|       |   |   Microsoft.Identity.Client.Extensions.Msal.dll
+|       |   |   Microsoft.IdentityModel.Abstractions.dll
+|       |   |   Microsoft.IdentityModel.JsonWebTokens.dll
+|       |   |   Microsoft.IdentityModel.Logging.dll
+|       |   |   Microsoft.IdentityModel.Protocols.dll
+|       |   |   Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+|       |   |   Microsoft.IdentityModel.Tokens.dll
+|       |   |   Microsoft.NET.StringTools.dll
+|       |   |   Microsoft.SqlServer.Server.dll
+|       |   |   Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+|       |   |   Microsoft.VisualStudio.Web.CodeGeneration.dll
+|       |   |   Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+|       |   |   Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+|       |   |   Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+|       |   |   Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+|       |   |   Microsoft.Win32.SystemEvents.dll
+|       |   |   Mono.TextTemplating.dll
+|       |   |   Newtonsoft.Json.Bson.dll
+|       |   |   Newtonsoft.Json.dll
+|       |   |   NuGet.Common.dll
+|       |   |   NuGet.Configuration.dll
+|       |   |   NuGet.DependencyResolver.Core.dll
+|       |   |   NuGet.Frameworks.dll
+|       |   |   NuGet.LibraryModel.dll
+|       |   |   NuGet.Packaging.dll
+|       |   |   NuGet.ProjectModel.dll
+|       |   |   NuGet.Protocol.dll
+|       |   |   NuGet.Versioning.dll
+|       |   |   System.ClientModel.dll
+|       |   |   System.CodeDom.dll
+|       |   |   System.Composition.AttributedModel.dll
+|       |   |   System.Composition.Convention.dll
+|       |   |   System.Composition.Hosting.dll
+|       |   |   System.Composition.Runtime.dll
+|       |   |   System.Composition.TypedParts.dll
+|       |   |   System.Configuration.ConfigurationManager.dll
+|       |   |   System.Diagnostics.DiagnosticSource.dll
+|       |   |   System.Drawing.Common.dll
+|       |   |   System.Formats.Asn1.dll
+|       |   |   System.IdentityModel.Tokens.Jwt.dll
+|       |   |   System.Memory.Data.dll
+|       |   |   System.Reflection.MetadataLoadContext.dll
+|       |   |   System.Runtime.Caching.dll
+|       |   |   System.Security.Cryptography.Pkcs.dll
+|       |   |   System.Security.Cryptography.ProtectedData.dll
+|       |   |   System.Security.Cryptography.Xml.dll
+|       |   |   System.Security.Permissions.dll
+|       |   |   System.Windows.Extensions.dll
+|       |   |   
+|       |   +---af
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---ar
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---az
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---bg
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---bn-BD
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---cs
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---da
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---de
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---el
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---es
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---fa
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---fi-FI
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---fr
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---fr-BE
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---he
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---hr
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---hu
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---hy
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---id
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---is
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---it
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---ja
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---ko
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---ko-KR
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---ku
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---lv
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---ms-MY
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---mt
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---nb
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---nb-NO
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---nl
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---pl
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---pt
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---pt-BR
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---refs
+|       |   |       Microsoft.AspNetCore.Antiforgery.dll
+|       |   |       Microsoft.AspNetCore.Authentication.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Authentication.BearerToken.dll
+|       |   |       Microsoft.AspNetCore.Authentication.Cookies.dll
+|       |   |       Microsoft.AspNetCore.Authentication.Core.dll
+|       |   |       Microsoft.AspNetCore.Authentication.dll
+|       |   |       Microsoft.AspNetCore.Authentication.OAuth.dll
+|       |   |       Microsoft.AspNetCore.Authorization.dll
+|       |   |       Microsoft.AspNetCore.Authorization.Policy.dll
+|       |   |       Microsoft.AspNetCore.Components.Authorization.dll
+|       |   |       Microsoft.AspNetCore.Components.dll
+|       |   |       Microsoft.AspNetCore.Components.Endpoints.dll
+|       |   |       Microsoft.AspNetCore.Components.Forms.dll
+|       |   |       Microsoft.AspNetCore.Components.Server.dll
+|       |   |       Microsoft.AspNetCore.Components.Web.dll
+|       |   |       Microsoft.AspNetCore.Connections.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.CookiePolicy.dll
+|       |   |       Microsoft.AspNetCore.Cors.dll
+|       |   |       Microsoft.AspNetCore.DataProtection.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.DataProtection.dll
+|       |   |       Microsoft.AspNetCore.DataProtection.Extensions.dll
+|       |   |       Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Diagnostics.dll
+|       |   |       Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+|       |   |       Microsoft.AspNetCore.dll
+|       |   |       Microsoft.AspNetCore.HostFiltering.dll
+|       |   |       Microsoft.AspNetCore.Hosting.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Hosting.dll
+|       |   |       Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Html.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Http.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Http.Connections.Common.dll
+|       |   |       Microsoft.AspNetCore.Http.Connections.dll
+|       |   |       Microsoft.AspNetCore.Http.dll
+|       |   |       Microsoft.AspNetCore.Http.Extensions.dll
+|       |   |       Microsoft.AspNetCore.Http.Features.dll
+|       |   |       Microsoft.AspNetCore.Http.Results.dll
+|       |   |       Microsoft.AspNetCore.HttpLogging.dll
+|       |   |       Microsoft.AspNetCore.HttpOverrides.dll
+|       |   |       Microsoft.AspNetCore.HttpsPolicy.dll
+|       |   |       Microsoft.AspNetCore.Identity.dll
+|       |   |       Microsoft.AspNetCore.Localization.dll
+|       |   |       Microsoft.AspNetCore.Localization.Routing.dll
+|       |   |       Microsoft.AspNetCore.Metadata.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Core.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Cors.dll
+|       |   |       Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+|       |   |       Microsoft.AspNetCore.Mvc.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Localization.dll
+|       |   |       Microsoft.AspNetCore.Mvc.Razor.dll
+|       |   |       Microsoft.AspNetCore.Mvc.RazorPages.dll
+|       |   |       Microsoft.AspNetCore.Mvc.TagHelpers.dll
+|       |   |       Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+|       |   |       Microsoft.AspNetCore.OutputCaching.dll
+|       |   |       Microsoft.AspNetCore.RateLimiting.dll
+|       |   |       Microsoft.AspNetCore.Razor.dll
+|       |   |       Microsoft.AspNetCore.Razor.Runtime.dll
+|       |   |       Microsoft.AspNetCore.RequestDecompression.dll
+|       |   |       Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.ResponseCaching.dll
+|       |   |       Microsoft.AspNetCore.ResponseCompression.dll
+|       |   |       Microsoft.AspNetCore.Rewrite.dll
+|       |   |       Microsoft.AspNetCore.Routing.Abstractions.dll
+|       |   |       Microsoft.AspNetCore.Routing.dll
+|       |   |       Microsoft.AspNetCore.Server.HttpSys.dll
+|       |   |       Microsoft.AspNetCore.Server.IIS.dll
+|       |   |       Microsoft.AspNetCore.Server.IISIntegration.dll
+|       |   |       Microsoft.AspNetCore.Server.Kestrel.Core.dll
+|       |   |       Microsoft.AspNetCore.Server.Kestrel.dll
+|       |   |       Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll
+|       |   |       Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+|       |   |       Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+|       |   |       Microsoft.AspNetCore.Session.dll
+|       |   |       Microsoft.AspNetCore.SignalR.Common.dll
+|       |   |       Microsoft.AspNetCore.SignalR.Core.dll
+|       |   |       Microsoft.AspNetCore.SignalR.dll
+|       |   |       Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+|       |   |       Microsoft.AspNetCore.StaticFiles.dll
+|       |   |       Microsoft.AspNetCore.WebSockets.dll
+|       |   |       Microsoft.AspNetCore.WebUtilities.dll
+|       |   |       Microsoft.CSharp.dll
+|       |   |       Microsoft.Extensions.Caching.Abstractions.dll
+|       |   |       Microsoft.Extensions.Configuration.Abstractions.dll
+|       |   |       Microsoft.Extensions.Configuration.Binder.dll
+|       |   |       Microsoft.Extensions.Configuration.CommandLine.dll
+|       |   |       Microsoft.Extensions.Configuration.dll
+|       |   |       Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+|       |   |       Microsoft.Extensions.Configuration.FileExtensions.dll
+|       |   |       Microsoft.Extensions.Configuration.Ini.dll
+|       |   |       Microsoft.Extensions.Configuration.Json.dll
+|       |   |       Microsoft.Extensions.Configuration.KeyPerFile.dll
+|       |   |       Microsoft.Extensions.Configuration.UserSecrets.dll
+|       |   |       Microsoft.Extensions.Configuration.Xml.dll
+|       |   |       Microsoft.Extensions.Diagnostics.dll
+|       |   |       Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+|       |   |       Microsoft.Extensions.Diagnostics.HealthChecks.dll
+|       |   |       Microsoft.Extensions.Features.dll
+|       |   |       Microsoft.Extensions.FileProviders.Abstractions.dll
+|       |   |       Microsoft.Extensions.FileProviders.Composite.dll
+|       |   |       Microsoft.Extensions.FileProviders.Physical.dll
+|       |   |       Microsoft.Extensions.FileSystemGlobbing.dll
+|       |   |       Microsoft.Extensions.Hosting.dll
+|       |   |       Microsoft.Extensions.Http.dll
+|       |   |       Microsoft.Extensions.Logging.Configuration.dll
+|       |   |       Microsoft.Extensions.Logging.Console.dll
+|       |   |       Microsoft.Extensions.Logging.Debug.dll
+|       |   |       Microsoft.Extensions.Logging.EventLog.dll
+|       |   |       Microsoft.Extensions.Logging.EventSource.dll
+|       |   |       Microsoft.Extensions.Logging.TraceSource.dll
+|       |   |       Microsoft.Extensions.Options.ConfigurationExtensions.dll
+|       |   |       Microsoft.Extensions.Options.DataAnnotations.dll
+|       |   |       Microsoft.Extensions.Primitives.dll
+|       |   |       Microsoft.JSInterop.dll
+|       |   |       Microsoft.Net.Http.Headers.dll
+|       |   |       Microsoft.VisualBasic.Core.dll
+|       |   |       Microsoft.VisualBasic.dll
+|       |   |       Microsoft.Win32.Primitives.dll
+|       |   |       Microsoft.Win32.Registry.dll
+|       |   |       mscorlib.dll
+|       |   |       netstandard.dll
+|       |   |       System.AppContext.dll
+|       |   |       System.Buffers.dll
+|       |   |       System.Collections.Concurrent.dll
+|       |   |       System.Collections.dll
+|       |   |       System.Collections.Immutable.dll
+|       |   |       System.Collections.NonGeneric.dll
+|       |   |       System.Collections.Specialized.dll
+|       |   |       System.ComponentModel.Annotations.dll
+|       |   |       System.ComponentModel.DataAnnotations.dll
+|       |   |       System.ComponentModel.dll
+|       |   |       System.ComponentModel.EventBasedAsync.dll
+|       |   |       System.ComponentModel.Primitives.dll
+|       |   |       System.ComponentModel.TypeConverter.dll
+|       |   |       System.Configuration.dll
+|       |   |       System.Console.dll
+|       |   |       System.Core.dll
+|       |   |       System.Data.Common.dll
+|       |   |       System.Data.DataSetExtensions.dll
+|       |   |       System.Data.dll
+|       |   |       System.Diagnostics.Contracts.dll
+|       |   |       System.Diagnostics.Debug.dll
+|       |   |       System.Diagnostics.EventLog.dll
+|       |   |       System.Diagnostics.FileVersionInfo.dll
+|       |   |       System.Diagnostics.Process.dll
+|       |   |       System.Diagnostics.StackTrace.dll
+|       |   |       System.Diagnostics.TextWriterTraceListener.dll
+|       |   |       System.Diagnostics.Tools.dll
+|       |   |       System.Diagnostics.TraceSource.dll
+|       |   |       System.Diagnostics.Tracing.dll
+|       |   |       System.dll
+|       |   |       System.Drawing.dll
+|       |   |       System.Drawing.Primitives.dll
+|       |   |       System.Dynamic.Runtime.dll
+|       |   |       System.Formats.Tar.dll
+|       |   |       System.Globalization.Calendars.dll
+|       |   |       System.Globalization.dll
+|       |   |       System.Globalization.Extensions.dll
+|       |   |       System.IO.Compression.Brotli.dll
+|       |   |       System.IO.Compression.dll
+|       |   |       System.IO.Compression.FileSystem.dll
+|       |   |       System.IO.Compression.ZipFile.dll
+|       |   |       System.IO.dll
+|       |   |       System.IO.FileSystem.AccessControl.dll
+|       |   |       System.IO.FileSystem.dll
+|       |   |       System.IO.FileSystem.DriveInfo.dll
+|       |   |       System.IO.FileSystem.Primitives.dll
+|       |   |       System.IO.FileSystem.Watcher.dll
+|       |   |       System.IO.IsolatedStorage.dll
+|       |   |       System.IO.MemoryMappedFiles.dll
+|       |   |       System.IO.Pipelines.dll
+|       |   |       System.IO.Pipes.AccessControl.dll
+|       |   |       System.IO.Pipes.dll
+|       |   |       System.IO.UnmanagedMemoryStream.dll
+|       |   |       System.Linq.dll
+|       |   |       System.Linq.Expressions.dll
+|       |   |       System.Linq.Parallel.dll
+|       |   |       System.Linq.Queryable.dll
+|       |   |       System.Memory.dll
+|       |   |       System.Net.dll
+|       |   |       System.Net.Http.dll
+|       |   |       System.Net.Http.Json.dll
+|       |   |       System.Net.HttpListener.dll
+|       |   |       System.Net.Mail.dll
+|       |   |       System.Net.NameResolution.dll
+|       |   |       System.Net.NetworkInformation.dll
+|       |   |       System.Net.Ping.dll
+|       |   |       System.Net.Primitives.dll
+|       |   |       System.Net.Quic.dll
+|       |   |       System.Net.Requests.dll
+|       |   |       System.Net.Security.dll
+|       |   |       System.Net.ServicePoint.dll
+|       |   |       System.Net.Sockets.dll
+|       |   |       System.Net.WebClient.dll
+|       |   |       System.Net.WebHeaderCollection.dll
+|       |   |       System.Net.WebProxy.dll
+|       |   |       System.Net.WebSockets.Client.dll
+|       |   |       System.Net.WebSockets.dll
+|       |   |       System.Numerics.dll
+|       |   |       System.Numerics.Vectors.dll
+|       |   |       System.ObjectModel.dll
+|       |   |       System.Reflection.DispatchProxy.dll
+|       |   |       System.Reflection.dll
+|       |   |       System.Reflection.Emit.dll
+|       |   |       System.Reflection.Emit.ILGeneration.dll
+|       |   |       System.Reflection.Emit.Lightweight.dll
+|       |   |       System.Reflection.Extensions.dll
+|       |   |       System.Reflection.Metadata.dll
+|       |   |       System.Reflection.Primitives.dll
+|       |   |       System.Reflection.TypeExtensions.dll
+|       |   |       System.Resources.Reader.dll
+|       |   |       System.Resources.ResourceManager.dll
+|       |   |       System.Resources.Writer.dll
+|       |   |       System.Runtime.CompilerServices.Unsafe.dll
+|       |   |       System.Runtime.CompilerServices.VisualC.dll
+|       |   |       System.Runtime.dll
+|       |   |       System.Runtime.Extensions.dll
+|       |   |       System.Runtime.Handles.dll
+|       |   |       System.Runtime.InteropServices.dll
+|       |   |       System.Runtime.InteropServices.JavaScript.dll
+|       |   |       System.Runtime.InteropServices.RuntimeInformation.dll
+|       |   |       System.Runtime.Intrinsics.dll
+|       |   |       System.Runtime.Loader.dll
+|       |   |       System.Runtime.Numerics.dll
+|       |   |       System.Runtime.Serialization.dll
+|       |   |       System.Runtime.Serialization.Formatters.dll
+|       |   |       System.Runtime.Serialization.Json.dll
+|       |   |       System.Runtime.Serialization.Primitives.dll
+|       |   |       System.Runtime.Serialization.Xml.dll
+|       |   |       System.Security.AccessControl.dll
+|       |   |       System.Security.Claims.dll
+|       |   |       System.Security.Cryptography.Algorithms.dll
+|       |   |       System.Security.Cryptography.Cng.dll
+|       |   |       System.Security.Cryptography.Csp.dll
+|       |   |       System.Security.Cryptography.dll
+|       |   |       System.Security.Cryptography.Encoding.dll
+|       |   |       System.Security.Cryptography.OpenSsl.dll
+|       |   |       System.Security.Cryptography.Primitives.dll
+|       |   |       System.Security.Cryptography.X509Certificates.dll
+|       |   |       System.Security.dll
+|       |   |       System.Security.Principal.dll
+|       |   |       System.Security.Principal.Windows.dll
+|       |   |       System.Security.SecureString.dll
+|       |   |       System.ServiceModel.Web.dll
+|       |   |       System.ServiceProcess.dll
+|       |   |       System.Text.Encoding.CodePages.dll
+|       |   |       System.Text.Encoding.dll
+|       |   |       System.Text.Encoding.Extensions.dll
+|       |   |       System.Text.Encodings.Web.dll
+|       |   |       System.Text.Json.dll
+|       |   |       System.Text.RegularExpressions.dll
+|       |   |       System.Threading.Channels.dll
+|       |   |       System.Threading.dll
+|       |   |       System.Threading.Overlapped.dll
+|       |   |       System.Threading.RateLimiting.dll
+|       |   |       System.Threading.Tasks.Dataflow.dll
+|       |   |       System.Threading.Tasks.dll
+|       |   |       System.Threading.Tasks.Extensions.dll
+|       |   |       System.Threading.Tasks.Parallel.dll
+|       |   |       System.Threading.Thread.dll
+|       |   |       System.Threading.ThreadPool.dll
+|       |   |       System.Threading.Timer.dll
+|       |   |       System.Transactions.dll
+|       |   |       System.Transactions.Local.dll
+|       |   |       System.ValueTuple.dll
+|       |   |       System.Web.dll
+|       |   |       System.Web.HttpUtility.dll
+|       |   |       System.Windows.dll
+|       |   |       System.Xml.dll
+|       |   |       System.Xml.Linq.dll
+|       |   |       System.Xml.ReaderWriter.dll
+|       |   |       System.Xml.Serialization.dll
+|       |   |       System.Xml.XDocument.dll
+|       |   |       System.Xml.XmlDocument.dll
+|       |   |       System.Xml.XmlSerializer.dll
+|       |   |       System.Xml.XPath.dll
+|       |   |       System.Xml.XPath.XDocument.dll
+|       |   |       WindowsBase.dll
+|       |   |       
+|       |   +---ro
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---ru
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---runtimes
+|       |   |   +---browser
+|       |   |   |   \---lib
+|       |   |   |       \---net8.0
+|       |   |   +---unix
+|       |   |   |   \---lib
+|       |   |   |       \---net6.0
+|       |   |   |               Microsoft.Data.SqlClient.dll
+|       |   |   |               
+|       |   |   +---win
+|       |   |   |   \---lib
+|       |   |   |       +---net6.0
+|       |   |   |       |       Microsoft.Data.SqlClient.dll
+|       |   |   |       |       System.Runtime.Caching.dll
+|       |   |   |       |       
+|       |   |   |       +---net7.0
+|       |   |   |       |       Microsoft.Win32.SystemEvents.dll
+|       |   |   |       |       System.Drawing.Common.dll
+|       |   |   |       |       System.Security.Cryptography.ProtectedData.dll
+|       |   |   |       |       System.Windows.Extensions.dll
+|       |   |   |       |       
+|       |   |   |       \---net8.0
+|       |   |   |               System.Security.Cryptography.Pkcs.dll
+|       |   |   |               
+|       |   |   +---win-arm
+|       |   |   |   \---native
+|       |   |   |           Microsoft.Data.SqlClient.SNI.dll
+|       |   |   |           
+|       |   |   +---win-arm64
+|       |   |   |   \---native
+|       |   |   |           Microsoft.Data.SqlClient.SNI.dll
+|       |   |   |           
+|       |   |   +---win-x64
+|       |   |   |   \---native
+|       |   |   |           Microsoft.Data.SqlClient.SNI.dll
+|       |   |   |           
+|       |   |   \---win-x86
+|       |   |       \---native
+|       |   |               Microsoft.Data.SqlClient.SNI.dll
+|       |   |               
+|       |   +---sk
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---sl
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---sr
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---sr-Latn
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---sv
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---th-TH
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---tr
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   +---uk
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---uz-Cyrl-UZ
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---uz-Latn-UZ
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---vi
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---zh-CN
+|       |   |       Humanizer.resources.dll
+|       |   |       
+|       |   +---zh-Hans
+|       |   |       Humanizer.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |   |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Features.resources.dll
+|       |   |       Microsoft.CodeAnalysis.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |   |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |   |       
+|       |   \---zh-Hant
+|       |           Humanizer.resources.dll
+|       |           Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+|       |           Microsoft.CodeAnalysis.CSharp.resources.dll
+|       |           Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+|       |           Microsoft.CodeAnalysis.Features.resources.dll
+|       |           Microsoft.CodeAnalysis.resources.dll
+|       |           Microsoft.CodeAnalysis.Scripting.resources.dll
+|       |           Microsoft.CodeAnalysis.Workspaces.resources.dll
+|       |           
+|       \---net9.0
++---obj
+|   |   BulkyWeb.csproj.codegeneration.targets
+|   |   BulkyWeb.csproj.nuget.dgspec.json
+|   |   BulkyWeb.csproj.nuget.g.props
+|   |   BulkyWeb.csproj.nuget.g.targets
+|   |   project.assets.json
+|   |   project.nuget.cache
+|   |   
+|   \---Debug
+|       +---net8.0
+|       |   |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+|       |   |   ApiEndpoints.json
+|       |   |   apphost.exe
+|       |   |   BulkyWeb.AssemblyInfo.cs
+|       |   |   BulkyWeb.AssemblyInfoInputs.cache
+|       |   |   BulkyWeb.assets.cache
+|       |   |   BulkyWeb.csproj.AssemblyReference.cache
+|       |   |   BulkyWeb.csproj.BuildWithSkipAnalyzers
+|       |   |   BulkyWeb.csproj.CoreCompileInputs.cache
+|       |   |   BulkyWeb.csproj.FileListAbsolute.txt
+|       |   |   BulkyWeb.csproj.Up2Date
+|       |   |   BulkyWeb.dll
+|       |   |   BulkyWeb.GeneratedMSBuildEditorConfig.editorconfig
+|       |   |   BulkyWeb.genruntimeconfig.cache
+|       |   |   BulkyWeb.GlobalUsings.g.cs
+|       |   |   BulkyWeb.MvcApplicationPartsAssemblyInfo.cache
+|       |   |   BulkyWeb.MvcApplicationPartsAssemblyInfo.cs
+|       |   |   BulkyWeb.pdb
+|       |   |   BulkyWeb.RazorAssemblyInfo.cache
+|       |   |   BulkyWeb.RazorAssemblyInfo.cs
+|       |   |   BulkyWeb.sourcelink.json
+|       |   |   staticwebassets.build.json
+|       |   |   staticwebassets.development.json
+|       |   |   staticwebassets.pack.json
+|       |   |   
+|       |   +---ref
+|       |   |       BulkyWeb.dll
+|       |   |       
+|       |   +---refint
+|       |   |       BulkyWeb.dll
+|       |   |       
+|       |   +---scopedcss
+|       |   |   +---bundle
+|       |   |   |       BulkyWeb.styles.css
+|       |   |   |       
+|       |   |   +---projectbundle
+|       |   |   |       BulkyWeb.bundle.scp.css
+|       |   |   |       
+|       |   |   \---Views
+|       |   |       \---Shared
+|       |   |               _Layout.cshtml.rz.scp.css
+|       |   |               
+|       |   \---staticwebassets
+|       |           msbuild.build.BulkyWeb.props
+|       |           msbuild.buildMultiTargeting.BulkyWeb.props
+|       |           msbuild.buildTransitive.BulkyWeb.props
+|       |           msbuild.BulkyWeb.Microsoft.AspNetCore.StaticWebAssets.props
+|       |           
+|       \---net9.0
+|           |   .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+|           |   BulkyWeb.AssemblyInfo.cs
+|           |   BulkyWeb.AssemblyInfoInputs.cache
+|           |   BulkyWeb.assets.cache
+|           |   BulkyWeb.csproj.AssemblyReference.cache
+|           |   BulkyWeb.csproj.CoreCompileInputs.cache
+|           |   BulkyWeb.csproj.FileListAbsolute.txt
+|           |   BulkyWeb.GeneratedMSBuildEditorConfig.editorconfig
+|           |   BulkyWeb.GlobalUsings.g.cs
+|           |   BulkyWeb.MvcApplicationPartsAssemblyInfo.cache
+|           |   BulkyWeb.MvcApplicationPartsAssemblyInfo.cs
+|           |   BulkyWeb.RazorAssemblyInfo.cache
+|           |   BulkyWeb.RazorAssemblyInfo.cs
+|           |   BulkyWeb.sourcelink.json
+|           |   
+|           +---ref
+|           +---refint
+|           \---staticwebassets
++---Properties
+|       launchSettings.json
+|       
++---Views
+|   |   _ViewImports.cshtml
+|   |   _ViewStart.cshtml
+|   |   
+|   \---Shared
+|           Error.cshtml
+|           _Layout.cshtml
+|           _Layout.cshtml.css
+|           _Notification.cshtml
+|           _ValidationScriptsPartial.cshtml
+|           
+\---wwwroot
+    |   favicon.ico
+    |   
+    +---css
+    |       site.css
+    |       
+    +---images
+    |   \---product
+    |           46f42933-3d8a-4f51-ab97-f329db53caca.jpeg
+    |           48ee8093-bd7b-4e55-a0c2-93e45e7efd4f.jpg
+    |           4ef40d64-9de8-4909-9f5d-bec5e61ba3c4.jpg
+    |           7422adf2-efd4-4920-b7da-2c794f735745.jpg
+    |           a61e8b88-4f3c-496f-bd46-ebcadea1f06f.jpg
+    |           da1b1974-7791-4014-bb74-124259d622a0.jpg
+    |           ee1c8202-5c59-4d05-992a-87f7e3481ca6.jpg
+    |           
+    +---js
+    |       product.js
+    |       site.js
+    |       
+    \---lib
+        +---bootstrap
+        |   |   LICENSE
+        |   |   
+        |   \---dist
+        |       +---css
+        |       |       bootstrap-grid.css
+        |       |       bootstrap-grid.css.map
+        |       |       bootstrap-grid.min.css
+        |       |       bootstrap-grid.min.css.map
+        |       |       bootstrap-grid.rtl.css
+        |       |       bootstrap-grid.rtl.css.map
+        |       |       bootstrap-grid.rtl.min.css
+        |       |       bootstrap-grid.rtl.min.css.map
+        |       |       bootstrap-reboot.css
+        |       |       bootstrap-reboot.css.map
+        |       |       bootstrap-reboot.min.css
+        |       |       bootstrap-reboot.min.css.map
+        |       |       bootstrap-reboot.rtl.css
+        |       |       bootstrap-reboot.rtl.css.map
+        |       |       bootstrap-reboot.rtl.min.css
+        |       |       bootstrap-reboot.rtl.min.css.map
+        |       |       bootstrap-utilities.css
+        |       |       bootstrap-utilities.css.map
+        |       |       bootstrap-utilities.min.css
+        |       |       bootstrap-utilities.min.css.map
+        |       |       bootstrap-utilities.rtl.css
+        |       |       bootstrap-utilities.rtl.css.map
+        |       |       bootstrap-utilities.rtl.min.css
+        |       |       bootstrap-utilities.rtl.min.css.map
+        |       |       bootstrap.css
+        |       |       bootstrap.css.map
+        |       |       bootstrap.min.css
+        |       |       bootstrap.min.css.map
+        |       |       bootstrap.rtl.css
+        |       |       bootstrap.rtl.css.map
+        |       |       bootstrap.rtl.min.css
+        |       |       bootstrap.rtl.min.css.map
+        |       |       
+        |       \---js
+        |               bootstrap.bundle.js
+        |               bootstrap.bundle.js.map
+        |               bootstrap.bundle.min.js
+        |               bootstrap.bundle.min.js.map
+        |               bootstrap.esm.js
+        |               bootstrap.esm.js.map
+        |               bootstrap.esm.min.js
+        |               bootstrap.esm.min.js.map
+        |               bootstrap.js
+        |               bootstrap.js.map
+        |               bootstrap.min.js
+        |               bootstrap.min.js.map
+        |               
+        +---jquery
+        |   |   LICENSE.txt
+        |   |   
+        |   \---dist
+        |           jquery.js
+        |           jquery.min.js
+        |           jquery.min.map
+        |           
+        +---jquery-validation
+        |   |   LICENSE.md
+        |   |   
+        |   \---dist
+        |           additional-methods.js
+        |           additional-methods.min.js
+        |           jquery.validate.js
+        |           jquery.validate.min.js
+        |           
+        \---jquery-validation-unobtrusive
+                jquery.validate.unobtrusive.js
+                jquery.validate.unobtrusive.min.js
+                LICENSE.txt
+                
