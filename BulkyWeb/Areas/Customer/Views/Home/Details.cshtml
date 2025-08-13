@@ -70,7 +70,7 @@
 
  *@
 
-                        <img src="@Model.ImageUrl" width="100%" class="rounded" />
+                        <img id="prodImg" src="@Model.ImageUrl" width="100%" class="rounded" />
 
 
 
@@ -149,6 +149,84 @@
 
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <!-- Lớp modal-lg để modal lớn, modal-dialog-centered để căn giữa -->
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img id="modalImg" class="img-fluid" src="" alt="Modal Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const imgElement = document.getElementById('prodImg');
+    const modalImg = document.getElementById('modalImg');
+    const myModal = new bootstrap.Modal(document.getElementById('myModal'));
+
+    imgElement.addEventListener('click', () =>
+    {
+        if (imgElement.classList.contains('active')) {
+            imgElement.classList.remove('active');
+            imgElement.classList.add('active');
+            
+            if (imgElement.classList.contains('active')) {
+                modalImg.src = imgElement.src;
+                myModal.show();
+            }
+        }
+        else {
+            imgElement.classList.add('active');
+        }
+    });
+
+    document.addEventListener('click', function (e) {
+        if (!imgElement.contains(e.target)) {
+            imgElement.classList.remove('active');
+        }
+    });
+
+</script>
+
+<style>
+    body{
+        user-select: none;
+    }
+
+    img:hover{
+        cursor: pointer;
+    }
+
+
+    .modal-content{
+        width: 800px;
+        height: auto;
+    }
+    .modal-body{
+        width: 100%;
+        height: auto;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    #modalImg{
+        width: 100%;
+        height: auto;
+        max-height: 650px;
+        object-fit: contain;
+    }
+</style>

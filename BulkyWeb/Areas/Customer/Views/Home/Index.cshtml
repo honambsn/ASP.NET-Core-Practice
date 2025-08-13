@@ -56,12 +56,18 @@
 <style>
     .card,
     .details-btn{
-        transition: transform 0.5s ease, box-shadow 0.3s ease, all 0.3s ease-in-out;
+        transition: transform 0.5s ease, box-shadow 0.3s ease, all 0.3s ease-in-out, z-index 0.3s ease;
     }
 
-    .card:hover,
-    .details-btn:hover {
-        transform: scale(1.1);
+    .card:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+
+    .details-btn:hover{
+        transform: scale(1.05);
         cursor: pointer;
     }
 </style>
