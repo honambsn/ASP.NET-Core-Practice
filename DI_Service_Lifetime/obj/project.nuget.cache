@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "aBGNXhjVFmv7p0s6jwif4wiRXL//eo5efRfDxL47lQZxpowRondT8UPiTKf1RYIVj9aLI54xCS96n2Sx9aPGmg==",
+  "success": true,
+  "projectFilePath": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\DI_Service_Lifetime\\DI_Service_Lifetime.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\honam\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.1\\microsoft.netcore.app.ref.8.0.1.nupkg.sha512",
+    "C:\\Users\\honam\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.1\\microsoft.windowsdesktop.app.ref.8.0.1.nupkg.sha512",
+    "C:\\Users\\honam\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.1\\microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512",
+    "C:\\Users\\honam\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.1\\microsoft.netcore.app.host.win-x64.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

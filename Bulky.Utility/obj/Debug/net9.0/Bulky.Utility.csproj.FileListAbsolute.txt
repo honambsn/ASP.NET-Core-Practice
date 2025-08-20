@@ -1,0 +1,12 @@
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\Bulky.Utility\bin\Debug\net9.0\Bulky.Utility.deps.json
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\Bulky.Utility\bin\Debug\net9.0\Bulky.Utility.dll
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\Bulky.Utility\bin\Debug\net9.0\Bulky.Utility.pdb
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.AssemblyInfoInputs.cache
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.AssemblyInfo.cs
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.csproj.CoreCompileInputs.cache
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.sourcelink.json
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.dll
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\Bulky.Utility\obj\Debug\net9.0\refint\Bulky.Utility.dll
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.pdb
+D:\Ba Nam\Own project\Practice\c#\ASP.NET Core MVC\Bulky.Utility\obj\Debug\net9.0\ref\Bulky.Utility.dll

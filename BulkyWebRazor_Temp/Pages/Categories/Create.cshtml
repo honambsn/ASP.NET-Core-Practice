@@ -1,0 +1,66 @@
+﻿@page
+@model BulkyWebRazor_Temp.Pages.Categories.CreateModel
+@{
+}
+
+
+<h1>Create Category</h1>
+
+<form method="post">
+    <div class="border p-3 mt-4" style="border: 1px solid black !important;">
+        <div class="row pb-2">
+            <h2 class="text-primary">Create Category</h2>
+            <hr style="border: none; height: 2px; background-color: #333;">
+        </div>
+
+        @* <div asp-validation-summary="ModeOnly"></div> *@
+
+        @* @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger" role="alert">
+                <div asp-validation-summary="ModelOnly"></div>
+            </div>
+        } *@
+
+        <div class="mb-3 row p-1">
+            <label asp-for="Category.Name" class="p-0">Category Name</label>
+            <input asp-for="Category.Name" type="text" class="form-control" placeholder="Ex. Cate" />
+            <span asp-validation-for="Category.Name" class="text-danger"></span>
+        </div>
+        
+        <div class="mb-3 row p-1">
+            <label asp-for="Category.DisplayOrder">Display Order</label>
+            <input asp-for="Category.DisplayOrder" type="number" class="form-control" placeholder="Ex. Cate"
+                   min="1" max="100"/>
+            <span asp-validation-for="Category.DisplayOrder" class="text-danger"></span>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <button type="submit" class="btn btn-primary form-control">Create</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <a asp-controller="/category/index" class="btn btn-outline-secondary border form-control">
+                    Back to List
+                </a>
+            </div>
+        </div>
+    </div>
+</form>
+
+<style>
+    .alert-danger:empty {
+        display: none;
+    }
+</style>
+
+
+@* @section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+ *@
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

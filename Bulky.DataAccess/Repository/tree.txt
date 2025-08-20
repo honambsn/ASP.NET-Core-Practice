@@ -1,0 +1,13 @@
+Folder PATH listing for volume New Volume
+Volume serial number is D428-1106
+D:.
+|   CategoryRepository.cs
+|   tree.txt
+|   UnitOfWork.cs
+|   
+\---IRepository
+        ICategoryRepository.cs
+        IRepository.cs
+        IUnitOfWork.cs
+        Repository.cs
+        
