@@ -1,0 +1,63 @@
+# Ignore build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ASP.NET Core specific
+appsettings.Development.json
+
+# VS Code directories
+.vscode/
+
+# Rider project files
+.idea/
+
+# Visual Studio working folder
+.vs/
+
+# Dotnet watch/Hot reload temp files
+**/Properties/launchSettings.json
+
+# Build results
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Static assets
+wwwroot/lib/
+
+# Bundle outputs
+**/*.bundle.scp.css
+**/*.styles.css
+**/*.rz.scp.css
+
+# Others
+*.dbmdl
+*.bak
+*.backup
+*.orig
+*.tmp
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db

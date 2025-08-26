@@ -15,9 +15,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb2.0\\BulkyWeb\\BulkyWeb.csproj",
-      "projectName": "BulkyWeb",
-      "projectPath": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb2.0\\BulkyWeb\\BulkyWeb.csproj",
+      "projectUniqueName": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb2.0\\BulkyWeb\\BulkyWeb 2.0.csproj",
+      "projectName": "BulkyWeb 2.0",
+      "projectPath": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb2.0\\BulkyWeb\\BulkyWeb 2.0.csproj",
       "packagesPath": "C:\\Users\\honam\\.nuget\\packages\\",
       "outputPath": "D:\\Ba Nam\\Own project\\Practice\\c#\\ASP.NET Core MVC\\BulkyWeb2.0\\BulkyWeb\\obj\\",
       "projectStyle": "PackageReference",
