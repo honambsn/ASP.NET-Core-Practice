@@ -1,0 +1,411 @@
+Folder PATH listing for volume New Volume
+Volume serial number is D428-1106
+D:.
+|   tree.txt
+|   tree.txt'
+|   
++---WhiteLagoon
+|   |   .gitignore
+|   |   appsettings.Development.json
+|   |   appsettings.json
+|   |   Program.cs
+|   |   WhiteLagoon.csproj
+|   |   WhiteLagoon.csproj.user
+|   |   WhiteLagoon.sln
+|   |   
+|   +---bin
+|   |   \---Debug
+|   |       \---net8.0
+|   |               appsettings.Development.json
+|   |               appsettings.json
+|   |               BulkyWeb 2.0.deps.json
+|   |               BulkyWeb 2.0.dll
+|   |               BulkyWeb 2.0.exe
+|   |               BulkyWeb 2.0.pdb
+|   |               BulkyWeb 2.0.runtimeconfig.json
+|   |               BulkyWeb 2.0.staticwebassets.runtime.json
+|   |               WhiteLagoon.deps.json
+|   |               WhiteLagoon.dll
+|   |               WhiteLagoon.exe
+|   |               WhiteLagoon.pdb
+|   |               WhiteLagoon.runtimeconfig.json
+|   |               WhiteLagoon.staticwebassets.runtime.json
+|   |               WhiteLagoon.Web.deps.json
+|   |               WhiteLagoon.Web.dll
+|   |               WhiteLagoon.Web.exe
+|   |               WhiteLagoon.Web.pdb
+|   |               WhiteLagoon.Web.runtimeconfig.json
+|   |               WhiteLagoon.Web.staticwebassets.runtime.json
+|   |               
+|   +---Controllers
+|   |       HomeController.cs
+|   |       
+|   +---Models
+|   |       ErrorViewModel.cs
+|   |       
+|   +---obj
+|   |   |   BulkyWeb .0.csproj.nuget.dgspec.json
+|   |   |   BulkyWeb .0.csproj.nuget.g.props
+|   |   |   BulkyWeb .0.csproj.nuget.g.targets
+|   |   |   BulkyWeb 2.0.csproj.nuget.dgspec.json
+|   |   |   BulkyWeb 2.0.csproj.nuget.g.props
+|   |   |   BulkyWeb 2.0.csproj.nuget.g.targets
+|   |   |   BulkyWeb.csproj.nuget.dgspec.json
+|   |   |   BulkyWeb.csproj.nuget.g.props
+|   |   |   BulkyWeb.csproj.nuget.g.targets
+|   |   |   project.assets.json
+|   |   |   project.nuget.cache
+|   |   |   WhiteLagoon.csproj.nuget.dgspec.json
+|   |   |   WhiteLagoon.csproj.nuget.g.props
+|   |   |   WhiteLagoon.csproj.nuget.g.targets
+|   |   |   WhiteLagoon.Web.csproj.nuget.dgspec.json
+|   |   |   WhiteLagoon.Web.csproj.nuget.g.props
+|   |   |   WhiteLagoon.Web.csproj.nuget.g.targets
+|   |   |   
+|   |   \---Debug
+|   |       \---net8.0
+|   |           |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+|   |           |   ApiEndpoints.json
+|   |           |   apphost.exe
+|   |           |   BulkyWeb .0.AssemblyInfo.cs
+|   |           |   BulkyWeb .0.AssemblyInfoInputs.cache
+|   |           |   BulkyWeb .0.assets.cache
+|   |           |   BulkyWeb .0.GeneratedMSBuildEditorConfig.editorconfig
+|   |           |   BulkyWeb .0.GlobalUsings.g.cs
+|   |           |   BulkyWeb .0.RazorAssemblyInfo.cache
+|   |           |   BulkyWeb .0.RazorAssemblyInfo.cs
+|   |           |   BulkyWeb 2.0.AssemblyInfo.cs
+|   |           |   BulkyWeb 2.0.AssemblyInfoInputs.cache
+|   |           |   BulkyWeb 2.0.assets.cache
+|   |           |   BulkyWeb 2.0.csproj.BuildWithSkipAnalyzers
+|   |           |   BulkyWeb 2.0.csproj.CoreCompileInputs.cache
+|   |           |   BulkyWeb 2.0.csproj.FileListAbsolute.txt
+|   |           |   BulkyWeb 2.0.dll
+|   |           |   BulkyWeb 2.0.GeneratedMSBuildEditorConfig.editorconfig
+|   |           |   BulkyWeb 2.0.genruntimeconfig.cache
+|   |           |   BulkyWeb 2.0.GlobalUsings.g.cs
+|   |           |   BulkyWeb 2.0.MvcApplicationPartsAssemblyInfo.cache
+|   |           |   BulkyWeb 2.0.pdb
+|   |           |   BulkyWeb 2.0.RazorAssemblyInfo.cache
+|   |           |   BulkyWeb 2.0.RazorAssemblyInfo.cs
+|   |           |   BulkyWeb 2.0.sourcelink.json
+|   |           |   BulkyWeb.AssemblyInfo.cs
+|   |           |   BulkyWeb.AssemblyInfoInputs.cache
+|   |           |   BulkyWeb.assets.cache
+|   |           |   BulkyWeb.csproj.FileListAbsolute.txt
+|   |           |   BulkyWeb.GeneratedMSBuildEditorConfig.editorconfig
+|   |           |   BulkyWeb.GlobalUsings.g.cs
+|   |           |   BulkyWeb.RazorAssemblyInfo.cache
+|   |           |   BulkyWeb.RazorAssemblyInfo.cs
+|   |           |   staticwebassets.build.json
+|   |           |   staticwebassets.development.json
+|   |           |   staticwebassets.pack.json
+|   |           |   WhiteLagoon.AssemblyInfo.cs
+|   |           |   WhiteLagoon.AssemblyInfoInputs.cache
+|   |           |   WhiteLagoon.assets.cache
+|   |           |   WhiteLagoon.csproj.BuildWithSkipAnalyzers
+|   |           |   WhiteLagoon.csproj.CoreCompileInputs.cache
+|   |           |   WhiteLagoon.csproj.FileListAbsolute.txt
+|   |           |   WhiteLagoon.dll
+|   |           |   WhiteLagoon.GeneratedMSBuildEditorConfig.editorconfig
+|   |           |   WhiteLagoon.genruntimeconfig.cache
+|   |           |   WhiteLagoon.GlobalUsings.g.cs
+|   |           |   WhiteLagoon.MvcApplicationPartsAssemblyInfo.cache
+|   |           |   WhiteLagoon.pdb
+|   |           |   WhiteLagoon.RazorAssemblyInfo.cache
+|   |           |   WhiteLagoon.RazorAssemblyInfo.cs
+|   |           |   WhiteLagoon.sourcelink.json
+|   |           |   WhiteLagoon.Web.AssemblyInfo.cs
+|   |           |   WhiteLagoon.Web.AssemblyInfoInputs.cache
+|   |           |   WhiteLagoon.Web.assets.cache
+|   |           |   WhiteLagoon.Web.csproj.BuildWithSkipAnalyzers
+|   |           |   WhiteLagoon.Web.csproj.CoreCompileInputs.cache
+|   |           |   WhiteLagoon.Web.csproj.FileListAbsolute.txt
+|   |           |   WhiteLagoon.Web.dll
+|   |           |   WhiteLagoon.Web.GeneratedMSBuildEditorConfig.editorconfig
+|   |           |   WhiteLagoon.Web.genruntimeconfig.cache
+|   |           |   WhiteLagoon.Web.GlobalUsings.g.cs
+|   |           |   WhiteLagoon.Web.MvcApplicationPartsAssemblyInfo.cache
+|   |           |   WhiteLagoon.Web.pdb
+|   |           |   WhiteLagoon.Web.RazorAssemblyInfo.cache
+|   |           |   WhiteLagoon.Web.RazorAssemblyInfo.cs
+|   |           |   WhiteLagoon.Web.sourcelink.json
+|   |           |   
+|   |           +---ref
+|   |           |       BulkyWeb 2.0.dll
+|   |           |       WhiteLagoon.dll
+|   |           |       WhiteLagoon.Web.dll
+|   |           |       
+|   |           +---refint
+|   |           |       BulkyWeb 2.0.dll
+|   |           |       WhiteLagoon.dll
+|   |           |       WhiteLagoon.Web.dll
+|   |           |       
+|   |           +---scopedcss
+|   |           |   +---bundle
+|   |           |   |       BulkyWeb 2.0.styles.css
+|   |           |   |       WhiteLagoon.styles.css
+|   |           |   |       WhiteLagoon.Web.styles.css
+|   |           |   |       
+|   |           |   +---projectbundle
+|   |           |   |       BulkyWeb 2.0.bundle.scp.css
+|   |           |   |       WhiteLagoon.bundle.scp.css
+|   |           |   |       WhiteLagoon.Web.bundle.scp.css
+|   |           |   |       
+|   |           |   \---Views
+|   |           |       \---Shared
+|   |           |               _Layout.cshtml.rz.scp.css
+|   |           |               
+|   |           \---staticwebassets
+|   |                   msbuild.build.BulkyWeb 2.0.props
+|   |                   msbuild.build.WhiteLagoon.props
+|   |                   msbuild.build.WhiteLagoon.Web.props
+|   |                   msbuild.buildMultiTargeting.BulkyWeb 2.0.props
+|   |                   msbuild.buildMultiTargeting.WhiteLagoon.props
+|   |                   msbuild.buildMultiTargeting.WhiteLagoon.Web.props
+|   |                   msbuild.buildTransitive.BulkyWeb 2.0.props
+|   |                   msbuild.buildTransitive.WhiteLagoon.props
+|   |                   msbuild.buildTransitive.WhiteLagoon.Web.props
+|   |                   msbuild.BulkyWeb 2.0.Microsoft.AspNetCore.StaticWebAssets.props
+|   |                   msbuild.WhiteLagoon.Microsoft.AspNetCore.StaticWebAssets.props
+|   |                   msbuild.WhiteLagoon.Web.Microsoft.AspNetCore.StaticWebAssets.props
+|   |                   
+|   +---Properties
+|   |       launchSettings.json
+|   |       
+|   +---Views
+|   |   |   _ViewImports.cshtml
+|   |   |   _ViewStart.cshtml
+|   |   |   
+|   |   +---Home
+|   |   |       Index.cshtml
+|   |   |       Privacy.cshtml
+|   |   |       
+|   |   \---Shared
+|   |           Error.cshtml
+|   |           _Layout.cshtml
+|   |           _Layout.cshtml.css
+|   |           _ValidationScriptsPartial.cshtml
+|   |           
+|   \---wwwroot
+|       |   favicon.ico
+|       |   
+|       +---css
+|       |       site.css
+|       |       
+|       +---js
+|       |       site.js
+|       |       
+|       \---lib
+|           +---bootstrap
+|           |   |   LICENSE
+|           |   |   
+|           |   \---dist
+|           |       +---css
+|           |       |       bootstrap-grid.css
+|           |       |       bootstrap-grid.css.map
+|           |       |       bootstrap-grid.min.css
+|           |       |       bootstrap-grid.min.css.map
+|           |       |       bootstrap-grid.rtl.css
+|           |       |       bootstrap-grid.rtl.css.map
+|           |       |       bootstrap-grid.rtl.min.css
+|           |       |       bootstrap-grid.rtl.min.css.map
+|           |       |       bootstrap-reboot.css
+|           |       |       bootstrap-reboot.css.map
+|           |       |       bootstrap-reboot.min.css
+|           |       |       bootstrap-reboot.min.css.map
+|           |       |       bootstrap-reboot.rtl.css
+|           |       |       bootstrap-reboot.rtl.css.map
+|           |       |       bootstrap-reboot.rtl.min.css
+|           |       |       bootstrap-reboot.rtl.min.css.map
+|           |       |       bootstrap-utilities.css
+|           |       |       bootstrap-utilities.css.map
+|           |       |       bootstrap-utilities.min.css
+|           |       |       bootstrap-utilities.min.css.map
+|           |       |       bootstrap-utilities.rtl.css
+|           |       |       bootstrap-utilities.rtl.css.map
+|           |       |       bootstrap-utilities.rtl.min.css
+|           |       |       bootstrap-utilities.rtl.min.css.map
+|           |       |       bootstrap.css
+|           |       |       bootstrap.css.map
+|           |       |       bootstrap.min.css
+|           |       |       bootstrap.min.css.map
+|           |       |       bootstrap.rtl.css
+|           |       |       bootstrap.rtl.css.map
+|           |       |       bootstrap.rtl.min.css
+|           |       |       bootstrap.rtl.min.css.map
+|           |       |       
+|           |       \---js
+|           |               bootstrap.bundle.js
+|           |               bootstrap.bundle.js.map
+|           |               bootstrap.bundle.min.js
+|           |               bootstrap.bundle.min.js.map
+|           |               bootstrap.esm.js
+|           |               bootstrap.esm.js.map
+|           |               bootstrap.esm.min.js
+|           |               bootstrap.esm.min.js.map
+|           |               bootstrap.js
+|           |               bootstrap.js.map
+|           |               bootstrap.min.js
+|           |               bootstrap.min.js.map
+|           |               
+|           +---jquery
+|           |   |   LICENSE.txt
+|           |   |   
+|           |   \---dist
+|           |           jquery.js
+|           |           jquery.min.js
+|           |           jquery.min.map
+|           |           
+|           +---jquery-validation
+|           |   |   LICENSE.md
+|           |   |   
+|           |   \---dist
+|           |           additional-methods.js
+|           |           additional-methods.min.js
+|           |           jquery.validate.js
+|           |           jquery.validate.min.js
+|           |           
+|           \---jquery-validation-unobtrusive
+|                   jquery.validate.unobtrusive.js
+|                   jquery.validate.unobtrusive.min.js
+|                   LICENSE.txt
+|                   
+\---WhiteLagoon.Web
+    |   appsettings.Development.json
+    |   appsettings.json
+    |   Program.cs
+    |   WhiteLagoon.Web.csproj
+    |   WhiteLagoon.Web.csproj.user
+    |   
+    +---bin
+    |   \---Debug
+    |       \---net8.0
+    +---Controllers
+    |       HomeController.cs
+    |       
+    +---Models
+    |       ErrorViewModel.cs
+    |       
+    +---obj
+    |   |   project.assets.json
+    |   |   project.nuget.cache
+    |   |   WhiteLagoon.Web.csproj.nuget.dgspec.json
+    |   |   WhiteLagoon.Web.csproj.nuget.g.props
+    |   |   WhiteLagoon.Web.csproj.nuget.g.targets
+    |   |   
+    |   \---Debug
+    |       \---net8.0
+    |           |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+    |           |   WhiteLagoon.Web.AssemblyInfo.cs
+    |           |   WhiteLagoon.Web.AssemblyInfoInputs.cache
+    |           |   WhiteLagoon.Web.assets.cache
+    |           |   WhiteLagoon.Web.GeneratedMSBuildEditorConfig.editorconfig
+    |           |   WhiteLagoon.Web.GlobalUsings.g.cs
+    |           |   WhiteLagoon.Web.RazorAssemblyInfo.cache
+    |           |   WhiteLagoon.Web.RazorAssemblyInfo.cs
+    |           |   
+    |           +---ref
+    |           +---refint
+    |           \---staticwebassets
+    +---Properties
+    |       launchSettings.json
+    |       
+    +---Views
+    |   |   _ViewImports.cshtml
+    |   |   _ViewStart.cshtml
+    |   |   
+    |   +---Home
+    |   |       Index.cshtml
+    |   |       Privacy.cshtml
+    |   |       
+    |   \---Shared
+    |           Error.cshtml
+    |           _Layout.cshtml
+    |           _Layout.cshtml.css
+    |           _ValidationScriptsPartial.cshtml
+    |           
+    \---wwwroot
+        |   favicon.ico
+        |   
+        +---css
+        |       site.css
+        |       
+        +---js
+        |       site.js
+        |       
+        \---lib
+            +---bootstrap
+            |   |   LICENSE
+            |   |   
+            |   \---dist
+            |       +---css
+            |       |       bootstrap-grid.css
+            |       |       bootstrap-grid.css.map
+            |       |       bootstrap-grid.min.css
+            |       |       bootstrap-grid.min.css.map
+            |       |       bootstrap-grid.rtl.css
+            |       |       bootstrap-grid.rtl.css.map
+            |       |       bootstrap-grid.rtl.min.css
+            |       |       bootstrap-grid.rtl.min.css.map
+            |       |       bootstrap-reboot.css
+            |       |       bootstrap-reboot.css.map
+            |       |       bootstrap-reboot.min.css
+            |       |       bootstrap-reboot.min.css.map
+            |       |       bootstrap-reboot.rtl.css
+            |       |       bootstrap-reboot.rtl.css.map
+            |       |       bootstrap-reboot.rtl.min.css
+            |       |       bootstrap-reboot.rtl.min.css.map
+            |       |       bootstrap-utilities.css
+            |       |       bootstrap-utilities.css.map
+            |       |       bootstrap-utilities.min.css
+            |       |       bootstrap-utilities.min.css.map
+            |       |       bootstrap-utilities.rtl.css
+            |       |       bootstrap-utilities.rtl.css.map
+            |       |       bootstrap-utilities.rtl.min.css
+            |       |       bootstrap-utilities.rtl.min.css.map
+            |       |       bootstrap.css
+            |       |       bootstrap.css.map
+            |       |       bootstrap.min.css
+            |       |       bootstrap.min.css.map
+            |       |       bootstrap.rtl.css
+            |       |       bootstrap.rtl.css.map
+            |       |       bootstrap.rtl.min.css
+            |       |       bootstrap.rtl.min.css.map
+            |       |       
+            |       \---js
+            |               bootstrap.bundle.js
+            |               bootstrap.bundle.js.map
+            |               bootstrap.bundle.min.js
+            |               bootstrap.bundle.min.js.map
+            |               bootstrap.esm.js
+            |               bootstrap.esm.js.map
+            |               bootstrap.esm.min.js
+            |               bootstrap.esm.min.js.map
+            |               bootstrap.js
+            |               bootstrap.js.map
+            |               bootstrap.min.js
+            |               bootstrap.min.js.map
+            |               
+            +---jquery
+            |   |   LICENSE.txt
+            |   |   
+            |   \---dist
+            |           jquery.js
+            |           jquery.min.js
+            |           jquery.min.map
+            |           
+            +---jquery-validation
+            |   |   LICENSE.md
+            |   |   
+            |   \---dist
+            |           additional-methods.js
+            |           additional-methods.min.js
+            |           jquery.validate.js
+            |           jquery.validate.min.js
+            |           
+            \---jquery-validation-unobtrusive
+                    jquery.validate.unobtrusive.js
+                    jquery.validate.unobtrusive.min.js
+                    LICENSE.txt
+                    

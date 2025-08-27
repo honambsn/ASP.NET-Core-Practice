@@ -1,0 +1,120 @@
+############################
+# .NET / ASP.NET Core
+############################
+
+# Build results (cho tất cả project con)
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+[Aa][Rr][Mm]*/
+artifacts/
+logs/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Rider / JetBrains
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+############################
+# Auto-generated / build outputs
+############################
+
+# Assemblies & executables
+*.dll
+*.exe
+*.appx
+*.cache
+*.pdb
+*.tmp
+*.log
+*.dbmdl
+*.sourcelink.json
+
+# MSBuild auto files
+*.g.i.cs
+*.g.cs
+*.GeneratedMSBuildEditorConfig.editorconfig
+*.AssemblyInfo.*
+*.GlobalUsings.g.cs
+*.FileListAbsolute.txt
+*.BuildWithSkipAnalyzers
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+project.lock.json
+project.assets.json
+project.fragment.lock.json
+project.nuget.cache
+*.nuget.g.props
+*.nuget.g.targets
+packages/
+
+# Static web assets / scoped css
+staticwebassets/
+scopedcss/
+
+############################
+# ASP.NET Core / Web
+############################
+
+# LibMan / npm restored libraries
+wwwroot/lib/
+
+# Nếu có frontend project kèm theo (Angular/React/Vue)
+ClientApp/node_modules/
+ClientApp/dist/
+ClientApp/build/
+ClientApp/coverage/
+ClientApp/.angular/
+ClientApp/.cache/
+ClientApp/.next/
+ClientApp/.nuxt/
+ClientApp/.vite/
+
+# Frontend lock files (bạn chọn giữ hoặc bỏ)
+ClientApp/package-lock.json
+ClientApp/yarn.lock
+ClientApp/pnpm-lock.yaml
+
+############################
+# Entity Framework Core
+############################
+
+# Nếu bạn không muốn track migrations, uncomment dòng dưới:
+# Migrations/
+
+############################
+# OS / System files
+############################
+
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+############################
+# Backup / temp
+############################
+
+*.bak
+*.swp
+*.svclog
+*.tmp
