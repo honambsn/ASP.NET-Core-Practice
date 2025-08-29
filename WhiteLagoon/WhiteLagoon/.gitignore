@@ -1,8 +1,6 @@
 ############################
 # .NET / ASP.NET Core
 ############################
-
-# Build results (cho tất cả project con)
 bin/
 obj/
 [Bb]uild/
@@ -11,7 +9,6 @@ obj/
 [Rr]elease*/
 x64/
 x86/
-[Aa][Rr][Mm]*/
 artifacts/
 logs/
 
@@ -33,19 +30,14 @@ logs/
 ############################
 # Auto-generated / build outputs
 ############################
-
-# Assemblies & executables
 *.dll
 *.exe
-*.appx
-*.cache
 *.pdb
-*.tmp
+*.cache
 *.log
 *.dbmdl
 *.sourcelink.json
 
-# MSBuild auto files
 *.g.i.cs
 *.g.cs
 *.GeneratedMSBuildEditorConfig.editorconfig
@@ -66,44 +58,24 @@ project.nuget.cache
 *.nuget.g.targets
 packages/
 
-# Static web assets / scoped css
+# Static web assets
 staticwebassets/
 scopedcss/
 
 ############################
 # ASP.NET Core / Web
 ############################
-
-# LibMan / npm restored libraries
 wwwroot/lib/
-
-# Nếu có frontend project kèm theo (Angular/React/Vue)
-ClientApp/node_modules/
-ClientApp/dist/
-ClientApp/build/
-ClientApp/coverage/
-ClientApp/.angular/
-ClientApp/.cache/
-ClientApp/.next/
-ClientApp/.nuxt/
-ClientApp/.vite/
-
-# Frontend lock files (bạn chọn giữ hoặc bỏ)
-ClientApp/package-lock.json
-ClientApp/yarn.lock
-ClientApp/pnpm-lock.yaml
 
 ############################
 # Entity Framework Core
 ############################
-
-# Nếu bạn không muốn track migrations, uncomment dòng dưới:
+# Nếu muốn giữ migrations => comment dòng dưới
 # Migrations/
 
 ############################
-# OS / System files
+# OS / System
 ############################
-
 ehthumbs.db
 Thumbs.db
 Desktop.ini
@@ -113,7 +85,6 @@ $RECYCLE.BIN/
 ############################
 # Backup / temp
 ############################
-
 *.bak
 *.swp
 *.svclog
