@@ -58,7 +58,7 @@ project.nuget.cache
 *.nuget.g.targets
 packages/
 
-# Static web assets
+# Static web assets / scoped css
 staticwebassets/
 scopedcss/
 
@@ -70,7 +70,7 @@ wwwroot/lib/
 ############################
 # Entity Framework Core
 ############################
-# Nếu muốn giữ migrations => comment dòng dưới
+# Nếu bạn KHÔNG muốn giữ migrations => uncomment dòng dưới:
 # Migrations/
 
 ############################
