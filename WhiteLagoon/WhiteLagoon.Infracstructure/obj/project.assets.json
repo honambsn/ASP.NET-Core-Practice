@@ -1503,7 +1503,10 @@
         },
         "runtime": {
           "bin/placeholder/WhiteLagoon.Domain.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },

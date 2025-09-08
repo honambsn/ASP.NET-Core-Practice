@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WhiteLagoon.Domain.Entities;
 using WhiteLagoon.Infracstructure.Data;
+using WhiteLagoon.Web.Models;
 
 namespace WhiteLagoon.Web.Controllers
 {
@@ -11,10 +12,23 @@ namespace WhiteLagoon.Web.Controllers
         {
             _db = db;
         }
-        public IActionResult Index()
+        public IActionResult Index(int page = 1)
         {
-            var villas = _db.Villas.ToList();
-            return View(villas);
+            int pageSize = 5; // Number of items per page
+            var totalVillas = _db.Villas.Count();
+            var vilass = _db.Villas.Skip((page - 1) * pageSize)
+                                   .Take(pageSize)
+                                   .ToList();
+
+            var totalPages = (int)Math.Ceiling(totalVillas / (double)pageSize);
+
+            var model = new VillaListViewModel
+            {
+                Villas = vilass,
+                CurrentPage = page,
+                TotalPages = totalPages
+            };
+            return View(model);
         }
 
         public IActionResult Create()

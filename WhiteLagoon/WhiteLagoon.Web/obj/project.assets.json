@@ -1491,7 +1491,10 @@
         },
         "runtime": {
           "bin/placeholder/WhiteLagoon.Domain.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "WhiteLagoon.Infracstructure/1.0.0": {
         "type": "project",

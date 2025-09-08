@@ -17,35 +17,32 @@ namespace WhiteLagoon.Web.Controllers
             return View(villaNumbers);
         }
 
-        //public IActionResult Create()
-        //{
-        //    return View();
-        //}
+        public IActionResult Create()
+        {
+            return View();
+        }
 
-        //[HttpPost]
-        //public IActionResult Create(VillaNumber obj)
-        //{
-        //    if (obj.Name == obj.Description)
-        //    {
-        //        ModelState.AddModelError("name", "The description cannot exactly match the Name.");
-        //    }
-        //    if (ModelState.IsValid)
-        //    {
-        //        _db.VillaNumbers.Add(obj);
-        //        _db.SaveChanges();
-        //        TempData["success"] = "Villa created successfully"; 
+        [HttpPost]
+        public IActionResult Create(VillaNumber obj)
+        {
+            //ModelState.Remove("Villa");
+            if (ModelState.IsValid)
+            {
+                _db.VillaNumbers.Add(obj);
+                _db.SaveChanges();
+                TempData["success"] = "The villa Number has been created successfully";
 
-        //        return RedirectToAction("Index", "Villa");
-        //    }
+                return RedirectToAction("Index", "Villa");
+            }
 
-        //    return View();
-        //}
+            return View();
+        }
 
         //public IActionResult Update(int villaID)
         //{
         //    VillaNumber? obj = _db.VillaNumbers.FirstOrDefault(u => u.VillaID == villaID);
-            
-            
+
+
         //    //Villa? obj = _db.VillaNumbers.Find(villaID);
         //    //var VillaList = _db.VillaNumbers.Where(u => u.Price > 50 && u.Occupancy > 0);
 
@@ -75,8 +72,8 @@ namespace WhiteLagoon.Web.Controllers
         //public IActionResult Delete(int villaID)
         //{
         //    Villa? obj = _db.VillaNumbers.FirstOrDefault(u => u.ID == villaID);
-            
-            
+
+
         //    //Villa? obj = _db.VillaNumbers.Find(villaID);
         //    //var VillaList = _db.VillaNumbers.Where(u => u.Price > 50 && u.Occupancy > 0);
 

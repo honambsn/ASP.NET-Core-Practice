@@ -90,6 +90,106 @@ namespace WhiteLagoon.Infracstructure.Migrations
                             Occupancy = 4,
                             Price = 400.0,
                             Sqft = 750
+                        },
+                        new
+                        {
+                            ID = 4,
+                            Description = "Villa 4 Description",
+                            ImageUrl = "https://placehold.co/600x404",
+                            Name = "Villa 4",
+                            Occupancy = 6,
+                            Price = 500.0,
+                            Sqft = 900
+                        },
+                        new
+                        {
+                            ID = 5,
+                            Description = "Villa 5 Description",
+                            ImageUrl = "https://placehold.co/600x405",
+                            Name = "Villa 5",
+                            Occupancy = 5,
+                            Price = 350.0,
+                            Sqft = 800
+                        },
+                        new
+                        {
+                            ID = 6,
+                            Description = "Villa 6 Description",
+                            ImageUrl = "https://placehold.co/600x406",
+                            Name = "Villa 6",
+                            Occupancy = 8,
+                            Price = 600.0,
+                            Sqft = 1000
+                        },
+                        new
+                        {
+                            ID = 7,
+                            Description = "Villa 7 Description",
+                            ImageUrl = "https://placehold.co/600x407",
+                            Name = "Villa 7",
+                            Occupancy = 4,
+                            Price = 450.0,
+                            Sqft = 700
+                        },
+                        new
+                        {
+                            ID = 8,
+                            Description = "Villa 8 Description",
+                            ImageUrl = "https://placehold.co/600x408",
+                            Name = "Villa 8",
+                            Occupancy = 6,
+                            Price = 550.0,
+                            Sqft = 850
+                        },
+                        new
+                        {
+                            ID = 9,
+                            Description = "Villa 9 Description",
+                            ImageUrl = "https://placehold.co/600x409",
+                            Name = "Villa 9",
+                            Occupancy = 4,
+                            Price = 350.0,
+                            Sqft = 600
+                        },
+                        new
+                        {
+                            ID = 10,
+                            Description = "Villa 10 Description",
+                            ImageUrl = "https://placehold.co/600x410",
+                            Name = "Villa 10",
+                            Occupancy = 5,
+                            Price = 400.0,
+                            Sqft = 700
+                        },
+                        new
+                        {
+                            ID = 11,
+                            Description = "Villa 11 Description",
+                            ImageUrl = "https://placehold.co/600x411",
+                            Name = "Villa 11",
+                            Occupancy = 7,
+                            Price = 650.0,
+                            Sqft = 950
+                        },
+                        new
+                        {
+                            ID = 12,
+                            Description = "Villa 12 Description",
+                            ImageUrl = "https://placehold.co/600x412",
+                            Name = "Villa 12",
+                            Occupancy = 6,
+                            Price = 500.0,
+                            Sqft = 800
+                        },
+                        new
+                        {
+                            ID = 13,
+                            Description = "Villa 13 Description",
+                            ImageUrl = "https://placehold.co/600x413",
+                            Name = "Villa 13",
+                            Occupancy = 8,
+                            Price = 700.0,
+                            Sqft = 1200
                         });
                 });
 
