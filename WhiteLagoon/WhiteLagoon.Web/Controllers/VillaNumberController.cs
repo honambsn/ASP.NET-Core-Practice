@@ -14,12 +14,34 @@ namespace WhiteLagoon.Web.Controllers
         {
             _db = db;
         }
-        public IActionResult Index()
-        {
-            var villaNumbers = _db.VillaNumbers.Include(u => u.Villa).ToList();
-            return View(villaNumbers);
-        }
 
+        #region Index
+        public IActionResult Index(int page = 1)
+        {
+            int pageSize = 5;
+            var totalVillaNumbers = _db.VillaNumbers.Count();
+
+            var villaNumbers = _db.VillaNumbers
+                .Include(u => u.Villa)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+            
+            var totalPages = (int)Math.Ceiling(totalVillaNumbers / (double)pageSize);
+
+            var viewModel = new VillaNumberListVM
+            {
+                VillaNumbers = villaNumbers,
+                CurrentPage = page,
+                TotalPages = totalPages
+            };
+
+            //var villaNumbers = _db.VillaNumbers.Include(u => u.Villa).ToList();
+            return View(viewModel);
+        }
+        #endregion
+
+        #region Create
         public IActionResult Create()
         {
             VillaNumberVM villaNumberVM = new()
@@ -30,14 +52,6 @@ namespace WhiteLagoon.Web.Controllers
                      Value = i.ID.ToString()
                  })
             };
-            //IEnumerable<SelectListItem> list = _db.Villas.ToList().Select(u => new SelectListItem
-            //{
-            //    Text = u.Name,
-            //    Value = u.ID.ToString()
-            //});
-
-            //ViewData["VillaList"] = list;
-            //ViewBag.VillaList = list;
 
             return View(villaNumberVM);
         }
@@ -70,37 +84,50 @@ namespace WhiteLagoon.Web.Controllers
 
             return View(obj);
         }
+        #endregion
 
-        //public IActionResult Update(int villaID)
-        //{
-        //    VillaNumber? obj = _db.VillaNumbers.FirstOrDefault(u => u.VillaID == villaID);
+        #region Update
+        public IActionResult Update(int villaNumberID)
+        {
+            VillaNumberVM villaNumberVM = new()
+            {
+                VillaList = _db.Villas.ToList().Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.ID.ToString()
+                }),
+                VillaNumber = _db.VillaNumbers.FirstOrDefault(u => u.Villa_Number == villaNumberID)
+            };
 
+            if (villaNumberVM.VillaNumber is null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
 
-        //    //Villa? obj = _db.VillaNumbers.Find(villaID);
-        //    //var VillaList = _db.VillaNumbers.Where(u => u.Price > 50 && u.Occupancy > 0);
+            return View(villaNumberVM);
+        }
 
-        //    if (obj is null)
-        //    {
-        //        return RedirectToAction("Error", "Home");
-        //    }
+        [HttpPost]
+        public IActionResult Update(VillaNumberVM villaNumberVM)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.VillaNumbers.Update(villaNumberVM.VillaNumber);
+                _db.SaveChanges();
+                TempData["success"] = "Villa Number updated successfully";
+                return RedirectToAction("Index");
+            }
 
-        //    return View(obj);
-        //}
+            villaNumberVM.VillaList = _db.Villas.ToList().Select(i => new SelectListItem
+            {
+                Text = i.Name,
+                Value = i.ID.ToString()
+            });
 
-        //[HttpPost]
-        //public IActionResult Update(Villa obj)
-        //{
-        //    if (ModelState.IsValid &&  obj.ID > 0)
-        //    {
-        //        _db.VillaNumbers.Update(obj);
-        //        _db.SaveChanges();
-        //        TempData["success"] = "Villa updated successfully";
+            return View(villaNumberVM);
+        }
 
-        //        return RedirectToAction("Index", "Villa");
-        //    }
-
-        //    return View();
-        //}
+        #endregion
 
         //public IActionResult Delete(int villaID)
         //{

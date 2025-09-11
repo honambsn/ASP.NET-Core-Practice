@@ -16,6 +16,7 @@ namespace WhiteLagoon.Web.Controllers
         {
             int pageSize = 5; // Number of items per page
             var totalVillas = _db.Villas.Count();
+
             var vilass = _db.Villas.Skip((page - 1) * pageSize)
                                    .Take(pageSize)
                                    .ToList();
