@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WhiteLagoon.Infracstructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c077da9bf86e62f36ccfd1ff7c91b684a4a1e484")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+600396ed0de412860919ab2add4b91bb5af48485")]
 [assembly: System.Reflection.AssemblyProductAttribute("WhiteLagoon.Infracstructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WhiteLagoon.Infracstructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
