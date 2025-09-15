@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WhiteLagoon.Application.Common.Interfaces;
 using WhiteLagoon.Domain.Entities;
 using WhiteLagoon.Infracstructure.Data;
 using WhiteLagoon.Web.Models;
@@ -7,13 +8,17 @@ namespace WhiteLagoon.Web.Controllers
 {
     public class VillaController : Controller
     {
-        private readonly ApplicationDbContext _db;
-        public VillaController(ApplicationDbContext db)
+        private readonly IVillaRepository _villaRepo;
+        public VillaController(IVillaRepository villaRepo)
         {
-            _db = db;
+            _villaRepo = villaRepo;
         }
         public IActionResult Index(int page = 1)
         {
+
+            //var villas = _villaRepo.GetAll().ToList();
+            //return View(villas);
+
             int pageSize = 5; // Number of items per page
             var totalVillas = _db.Villas.Count();
 
