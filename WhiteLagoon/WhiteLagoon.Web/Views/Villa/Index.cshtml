@@ -40,6 +40,9 @@
                     <th>
                         Occupancy
                     </th>
+                    <th>
+                        Description
+                    </th>
                     <th></th>
                 </tr>
             </thead>
@@ -51,6 +54,7 @@
                         <td>@obj.Price</td>
                         <td>@obj.Sqft</td>
                         <td>@obj.Occupancy</td>
+                        <td>@obj.Description</td>
                         <td>
                             <div class="w-75 btn-group" role="group">
                                 <a asp-controller="Villa" asp-action="Update" asp-route-villaID="@obj.ID" class="btn btn-success mx-2">

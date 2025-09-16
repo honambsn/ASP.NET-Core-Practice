@@ -81,5 +81,36 @@ namespace WhiteLagoon.Infracstructure.Repository
         {
             _db.Villas.Update(entity);
         }
+
+        public int GetCount(Expression<Func<Villa, bool>>? filter = null)
+        {
+            IQueryable<Villa> query = _db.Villas;
+
+            if (filter is not null)
+            {
+                query = query.Where(filter);
+            }
+            return query.Count();
+        }
+
+        public IEnumerable<Villa> GetPaginated(int page, int pageSize, Expression<Func<Villa, bool>>? filter = null, string? includeProperties = null)
+        {
+            IQueryable<Villa> query = _db.Villas;
+            
+            if (filter is not null)
+            {
+                query = query.Where(filter);
+            }
+
+            if (!string.IsNullOrWhiteSpace(includeProperties))
+            {
+                foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp);
+                }
+            }
+
+            return query.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+        }
     }
 }

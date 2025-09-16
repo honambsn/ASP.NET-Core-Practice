@@ -17,5 +17,8 @@ namespace WhiteLagoon.Application.Common.Interfaces
         void Update(Villa entity);
         void Remove(Villa entity);
         void Save();
+
+        int GetCount(Expression<Func<Villa, bool>>? filter = null);
+        IEnumerable<Villa> GetPaginated(int page, int pageSize, Expression<Func<Villa, bool>>? filter = null, string? includeProperties = null);
     }
 }
