@@ -2,6 +2,7 @@ Folder PATH listing for volume New Volume
 Volume serial number is D428-1106
 D:.
 |   tree.txt
+|   tree.xt
 |   
 +---WhiteLagoon
 |   |   .gitignore
@@ -12,163 +13,12 @@ D:.
 |   |   WhiteLagoon.csproj.user
 |   |   WhiteLagoon.sln
 |   |   
-|   +---bin
-|   |   \---Debug
-|   |       \---net8.0
-|   |               appsettings.Development.json
-|   |               appsettings.json
-|   |               BulkyWeb 2.0.deps.json
-|   |               BulkyWeb 2.0.dll
-|   |               BulkyWeb 2.0.exe
-|   |               BulkyWeb 2.0.pdb
-|   |               BulkyWeb 2.0.runtimeconfig.json
-|   |               BulkyWeb 2.0.staticwebassets.runtime.json
-|   |               WhiteLagoon.deps.json
-|   |               WhiteLagoon.dll
-|   |               WhiteLagoon.exe
-|   |               WhiteLagoon.pdb
-|   |               WhiteLagoon.runtimeconfig.json
-|   |               WhiteLagoon.staticwebassets.runtime.json
-|   |               WhiteLagoon.Web.deps.json
-|   |               WhiteLagoon.Web.dll
-|   |               WhiteLagoon.Web.exe
-|   |               WhiteLagoon.Web.pdb
-|   |               WhiteLagoon.Web.runtimeconfig.json
-|   |               WhiteLagoon.Web.staticwebassets.runtime.json
-|   |               
 |   +---Controllers
 |   |       HomeController.cs
 |   |       
 |   +---Models
 |   |       ErrorViewModel.cs
 |   |       
-|   +---obj
-|   |   |   BulkyWeb .0.csproj.nuget.dgspec.json
-|   |   |   BulkyWeb .0.csproj.nuget.g.props
-|   |   |   BulkyWeb .0.csproj.nuget.g.targets
-|   |   |   BulkyWeb 2.0.csproj.nuget.dgspec.json
-|   |   |   BulkyWeb 2.0.csproj.nuget.g.props
-|   |   |   BulkyWeb 2.0.csproj.nuget.g.targets
-|   |   |   BulkyWeb.csproj.nuget.dgspec.json
-|   |   |   BulkyWeb.csproj.nuget.g.props
-|   |   |   BulkyWeb.csproj.nuget.g.targets
-|   |   |   project.assets.json
-|   |   |   project.nuget.cache
-|   |   |   WhiteLagoon.csproj.nuget.dgspec.json
-|   |   |   WhiteLagoon.csproj.nuget.g.props
-|   |   |   WhiteLagoon.csproj.nuget.g.targets
-|   |   |   WhiteLagoon.Web.csproj.nuget.dgspec.json
-|   |   |   WhiteLagoon.Web.csproj.nuget.g.props
-|   |   |   WhiteLagoon.Web.csproj.nuget.g.targets
-|   |   |   
-|   |   \---Debug
-|   |       \---net8.0
-|   |           |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
-|   |           |   ApiEndpoints.json
-|   |           |   apphost.exe
-|   |           |   BulkyWeb .0.AssemblyInfo.cs
-|   |           |   BulkyWeb .0.AssemblyInfoInputs.cache
-|   |           |   BulkyWeb .0.assets.cache
-|   |           |   BulkyWeb .0.GeneratedMSBuildEditorConfig.editorconfig
-|   |           |   BulkyWeb .0.GlobalUsings.g.cs
-|   |           |   BulkyWeb .0.RazorAssemblyInfo.cache
-|   |           |   BulkyWeb .0.RazorAssemblyInfo.cs
-|   |           |   BulkyWeb 2.0.AssemblyInfo.cs
-|   |           |   BulkyWeb 2.0.AssemblyInfoInputs.cache
-|   |           |   BulkyWeb 2.0.assets.cache
-|   |           |   BulkyWeb 2.0.csproj.BuildWithSkipAnalyzers
-|   |           |   BulkyWeb 2.0.csproj.CoreCompileInputs.cache
-|   |           |   BulkyWeb 2.0.csproj.FileListAbsolute.txt
-|   |           |   BulkyWeb 2.0.dll
-|   |           |   BulkyWeb 2.0.GeneratedMSBuildEditorConfig.editorconfig
-|   |           |   BulkyWeb 2.0.genruntimeconfig.cache
-|   |           |   BulkyWeb 2.0.GlobalUsings.g.cs
-|   |           |   BulkyWeb 2.0.MvcApplicationPartsAssemblyInfo.cache
-|   |           |   BulkyWeb 2.0.pdb
-|   |           |   BulkyWeb 2.0.RazorAssemblyInfo.cache
-|   |           |   BulkyWeb 2.0.RazorAssemblyInfo.cs
-|   |           |   BulkyWeb 2.0.sourcelink.json
-|   |           |   BulkyWeb.AssemblyInfo.cs
-|   |           |   BulkyWeb.AssemblyInfoInputs.cache
-|   |           |   BulkyWeb.assets.cache
-|   |           |   BulkyWeb.csproj.FileListAbsolute.txt
-|   |           |   BulkyWeb.GeneratedMSBuildEditorConfig.editorconfig
-|   |           |   BulkyWeb.GlobalUsings.g.cs
-|   |           |   BulkyWeb.RazorAssemblyInfo.cache
-|   |           |   BulkyWeb.RazorAssemblyInfo.cs
-|   |           |   staticwebassets.build.json
-|   |           |   staticwebassets.development.json
-|   |           |   staticwebassets.pack.json
-|   |           |   WhiteLagoon.AssemblyInfo.cs
-|   |           |   WhiteLagoon.AssemblyInfoInputs.cache
-|   |           |   WhiteLagoon.assets.cache
-|   |           |   WhiteLagoon.csproj.BuildWithSkipAnalyzers
-|   |           |   WhiteLagoon.csproj.CoreCompileInputs.cache
-|   |           |   WhiteLagoon.csproj.FileListAbsolute.txt
-|   |           |   WhiteLagoon.dll
-|   |           |   WhiteLagoon.GeneratedMSBuildEditorConfig.editorconfig
-|   |           |   WhiteLagoon.genruntimeconfig.cache
-|   |           |   WhiteLagoon.GlobalUsings.g.cs
-|   |           |   WhiteLagoon.MvcApplicationPartsAssemblyInfo.cache
-|   |           |   WhiteLagoon.pdb
-|   |           |   WhiteLagoon.RazorAssemblyInfo.cache
-|   |           |   WhiteLagoon.RazorAssemblyInfo.cs
-|   |           |   WhiteLagoon.sourcelink.json
-|   |           |   WhiteLagoon.Web.AssemblyInfo.cs
-|   |           |   WhiteLagoon.Web.AssemblyInfoInputs.cache
-|   |           |   WhiteLagoon.Web.assets.cache
-|   |           |   WhiteLagoon.Web.csproj.BuildWithSkipAnalyzers
-|   |           |   WhiteLagoon.Web.csproj.CoreCompileInputs.cache
-|   |           |   WhiteLagoon.Web.csproj.FileListAbsolute.txt
-|   |           |   WhiteLagoon.Web.dll
-|   |           |   WhiteLagoon.Web.GeneratedMSBuildEditorConfig.editorconfig
-|   |           |   WhiteLagoon.Web.genruntimeconfig.cache
-|   |           |   WhiteLagoon.Web.GlobalUsings.g.cs
-|   |           |   WhiteLagoon.Web.MvcApplicationPartsAssemblyInfo.cache
-|   |           |   WhiteLagoon.Web.pdb
-|   |           |   WhiteLagoon.Web.RazorAssemblyInfo.cache
-|   |           |   WhiteLagoon.Web.RazorAssemblyInfo.cs
-|   |           |   WhiteLagoon.Web.sourcelink.json
-|   |           |   
-|   |           +---ref
-|   |           |       BulkyWeb 2.0.dll
-|   |           |       WhiteLagoon.dll
-|   |           |       WhiteLagoon.Web.dll
-|   |           |       
-|   |           +---refint
-|   |           |       BulkyWeb 2.0.dll
-|   |           |       WhiteLagoon.dll
-|   |           |       WhiteLagoon.Web.dll
-|   |           |       
-|   |           +---scopedcss
-|   |           |   +---bundle
-|   |           |   |       BulkyWeb 2.0.styles.css
-|   |           |   |       WhiteLagoon.styles.css
-|   |           |   |       WhiteLagoon.Web.styles.css
-|   |           |   |       
-|   |           |   +---projectbundle
-|   |           |   |       BulkyWeb 2.0.bundle.scp.css
-|   |           |   |       WhiteLagoon.bundle.scp.css
-|   |           |   |       WhiteLagoon.Web.bundle.scp.css
-|   |           |   |       
-|   |           |   \---Views
-|   |           |       \---Shared
-|   |           |               _Layout.cshtml.rz.scp.css
-|   |           |               
-|   |           \---staticwebassets
-|   |                   msbuild.build.BulkyWeb 2.0.props
-|   |                   msbuild.build.WhiteLagoon.props
-|   |                   msbuild.build.WhiteLagoon.Web.props
-|   |                   msbuild.buildMultiTargeting.BulkyWeb 2.0.props
-|   |                   msbuild.buildMultiTargeting.WhiteLagoon.props
-|   |                   msbuild.buildMultiTargeting.WhiteLagoon.Web.props
-|   |                   msbuild.buildTransitive.BulkyWeb 2.0.props
-|   |                   msbuild.buildTransitive.WhiteLagoon.props
-|   |                   msbuild.buildTransitive.WhiteLagoon.Web.props
-|   |                   msbuild.BulkyWeb 2.0.Microsoft.AspNetCore.StaticWebAssets.props
-|   |                   msbuild.WhiteLagoon.Microsoft.AspNetCore.StaticWebAssets.props
-|   |                   msbuild.WhiteLagoon.Web.Microsoft.AspNetCore.StaticWebAssets.props
-|   |                   
 |   +---Properties
 |   |       launchSettings.json
 |   |       
@@ -276,8 +126,20 @@ D:.
 |   +---bin
 |   |   \---Debug
 |   |       \---net8.0
+|   |               WhiteLagoon.Application.deps.json
+|   |               WhiteLagoon.Application.dll
+|   |               WhiteLagoon.Application.pdb
+|   |               WhiteLagoon.Domain.dll
+|   |               WhiteLagoon.Domain.pdb
+|   |               
+|   +---Common
+|   |   \---Interfaces
+|   |           IRepository.cs
+|   |           IVillaRepository.cs
+|   |           
 |   \---obj
 |       |   project.assets.json
+|       |   project.nuget.cache
 |       |   WhiteLagoon.Application.csproj.nuget.dgspec.json
 |       |   WhiteLagoon.Application.csproj.nuget.g.props
 |       |   WhiteLagoon.Application.csproj.nuget.g.targets
@@ -285,23 +147,43 @@ D:.
 |       \---Debug
 |           \---net8.0
 |               |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+|               |   WhiteLag.5B63BB29.Up2Date
+|               |   WhiteLagoon.Application.AssemblyInfo.cs
+|               |   WhiteLagoon.Application.AssemblyInfoInputs.cache
 |               |   WhiteLagoon.Application.assets.cache
+|               |   WhiteLagoon.Application.csproj.AssemblyReference.cache
+|               |   WhiteLagoon.Application.csproj.BuildWithSkipAnalyzers
+|               |   WhiteLagoon.Application.csproj.CoreCompileInputs.cache
 |               |   WhiteLagoon.Application.csproj.FileListAbsolute.txt
+|               |   WhiteLagoon.Application.dll
+|               |   WhiteLagoon.Application.GeneratedMSBuildEditorConfig.editorconfig
 |               |   WhiteLagoon.Application.GlobalUsings.g.cs
+|               |   WhiteLagoon.Application.pdb
+|               |   WhiteLagoon.Application.sourcelink.json
 |               |   
 |               +---ref
+|               |       WhiteLagoon.Application.dll
+|               |       
 |               \---refint
+|                       WhiteLagoon.Application.dll
+|                       
 +---WhiteLagoon.Domain
 |   |   WhiteLagoon.Domain.csproj
 |   |   
 |   +---bin
 |   |   \---Debug
 |   |       \---net8.0
+|   |               WhiteLagoon.Domain.deps.json
+|   |               WhiteLagoon.Domain.dll
+|   |               WhiteLagoon.Domain.pdb
+|   |               
 |   +---Entities
 |   |       Villa.cs
+|   |       VillaNumber.cs
 |   |       
 |   \---obj
 |       |   project.assets.json
+|       |   project.nuget.cache
 |       |   WhiteLagoon.Domain.csproj.nuget.dgspec.json
 |       |   WhiteLagoon.Domain.csproj.nuget.g.props
 |       |   WhiteLagoon.Domain.csproj.nuget.g.targets
@@ -309,19 +191,39 @@ D:.
 |       \---Debug
 |           \---net8.0
 |               |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+|               |   WhiteLagoon.Domain.AssemblyInfo.cs
+|               |   WhiteLagoon.Domain.AssemblyInfoInputs.cache
 |               |   WhiteLagoon.Domain.assets.cache
 |               |   WhiteLagoon.Domain.csproj.BuildWithSkipAnalyzers
+|               |   WhiteLagoon.Domain.csproj.CoreCompileInputs.cache
 |               |   WhiteLagoon.Domain.csproj.FileListAbsolute.txt
+|               |   WhiteLagoon.Domain.dll
+|               |   WhiteLagoon.Domain.GeneratedMSBuildEditorConfig.editorconfig
 |               |   WhiteLagoon.Domain.GlobalUsings.g.cs
+|               |   WhiteLagoon.Domain.pdb
+|               |   WhiteLagoon.Domain.sourcelink.json
 |               |   
 |               +---ref
+|               |       WhiteLagoon.Domain.dll
+|               |       
 |               \---refint
+|                       WhiteLagoon.Domain.dll
+|                       
 +---WhiteLagoon.Infracstructure
 |   |   WhiteLagoon.Infracstructure.csproj
 |   |   
 |   +---bin
 |   |   \---Debug
 |   |       \---net8.0
+|   |               WhiteLagoon.Application.dll
+|   |               WhiteLagoon.Application.pdb
+|   |               WhiteLagoon.Domain.dll
+|   |               WhiteLagoon.Domain.pdb
+|   |               WhiteLagoon.Infracstructure.deps.json
+|   |               WhiteLagoon.Infracstructure.dll
+|   |               WhiteLagoon.Infracstructure.pdb
+|   |               WhiteLagoon.Infracstructure.runtimeconfig.json
+|   |               
 |   +---Data
 |   |       ApplicationDbContext.cs
 |   |       
@@ -332,24 +234,47 @@ D:.
 |   |       20250829140017_ModifyNamesInVillaTable.Designer.cs
 |   |       20250829140854_seedVillaToDb.cs
 |   |       20250829140854_seedVillaToDb.Designer.cs
+|   |       20250905141702_addVillaNumber.cs
+|   |       20250905141702_addVillaNumber.Designer.cs
+|   |       20250908142733_AddMoreVillaData.cs
+|   |       20250908142733_AddMoreVillaData.Designer.cs
 |   |       ApplicationDbContextModelSnapshot.cs
 |   |       
-|   \---obj
-|       |   project.assets.json
-|       |   WhiteLagoon.Infracstructure.csproj.nuget.dgspec.json
-|       |   WhiteLagoon.Infracstructure.csproj.nuget.g.props
-|       |   WhiteLagoon.Infracstructure.csproj.nuget.g.targets
-|       |   
-|       \---Debug
-|           \---net8.0
-|               |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
-|               |   WhiteLagoon.Infracstructure.assets.cache
-|               |   WhiteLagoon.Infracstructure.csproj.BuildWithSkipAnalyzers
-|               |   WhiteLagoon.Infracstructure.csproj.FileListAbsolute.txt
-|               |   WhiteLagoon.Infracstructure.GlobalUsings.g.cs
-|               |   
-|               +---ref
-|               \---refint
+|   +---obj
+|   |   |   project.assets.json
+|   |   |   project.nuget.cache
+|   |   |   WhiteLagoon.Infracstructure.csproj.nuget.dgspec.json
+|   |   |   WhiteLagoon.Infracstructure.csproj.nuget.g.props
+|   |   |   WhiteLagoon.Infracstructure.csproj.nuget.g.targets
+|   |   |   
+|   |   \---Debug
+|   |       \---net8.0
+|   |           |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+|   |           |   WhiteLag.3C218A3C.Up2Date
+|   |           |   WhiteLagoon.Infracstructure.AssemblyInfo.cs
+|   |           |   WhiteLagoon.Infracstructure.AssemblyInfoInputs.cache
+|   |           |   WhiteLagoon.Infracstructure.assets.cache
+|   |           |   WhiteLagoon.Infracstructure.csproj.AssemblyReference.cache
+|   |           |   WhiteLagoon.Infracstructure.csproj.BuildWithSkipAnalyzers
+|   |           |   WhiteLagoon.Infracstructure.csproj.CoreCompileInputs.cache
+|   |           |   WhiteLagoon.Infracstructure.csproj.FileListAbsolute.txt
+|   |           |   WhiteLagoon.Infracstructure.dll
+|   |           |   WhiteLagoon.Infracstructure.GeneratedMSBuildEditorConfig.editorconfig
+|   |           |   WhiteLagoon.Infracstructure.genruntimeconfig.cache
+|   |           |   WhiteLagoon.Infracstructure.GlobalUsings.g.cs
+|   |           |   WhiteLagoon.Infracstructure.pdb
+|   |           |   WhiteLagoon.Infracstructure.sourcelink.json
+|   |           |   
+|   |           +---ref
+|   |           |       WhiteLagoon.Infracstructure.dll
+|   |           |       
+|   |           \---refint
+|   |                   WhiteLagoon.Infracstructure.dll
+|   |                   
+|   \---Repository
+|           Repository.cs
+|           VillaRepository.cs
+|           
 \---WhiteLagoon.Web
     |   appsettings.Development.json
     |   appsettings.json
@@ -360,43 +285,192 @@ D:.
     +---bin
     |   \---Debug
     |       \---net8.0
+    |           |   appsettings.Development.json
+    |           |   appsettings.json
+    |           |   Azure.Core.dll
+    |           |   Azure.Identity.dll
+    |           |   Humanizer.dll
+    |           |   Microsoft.Bcl.AsyncInterfaces.dll
+    |           |   Microsoft.CodeAnalysis.CSharp.dll
+    |           |   Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+    |           |   Microsoft.CodeAnalysis.dll
+    |           |   Microsoft.CodeAnalysis.Workspaces.dll
+    |           |   Microsoft.Data.SqlClient.dll
+    |           |   Microsoft.EntityFrameworkCore.Abstractions.dll
+    |           |   Microsoft.EntityFrameworkCore.Design.dll
+    |           |   Microsoft.EntityFrameworkCore.dll
+    |           |   Microsoft.EntityFrameworkCore.Relational.dll
+    |           |   Microsoft.EntityFrameworkCore.SqlServer.dll
+    |           |   Microsoft.Extensions.Caching.Memory.dll
+    |           |   Microsoft.Extensions.DependencyInjection.Abstractions.dll
+    |           |   Microsoft.Extensions.DependencyInjection.dll
+    |           |   Microsoft.Extensions.DependencyModel.dll
+    |           |   Microsoft.Extensions.Logging.Abstractions.dll
+    |           |   Microsoft.Extensions.Logging.dll
+    |           |   Microsoft.Extensions.Options.dll
+    |           |   Microsoft.Identity.Client.dll
+    |           |   Microsoft.Identity.Client.Extensions.Msal.dll
+    |           |   Microsoft.IdentityModel.Abstractions.dll
+    |           |   Microsoft.IdentityModel.JsonWebTokens.dll
+    |           |   Microsoft.IdentityModel.Logging.dll
+    |           |   Microsoft.IdentityModel.Protocols.dll
+    |           |   Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+    |           |   Microsoft.IdentityModel.Tokens.dll
+    |           |   Microsoft.SqlServer.Server.dll
+    |           |   Microsoft.Win32.SystemEvents.dll
+    |           |   Mono.TextTemplating.dll
+    |           |   System.ClientModel.dll
+    |           |   System.CodeDom.dll
+    |           |   System.Composition.AttributedModel.dll
+    |           |   System.Composition.Convention.dll
+    |           |   System.Composition.Hosting.dll
+    |           |   System.Composition.Runtime.dll
+    |           |   System.Composition.TypedParts.dll
+    |           |   System.Configuration.ConfigurationManager.dll
+    |           |   System.Drawing.Common.dll
+    |           |   System.Formats.Asn1.dll
+    |           |   System.IdentityModel.Tokens.Jwt.dll
+    |           |   System.Memory.Data.dll
+    |           |   System.Runtime.Caching.dll
+    |           |   System.Security.Cryptography.ProtectedData.dll
+    |           |   System.Security.Permissions.dll
+    |           |   System.Windows.Extensions.dll
+    |           |   WhiteLagoon.Application.dll
+    |           |   WhiteLagoon.Application.pdb
+    |           |   WhiteLagoon.Domain.dll
+    |           |   WhiteLagoon.Domain.pdb
+    |           |   WhiteLagoon.Infracstructure.dll
+    |           |   WhiteLagoon.Infracstructure.pdb
+    |           |   WhiteLagoon.Web.deps.json
+    |           |   WhiteLagoon.Web.dll
+    |           |   WhiteLagoon.Web.exe
+    |           |   WhiteLagoon.Web.pdb
+    |           |   WhiteLagoon.Web.runtimeconfig.json
+    |           |   WhiteLagoon.Web.staticwebassets.runtime.json
+    |           |   
     |           +---cs
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
     |           +---de
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
     |           +---es
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
     |           +---fr
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
     |           +---it
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
     |           +---ja
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
     |           +---ko
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
     |           +---pl
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
     |           +---pt-BR
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
     |           +---ru
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
     |           +---runtimes
     |           |   +---unix
     |           |   |   \---lib
     |           |   |       \---net6.0
+    |           |   |               Microsoft.Data.SqlClient.dll
+    |           |   |               System.Drawing.Common.dll
+    |           |   |               
     |           |   +---win
     |           |   |   \---lib
     |           |   |       \---net6.0
+    |           |   |               Microsoft.Data.SqlClient.dll
+    |           |   |               Microsoft.Win32.SystemEvents.dll
+    |           |   |               System.Drawing.Common.dll
+    |           |   |               System.Runtime.Caching.dll
+    |           |   |               System.Security.Cryptography.ProtectedData.dll
+    |           |   |               System.Windows.Extensions.dll
+    |           |   |               
     |           |   +---win-arm
     |           |   |   \---native
+    |           |   |           Microsoft.Data.SqlClient.SNI.dll
+    |           |   |           
     |           |   +---win-arm64
     |           |   |   \---native
+    |           |   |           Microsoft.Data.SqlClient.SNI.dll
+    |           |   |           
     |           |   +---win-x64
     |           |   |   \---native
+    |           |   |           Microsoft.Data.SqlClient.SNI.dll
+    |           |   |           
     |           |   \---win-x86
     |           |       \---native
+    |           |               Microsoft.Data.SqlClient.SNI.dll
+    |           |               
     |           +---tr
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
     |           +---zh-Hans
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
     |           \---zh-Hant
+    |                   Microsoft.CodeAnalysis.CSharp.resources.dll
+    |                   Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |                   Microsoft.CodeAnalysis.resources.dll
+    |                   Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |                   
     +---Controllers
     |       HomeController.cs
     |       VillaController.cs
+    |       VillaNumberController.cs
     |       
     +---Models
     |       ErrorViewModel.cs
+    |       VillaListViewModel.cs
     |       
     +---obj
     |   |   project.assets.json
+    |   |   project.nuget.cache
     |   |   WhiteLagoon.Web.csproj.nuget.dgspec.json
     |   |   WhiteLagoon.Web.csproj.nuget.g.props
     |   |   WhiteLagoon.Web.csproj.nuget.g.targets
@@ -406,21 +480,57 @@ D:.
     |           |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
     |           |   ApiEndpoints.json
     |           |   apphost.exe
+    |           |   staticwebassets.build.json
+    |           |   staticwebassets.development.json
+    |           |   staticwebassets.pack.json
+    |           |   WhiteLag.E5366113.Up2Date
+    |           |   WhiteLagoon.Web.AssemblyInfo.cs
+    |           |   WhiteLagoon.Web.AssemblyInfoInputs.cache
     |           |   WhiteLagoon.Web.assets.cache
+    |           |   WhiteLagoon.Web.csproj.AssemblyReference.cache
     |           |   WhiteLagoon.Web.csproj.BuildWithSkipAnalyzers
+    |           |   WhiteLagoon.Web.csproj.CoreCompileInputs.cache
     |           |   WhiteLagoon.Web.csproj.FileListAbsolute.txt
+    |           |   WhiteLagoon.Web.dll
+    |           |   WhiteLagoon.Web.GeneratedMSBuildEditorConfig.editorconfig
+    |           |   WhiteLagoon.Web.genruntimeconfig.cache
     |           |   WhiteLagoon.Web.GlobalUsings.g.cs
+    |           |   WhiteLagoon.Web.MvcApplicationPartsAssemblyInfo.cache
+    |           |   WhiteLagoon.Web.MvcApplicationPartsAssemblyInfo.cs
+    |           |   WhiteLagoon.Web.pdb
+    |           |   WhiteLagoon.Web.RazorAssemblyInfo.cache
+    |           |   WhiteLagoon.Web.RazorAssemblyInfo.cs
+    |           |   WhiteLagoon.Web.sourcelink.json
     |           |   
     |           +---ref
+    |           |       WhiteLagoon.Web.dll
+    |           |       
     |           +---refint
+    |           |       WhiteLagoon.Web.dll
+    |           |       
     |           +---scopedcss
     |           |   +---bundle
+    |           |   |       WhiteLagoon.Web.styles.css
+    |           |   |       
     |           |   +---projectbundle
+    |           |   |       WhiteLagoon.Web.bundle.scp.css
+    |           |   |       
     |           |   \---Views
     |           |       \---Shared
+    |           |               _Layout.cshtml.rz.scp.css
+    |           |               
     |           \---staticwebassets
+    |                   msbuild.build.WhiteLagoon.Web.props
+    |                   msbuild.buildMultiTargeting.WhiteLagoon.Web.props
+    |                   msbuild.buildTransitive.WhiteLagoon.Web.props
+    |                   msbuild.WhiteLagoon.Web.Microsoft.AspNetCore.StaticWebAssets.props
+    |                   
     +---Properties
     |       launchSettings.json
+    |       
+    +---ViewModels
+    |       VillaNumberListVM.cs
+    |       VillaNumberVM.cs
     |       
     +---Views
     |   |   _ViewImports.cshtml
@@ -434,11 +544,20 @@ D:.
     |   |       Error.cshtml
     |   |       _Layout.cshtml
     |   |       _Layout.cshtml.css
+    |   |       _Notification.cshtml
     |   |       _ValidationScriptsPartial.cshtml
     |   |       
-    |   \---Villa
+    |   +---Villa
+    |   |       Create.cshtml
+    |   |       Delete.cshtml
+    |   |       Index.cshtml
+    |   |       Update.cshtml
+    |   |       
+    |   \---VillaNumber
     |           Create.cshtml
+    |           Delete.cshtml
     |           Index.cshtml
+    |           Update.cshtml
     |           
     \---wwwroot
         |   favicon.ico
@@ -446,6 +565,29 @@ D:.
         +---css
         |       site.css
         |       
+        +---images
+        |   |   accessDenied.jpg
+        |   |   notfound.jpg
+        |   |   orderConfirmed.jpg
+        |   |   placeholder.png
+        |   |   resort.png
+        |   |   slide1.jpg
+        |   |   slide2.jpg
+        |   |   
+        |   +---Room Images
+        |   |       1.jpg
+        |   |       2.jpg
+        |   |       3.jpg
+        |   |       4.jpg
+        |   |       5.jpg
+        |   |       6.jpg
+        |   |       7.jpg
+        |   |       
+        |   \---VillaImage
+        |           a78075cc-2905-4471-a578-1d5fe3945fcd.jpg
+        |           cac7e1b4-5ba4-493f-9b73-14434d5b56d7.jpg
+        |           d75cb0ad-9ed1-46af-87bc-fa99e00b2e58.jpg
+        |           
         +---js
         |       site.js
         |       
