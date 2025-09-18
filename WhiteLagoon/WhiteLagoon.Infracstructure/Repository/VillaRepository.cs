@@ -72,10 +72,10 @@ namespace WhiteLagoon.Infracstructure.Repository
         //    _db.Remove(entity);
         //}
 
-        public void Save()
-        {
-            _db.SaveChanges();
-        }
+        //public void Save()
+        //{
+        //    _db.SaveChanges();
+        //}
 
         public void Update(Villa entity)
         {

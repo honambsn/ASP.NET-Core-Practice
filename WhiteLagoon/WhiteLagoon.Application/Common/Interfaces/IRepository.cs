@@ -19,5 +19,7 @@ namespace WhiteLagoon.Application.Common.Interfaces
 
         int GetCount(Expression<Func<T, bool>>? filter = null);
         IEnumerable<T> GetPaginated(int page, int pageSize, Expression<Func<T, bool>>? filter = null, string? includeProperties = null);
+
+        bool Any(Expression<Func<T, bool>> filter);
     }
 }

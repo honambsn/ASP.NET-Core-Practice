@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using WhiteLagoon.Application.Common.Interfaces;
 using WhiteLagoon.Domain.Entities;
 using WhiteLagoon.Infracstructure.Data;
 using WhiteLagoon.Web.ViewModels;
@@ -9,20 +10,25 @@ namespace WhiteLagoon.Web.Controllers
 {
     public class VillaNumberController : Controller
     {
-        private readonly ApplicationDbContext _db;
-        public VillaNumberController(ApplicationDbContext db)
+        //private readonly ApplicationDbContext _db;
+        //public VillaNumberController(ApplicationDbContext db)
+        //{
+        //    _db = db;
+        //}
+
+        private readonly IUnitOfWork _unitOfWork;
+        public VillaNumberController(IUnitOfWork unitOfWork)
         {
-            _db = db;
+            _unitOfWork = unitOfWork;
         }
 
         #region Index
         public IActionResult Index(int page = 1)
         {
             int pageSize = 5;
-            var totalVillaNumbers = _db.VillaNumbers.Count();
+            var totalVillaNumbers = _unitOfWork.VillaNumber.GetAll().Count();
 
-            var villaNumbers = _db.VillaNumbers
-                .Include(u => u.Villa)
+            var villaNumbers = _unitOfWork.VillaNumber.GetAll(includeProperties: "Villa")
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
                 .ToList();
@@ -46,7 +52,7 @@ namespace WhiteLagoon.Web.Controllers
         {
             VillaNumberVM villaNumberVM = new()
             {
-                 VillaList = _db.Villas.ToList().Select(i => new SelectListItem
+                 VillaList = _unitOfWork.Villa.GetAll().ToList().Select(i => new SelectListItem
                  {
                      Text = i.Name,
                      Value = i.ID.ToString()
@@ -60,13 +66,13 @@ namespace WhiteLagoon.Web.Controllers
         public IActionResult Create(VillaNumberVM obj)
         {
             //ModelState.Remove("Villa");
-            bool roomNumberExists = _db.VillaNumbers.Any(u => u.Villa_Number == obj.VillaNumber.Villa_Number);
+            bool roomNumberExists = _unitOfWork.VillaNumber.Any(u => u.Villa_Number == obj.VillaNumber.Villa_Number);
 
             if (ModelState.IsValid && !roomNumberExists)
             {
                 //_db.VillaNumbers.Add(obj.VillaNumber);
-                _db.VillaNumbers.Add(obj.VillaNumber);
-                _db.SaveChanges();
+                _unitOfWork.VillaNumber.Add(obj.VillaNumber);
+                _unitOfWork.Save();
                 TempData["success"] = "The villa Number has been created successfully";
 
                 return RedirectToAction(nameof(Index));
@@ -77,7 +83,7 @@ namespace WhiteLagoon.Web.Controllers
                 TempData["error"] = "Villa Number already exists";
             }
 
-            obj.VillaList = _db.Villas.ToList().Select(i => new SelectListItem
+            obj.VillaList = _unitOfWork.Villa.GetAll().Select(i => new SelectListItem
             {
                 Text = i.Name,
                 Value = i.ID.ToString()
@@ -92,12 +98,12 @@ namespace WhiteLagoon.Web.Controllers
         {
             VillaNumberVM villaNumberVM = new()
             {
-                VillaList = _db.Villas.ToList().Select(i => new SelectListItem
+                VillaList = _unitOfWork.Villa.GetAll().Select(i => new SelectListItem
                 {
                     Text = i.Name,
                     Value = i.ID.ToString()
                 }),
-                VillaNumber = _db.VillaNumbers.FirstOrDefault(u => u.Villa_Number == villaNumberID)
+                VillaNumber = _unitOfWork.VillaNumber.Get(u => u.Villa_Number == villaNumberID)
             };
 
             if (villaNumberVM.VillaNumber is null)
@@ -113,13 +119,13 @@ namespace WhiteLagoon.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                _db.VillaNumbers.Update(villaNumberVM.VillaNumber);
-                _db.SaveChanges();
+                _unitOfWork.VillaNumber.Update(villaNumberVM.VillaNumber);
+                _unitOfWork.Save();
                 TempData["success"] = "Villa Number updated successfully";
                 return RedirectToAction(nameof(Index));
             }
 
-            villaNumberVM.VillaList = _db.Villas.ToList().Select(i => new SelectListItem
+            villaNumberVM.VillaList = _unitOfWork.Villa.GetAll().Select(i => new SelectListItem
             {
                 Text = i.Name,
                 Value = i.ID.ToString()
@@ -135,12 +141,12 @@ namespace WhiteLagoon.Web.Controllers
         {
             VillaNumberVM villaNumberVM = new()
             {
-                VillaList = _db.Villas.ToList().Select(i => new SelectListItem
+                VillaList = _unitOfWork.Villa.GetAll().Select(i => new SelectListItem
                 {
                     Text = i.Name,
                     Value = i.ID.ToString()
                 }),
-                VillaNumber = _db.VillaNumbers.Include(u => u.Villa).FirstOrDefault(u => u.Villa_Number == villaNumberID)
+                VillaNumber = _unitOfWork.VillaNumber.Get(u => u.Villa_Number == villaNumberID)
             };
 
             if (villaNumberVM.VillaNumber is null)
@@ -154,13 +160,13 @@ namespace WhiteLagoon.Web.Controllers
         [HttpPost]
         public IActionResult Delete(VillaNumberVM villaNumberVM)
         {
-            VillaNumber? objFromDB = _db.VillaNumbers
-                    .FirstOrDefault(u => u.Villa_Number == villaNumberVM.VillaNumber.Villa_Number);
+            VillaNumber? objFromDB = _unitOfWork.VillaNumber
+                .Get(u => u.Villa_Number == villaNumberVM.VillaNumber.Villa_Number);
             
             if (objFromDB is not null)
             {
-                _db.VillaNumbers.Remove(objFromDB);
-                _db.SaveChanges();
+                _unitOfWork.VillaNumber.Remove(objFromDB);
+                _unitOfWork.Save();
                 TempData["success"] = "The villa number has been deleted successfully";
 
                 return RedirectToAction(nameof(Index));
