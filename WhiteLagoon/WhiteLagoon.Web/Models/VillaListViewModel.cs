@@ -2,7 +2,7 @@
 
 namespace WhiteLagoon.Web.Models
 {
-    internal class VillaListViewModel
+    public class VillaListViewModel
     {
         public List<Villa> Villas { get; set; }
         public int CurrentPage { get; set; }
