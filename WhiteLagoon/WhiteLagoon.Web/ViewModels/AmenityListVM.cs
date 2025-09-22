@@ -10,7 +10,7 @@ namespace WhiteLagoon.Web.ViewModels
         //[ValidateNever]
         //public IEnumerable<SelectListItem>? VillaList { get; set; }
 
-        public List<Amenity> Amenities { get; set; }
+        public IEnumerable<Amenity> Amenities { get; set; }
         public int CurrentPage { get; set; }
         public int TotalPages {  get; set; }
     }
