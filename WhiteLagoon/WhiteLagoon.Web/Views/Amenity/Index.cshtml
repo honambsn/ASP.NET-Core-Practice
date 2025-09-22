@@ -28,10 +28,15 @@
         <table class="table table-bordered table-striped">
             <thead>
                 <tr>
+                    @* <th>
+                        ID
+                    </th>
+                    <th>
+                        VillaID
+                    </th> *@
                     <th>
                         ID
                     </th>
-
                     <th>
                         Name
                     </th>
@@ -45,7 +50,9 @@
                 @foreach (var obj in Model.Amenities)
                 {
                     <tr>
-                        <td>@obj.Villa.ID</td>
+                        @* <td>@obj.Villa.ID</td>
+                        <td>@obj.VillaID</td> *@
+                        <td>@obj.ID</td>
                         <td>@obj.Name</td>
                         <td>@obj.Villa.Name</td>
                         <td>
