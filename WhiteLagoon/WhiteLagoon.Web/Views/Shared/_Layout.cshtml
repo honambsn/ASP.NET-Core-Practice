@@ -28,16 +28,19 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Villa" asp-action="Index">Villa</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="VillaNumber" asp-action="Index">VillaNumber</a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Amenity" asp-action="Index">Amenity</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Content Management
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" asp-controller="Villa" asp-action="Index">Villa</a></li>
+                                <li><a class="dropdown-item" asp-controller="VillaNumber" asp-action="Index">VillaNumber</a></li>
+                                
+                                <li><hr class="dropdown-divider"></li>
+                                
+                                <li><a class="dropdown-item" asp-controller="Amenity" asp-action="Index">Amenity</a></li>
+                            </ul>
                         </li>
 
                     </ul>
@@ -60,7 +63,7 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
