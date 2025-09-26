@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 using WhiteLagoon.Application.Common.Interfaces;
 using WhiteLagoon.Infracstructure.Data;
 using WhiteLagoon.Infracstructure.Repository;
@@ -25,6 +27,16 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+// configure requset localization
+var supportedCultures = new[] { "en-US", "fr-FR", "de-DE" }; // Add other cultures as needed
+var localizationOptions = new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture("en-US"),
+    SupportedCultures = supportedCultures.Select(c => new CultureInfo(c)).ToList(),
+    SupportedUICultures = supportedCultures.Select(c => new CultureInfo(c)).ToList()
+};
+app.UseRequestLocalization(localizationOptions);
 
 app.UseAuthorization();
 
