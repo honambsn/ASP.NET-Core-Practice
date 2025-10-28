@@ -1,0 +1,89 @@
+############################
+# IDE / Editor
+############################
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.csproj.user
+
+############################
+# Build outputs
+############################
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+[Aa][Rr][Mm]*/
+artifacts/
+logs/
+**/publish/
+**/out/
+
+############################
+# MSBuild / Generated Files
+############################
+*.g.cs
+*.g.i.cs
+*.GeneratedMSBuildEditorConfig.editorconfig
+*.AssemblyInfo.*
+*.GlobalUsings.g.cs
+*.FileListAbsolute.txt
+*.BuildWithSkipAnalyzers
+*.sourcelink.json
+*.pdb
+*.dll
+*.exe
+*.cache
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+project.assets.json
+project.lock.json
+project.nuget.cache
+*.nuget.g.props
+*.nuget.g.targets
+packages/
+
+############################
+# ASP.NET Core Specific
+############################
+staticwebassets/
+scopedcss/
+# Nếu bạn dùng LibMan (wwwroot/lib được restore), thì giữ dòng dưới:
+wwwroot/lib/
+
+############################
+# Test / Coverage
+############################
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+
+############################
+# OS / System
+############################
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+############################
+# Backup / Temp
+############################
+*.bak
+*.swp
+*.svclog
+*.tmp
