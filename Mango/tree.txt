@@ -1,6 +1,7 @@
 Folder PATH listing for volume New Volume
 Volume serial number is D428-1106
 D:.
+|   .gitignore
 |   tree.txt
 |   
 +---Mango
@@ -155,61 +156,34 @@ D:.
     +---bin
     |   \---Debug
     |       \---net8.0
-    |               appsettings.Development.json
-    |               appsettings.json
-    |               Mango.Services.CouponAPI.deps.json
-    |               Mango.Services.CouponAPI.dll
-    |               Mango.Services.CouponAPI.exe
-    |               Mango.Services.CouponAPI.pdb
-    |               Mango.Services.CouponAPI.runtimeconfig.json
-    |               Microsoft.OpenApi.dll
-    |               Swashbuckle.AspNetCore.Swagger.dll
-    |               Swashbuckle.AspNetCore.SwaggerGen.dll
-    |               Swashbuckle.AspNetCore.SwaggerUI.dll
-    |               
     +---Controllers
     |       WeatherForecastController.cs
     |       
+    +---Models
+    |   |   Coupon.cs
+    |   |   
+    |   \---DTO
+    |           CouponDTO.cs
+    |           
     +---obj
     |   |   Mango.Services.CouponAPI.csproj.nuget.dgspec.json
     |   |   Mango.Services.CouponAPI.csproj.nuget.g.props
     |   |   Mango.Services.CouponAPI.csproj.nuget.g.targets
     |   |   project.assets.json
-    |   |   project.nuget.cache
     |   |   
     |   \---Debug
     |       \---net8.0
     |           |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+    |           |   ApiEndpoints.json
     |           |   apphost.exe
-    |           |   Mango.Se.7A16D26A.Up2Date
-    |           |   Mango.Services.CouponAPI.AssemblyInfo.cs
-    |           |   Mango.Services.CouponAPI.AssemblyInfoInputs.cache
     |           |   Mango.Services.CouponAPI.assets.cache
-    |           |   Mango.Services.CouponAPI.csproj.AssemblyReference.cache
     |           |   Mango.Services.CouponAPI.csproj.BuildWithSkipAnalyzers
-    |           |   Mango.Services.CouponAPI.csproj.CoreCompileInputs.cache
     |           |   Mango.Services.CouponAPI.csproj.FileListAbsolute.txt
-    |           |   Mango.Services.CouponAPI.dll
-    |           |   Mango.Services.CouponAPI.GeneratedMSBuildEditorConfig.editorconfig
-    |           |   Mango.Services.CouponAPI.genruntimeconfig.cache
     |           |   Mango.Services.CouponAPI.GlobalUsings.g.cs
-    |           |   Mango.Services.CouponAPI.MvcApplicationPartsAssemblyInfo.cache
-    |           |   Mango.Services.CouponAPI.MvcApplicationPartsAssemblyInfo.cs
-    |           |   Mango.Services.CouponAPI.pdb
-    |           |   Mango.Services.CouponAPI.sourcelink.json
-    |           |   staticwebassets.build.json
     |           |   
     |           +---ref
-    |           |       Mango.Services.CouponAPI.dll
-    |           |       
     |           +---refint
-    |           |       Mango.Services.CouponAPI.dll
-    |           |       
     |           \---staticwebassets
-    |                   msbuild.build.Mango.Services.CouponAPI.props
-    |                   msbuild.buildMultiTargeting.Mango.Services.CouponAPI.props
-    |                   msbuild.buildTransitive.Mango.Services.CouponAPI.props
-    |                   
     \---Properties
             launchSettings.json
             

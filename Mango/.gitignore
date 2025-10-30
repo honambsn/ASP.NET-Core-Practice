@@ -42,7 +42,6 @@ logs/
 *.dll
 *.exe
 *.cache
-*.assets.cache
 *.nuget.g.props
 *.nuget.g.targets
 *.AssemblyReference.cache
@@ -61,7 +60,7 @@ packages/
 ############################
 staticwebassets/
 scopedcss/
-# LibMan hoặc npm restored libs
+# Nếu bạn dùng LibMan (wwwroot/lib được restore tự động):
 wwwroot/lib/
 
 ############################
