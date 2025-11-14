@@ -8,7 +8,8 @@ using System.Collections.Specialized;
 
 namespace Mango.Services.CouponAPI.Controllers
 {
-    [Route("api/[controller]")]
+     [Route("api/[controller]")]
+    //[Route("api/CouponAPI")] // hardcoded
     [ApiController]
     public class CouponAPIController : ControllerBase
     {
