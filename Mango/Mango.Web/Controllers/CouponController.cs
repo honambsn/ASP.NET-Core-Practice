@@ -45,46 +45,27 @@ namespace Mango.Web.Controllers
 
 			return View(list);
 		}
-		//public async Task<IActionResult> CouponIndex()
-		//{
-		//	List<CouponDTO>? list = new();
-		//	try
-		//	{
-		//		Console.WriteLine($"Calling API: {SD.CouponAPIBase}/api/CouponAPI");
 
-		//		ResponseDTO? response = await _couponService.GetAllCouponsAsync();
+		[HttpGet]
+		public async Task<IActionResult> CouponCreate()
+		{
+			return View();	
+		}
 
-		//		// Debug chi tiết hơn
-		//		Console.WriteLine($"Response is null: {response == null}");
-		//		Console.WriteLine($"Response.IsSuccess: {response?.IsSuccess}");
-		//		Console.WriteLine($"Response.Message: {response?.Message}");
-		//		Console.WriteLine($"Response.Result type: {response?.Result?.GetType().Name}");
-		//		Console.WriteLine($"Raw Result: {response?.Result}");
+		[HttpPost]
+		public async Task<IActionResult> CouponCreate(CouponDTO model)
+		{
+			if  (ModelState.IsValid)
+			{
+				ResponseDTO? response = await _couponService.CreateCouponsAsync(model);
 
-		//		if (response != null && response.IsSuccess)
-		//		{
-		//			// Kiểm tra Result có phải là string không
-		//			if (response.Result is string jsonString)
-		//			{
-		//				Console.WriteLine($"Result is string: {jsonString}");
-		//				list = JsonConvert.DeserializeObject<List<CouponDTO>>(jsonString);
-		//			}
-		//			else
-		//			{
-		//				Console.WriteLine($"Result is NOT string, it's: {response.Result?.GetType()}");
-		//				// Có thể Result đã là List rồi
-		//				list = response.Result as List<CouponDTO>;
-		//			}
-		//		}
+				if (response != null && response.IsSuccess)
+				{
+					return RedirectToAction(nameof(CouponIndex));
+				}
 
-		//		Console.WriteLine($"Coupons count: {list?.Count ?? 0}");
-		//	}
-		//	catch (Exception ex)
-		//	{
-		//		Console.WriteLine($"Error: {ex.Message}");
-		//		Console.WriteLine($"Stack trace: {ex.StackTrace}");
-		//	}
-		//	return View(list);
-		//}
+			}
+			return View(model);
+		}
 	}
 }
