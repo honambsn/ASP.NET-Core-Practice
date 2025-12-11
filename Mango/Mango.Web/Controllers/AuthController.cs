@@ -4,6 +4,7 @@ using Mango.Web.Utility;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
+using System.Diagnostics;
 
 namespace Mango.Web.Controllers
 {
@@ -21,7 +22,7 @@ namespace Mango.Web.Controllers
         //    return View();
         //}
         [HttpGet]
-        public async Task<IActionResult> Login(LoginRequestDTO obj)
+        public IActionResult Login()
         {
             LoginRequestDTO loginRequestDTO = new LoginRequestDTO();
             return View(loginRequestDTO);
@@ -90,42 +91,90 @@ namespace Mango.Web.Controllers
         [HttpPost]
         public async Task <IActionResult> Register(RegisterationRequestDTO obj)
         {
-            ResponseDTO result = await _authService.RegisterAsync(obj);
-            ResponseDTO assignRole;
+            ViewBag.RoleList = GetRoleList();
 
-            if (result != null && result.IsSuccess)
+            if (!ModelState.IsValid)
             {
-                if (string.IsNullOrEmpty(obj.Role))
-                {
-                    obj.Role = SD.RoleCustomer;
-                }
-                
-                assignRole = await _authService.AssignRoleAsync(obj);
-
-                if (assignRole != null && assignRole.IsSuccess)
-                {
-                    TempData["success"] = "Registration Successfull";
-                    return RedirectToAction(nameof(Login));
-                }
-
+                return View(obj);
             }
 
-            var roleList = new List<SelectListItem>()
-            {
-                new SelectListItem
-                {
-                    Text = SD.RoleAdmin, Value = SD.RoleAdmin
-                },
-                new SelectListItem
-                {
-                    Text = SD.RoleCustomer,
-                    Value= SD.RoleCustomer,
-                },
-            };
+            //ResponseDTO result = await _authService.RegisterAsync(obj);
+            var result = await _authService.RegisterAsync(obj);
+            //ResponseDTO assignRole;
 
-            ViewBag.RoleList = roleList;
+            if (result == null || !result.IsSuccess)
+            {
+                ModelState.AddModelError("", result?.Message ?? "Registration failed");
+                Debug.WriteLine("failed");
+                TempData["error"] = "FAILED";
+                return View(obj);
+            }
+
+            obj.Role ??= SD.RoleCustomer;
+
+            var assginRole = await _authService.AssignRoleAsync(obj);
+
+            if (assginRole == null || !assginRole.IsSuccess)
+            {
+                ModelState.AddModelError("", assginRole?.Message ?? "Assign role failed");
+                Debug.WriteLine("failed");
+                TempData["error"] = "FAILED";
+                return View(obj);
+            }
+
+            TempData["success"] = "Registration successful";
+            Debug.WriteLine("successful");
+            return RedirectToAction(nameof(Login));
+
+            //if (result != null && result.IsSuccess)
+            //{
+            //    if (string.IsNullOrEmpty(obj.Role))
+            //    {
+            //        obj.Role = SD.RoleCustomer;
+            //    }
+                
+            //    assignRole = await _authService.AssignRoleAsync(obj);
+
+            //    if (assignRole != null && assignRole.IsSuccess)
+            //    {
+            //        TempData["success"] = "Registration Successfull";
+            //        return RedirectToAction(nameof(Login));
+            //    }
+
+            //}
+
+            //var roleList = new List<SelectListItem>()
+            //{
+            //    new SelectListItem
+            //    {
+            //        Text = SD.RoleAdmin, Value = SD.RoleAdmin
+            //    },
+            //    new SelectListItem
+            //    {
+            //        Text = SD.RoleCustomer,
+            //        Value= SD.RoleCustomer,
+            //    },
+            //};
+
+            //ViewBag.RoleList = roleList;
             
-            return View();
+            //return View();
+        }
+
+        private List<SelectListItem> GetRoleList()
+        {
+            return new List<SelectListItem>
+            {
+                    new SelectListItem
+                    {
+                        Text = SD.RoleAdmin, Value = SD.RoleAdmin
+                    },
+                    new SelectListItem
+                    {
+                        Text = SD.RoleCustomer,
+                        Value= SD.RoleCustomer,
+                    },
+            };
         }
 
         public IActionResult Logout()
