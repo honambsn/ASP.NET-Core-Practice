@@ -34,36 +34,31 @@ namespace Mango.Web.Controllers
             ResponseDTO responseDTO = await _authService.LoginAsync(obj);
             //ResponseDTO assignRole;
 
-            if (responseDTO != null && responseDTO.IsSuccess)
+            if (responseDTO == null)
             {
-                LoginResponseDTO loginResponseDTO = 
-                    JsonConvert.DeserializeObject<LoginResponseDTO>(Convert.ToString(responseDTO.Result));
-
-                return RedirectToAction("Index", "Home");
-
-            }
-            else
-            {
-                ModelState.AddModelError("CustomError", responseDTO.Message);
+                ModelState.AddModelError("CustomError", "Login service returned no response");
+                TempData["error"] = "Login failed";
                 return View(obj);
             }
 
-            //var roleList = new List<SelectListItem>()
-            //{
-            //    new SelectListItem
-            //    {
-            //        Text = SD.RoleAdmin, Value = SD.RoleAdmin
-            //    },
-            //    new SelectListItem
-            //    {
-            //        Text = SD.RoleCustomer,
-            //        Value= SD.RoleCustomer,
-            //    },
-            //};
+            if  (!responseDTO.IsSuccess)
+            {
+                ModelState.AddModelError("CustomError", responseDTO.Message ?? "Login failed");
+                TempData["error"] = "Login failed";
+                return View(obj);
+            }
 
-            //ViewBag.RoleList = roleList;
+            if (responseDTO.Result == null)
+            {
+                ModelState.AddModelError("CustomError", "Login failed: empty result return");
+                TempData["error"] = "Login failed";
+                return View(obj);
+            }
 
-            //return View();
+            var loginResponseDTO = JsonConvert.DeserializeObject<LoginResponseDTO>(responseDTO.Result.ToString());
+
+            TempData["success"] = "Login successfully";
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpGet]
@@ -125,40 +120,6 @@ namespace Mango.Web.Controllers
             TempData["success"] = "Registration successful";
             Debug.WriteLine("successful");
             return RedirectToAction(nameof(Login));
-
-            //if (result != null && result.IsSuccess)
-            //{
-            //    if (string.IsNullOrEmpty(obj.Role))
-            //    {
-            //        obj.Role = SD.RoleCustomer;
-            //    }
-                
-            //    assignRole = await _authService.AssignRoleAsync(obj);
-
-            //    if (assignRole != null && assignRole.IsSuccess)
-            //    {
-            //        TempData["success"] = "Registration Successfull";
-            //        return RedirectToAction(nameof(Login));
-            //    }
-
-            //}
-
-            //var roleList = new List<SelectListItem>()
-            //{
-            //    new SelectListItem
-            //    {
-            //        Text = SD.RoleAdmin, Value = SD.RoleAdmin
-            //    },
-            //    new SelectListItem
-            //    {
-            //        Text = SD.RoleCustomer,
-            //        Value= SD.RoleCustomer,
-            //    },
-            //};
-
-            //ViewBag.RoleList = roleList;
-            
-            //return View();
         }
 
         private List<SelectListItem> GetRoleList()
