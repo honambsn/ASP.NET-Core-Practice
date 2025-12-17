@@ -5,8 +5,10 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using System.Diagnostics;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
 
@@ -16,11 +18,13 @@ namespace Mango.Web.Controllers
     {
         private readonly IAuthService _authService;
         private readonly ITokenProvider _tokenProvider;
+        private readonly TokenValidationParameters _tokenValidationParameters;
 
-        public AuthController(IAuthService authService, ITokenProvider tokenProvider)
+        public AuthController(IAuthService authService, ITokenProvider tokenProvider, TokenValidationParameters tokenValidationParameters)
         {
             _authService = authService;
             _tokenProvider = tokenProvider;
+            _tokenValidationParameters = tokenValidationParameters;
         }
 
         //public IActionResult Index()
@@ -153,61 +157,61 @@ namespace Mango.Web.Controllers
             return View();
         }
 
-        //private async Task SignInUser(LoginResponseDTO model)
-        //{
-        //    var handler = new JwtSecurityTokenHandler();
-        //    var jwt = handler.ReadJwtToken(model.Token);
-
-        //    var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
-
-        //    identity.AddClaim(new Claim(JwtRegisteredClaimNames.Email,
-        //        jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Email).Value));
-        //    identity.AddClaim(new Claim(JwtRegisteredClaimNames.Sub,
-        //        jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Sub).Value));
-        //    identity.AddClaim(new Claim(JwtRegisteredClaimNames.Name,
-        //        jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Name).Value));
-        //    identity.AddClaim(new Claim(ClaimTypes.Name,
-        //        jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Name).Value));
-
-        //    var principal = new ClaimsPrincipal(identity);
-        //    await HttpContent.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-        //}
-
-
         private async Task SignInUser(LoginResponseDTO model)
         {
             var handler = new JwtSecurityTokenHandler();
-            //var jwt = handler.ReadJwtToken(model.Token);
-            var jwt = handler.ValidateToken(
-                model.Token,
-                tokenValidationParameters,
-                out SecurityToken validatedToken
-                );
+            var jwt = handler.ReadJwtToken(model.Token);
 
-            var claims = new List<Claim>();
+            var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
 
-            var email = jwt.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Email)?.Value;
-            var sub = jwt.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Sub)?.Value;
-            var name = jwt.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Name)?.Value;
-
-            if (!string.IsNullOrEmpty(email))
-                claims.Add(new Claim(ClaimTypes.Email, email));
-            if (!string.IsNullOrEmpty(sub))
-                claims.Add(new Claim(ClaimTypes.NameIdentifier, sub));
-            if (!string.IsNullOrEmpty(name))
-                claims.Add(new Claim(ClaimTypes.Name, sub));
-
-            var identity = new ClaimsIdentity(
-                claims,
-                CookieAuthenticationDefaults.AuthenticationScheme
-                );
+            identity.AddClaim(new Claim(JwtRegisteredClaimNames.Email,
+                jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Email).Value));
+            identity.AddClaim(new Claim(JwtRegisteredClaimNames.Sub,
+                jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Sub).Value));
+            identity.AddClaim(new Claim(JwtRegisteredClaimNames.Name,
+                jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Name).Value));
+            identity.AddClaim(new Claim(ClaimTypes.Name,
+                jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Name).Value));
 
             var principal = new ClaimsPrincipal(identity);
-
-            await HttpContext.SignInAsync(
-                CookieAuthenticationDefaults.AuthenticationScheme,
-                principal
-            );
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
         }
+
+
+        //private async Task SignInUser(LoginResponseDTO model)
+        //{
+        //    var handler = new JwtSecurityTokenHandler();
+        //    //var jwt = handler.ReadJwtToken(model.Token);
+        //    var jwt = handler.ValidateToken(
+        //        model.Token,
+        //        tokenValidationParameters,
+        //        out SecurityToken validatedToken
+        //        );
+
+        //    var claims = new List<Claim>();
+
+        //    var email = jwt.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Email)?.Value;
+        //    var sub = jwt.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Sub)?.Value;
+        //    var name = jwt.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Name)?.Value;
+
+        //    if (!string.IsNullOrEmpty(email))
+        //        claims.Add(new Claim(ClaimTypes.Email, email));
+        //    if (!string.IsNullOrEmpty(sub))
+        //        claims.Add(new Claim(ClaimTypes.NameIdentifier, sub));
+        //    if (!string.IsNullOrEmpty(name))
+        //        claims.Add(new Claim(ClaimTypes.Name, name));
+
+        //    var identity = new ClaimsIdentity(
+        //        claims,
+        //        CookieAuthenticationDefaults.AuthenticationScheme
+        //        );
+
+        //    var principal = new ClaimsPrincipal(identity);
+
+        //    await HttpContext.SignInAsync(
+        //        CookieAuthenticationDefaults.AuthenticationScheme,
+        //        principal
+        //    );
+        //}
     }
 }
