@@ -65,9 +65,9 @@ namespace Mango.Web.Controllers
                 return View(obj);
             }
 
-            
 
             var loginResponseDTO = JsonConvert.DeserializeObject<LoginResponseDTO>(responseDTO.Result.ToString());
+            await SignInUser(loginResponseDTO);
             _tokenProvider.SetToken(loginResponseDTO.Token);
             
 
@@ -152,9 +152,12 @@ namespace Mango.Web.Controllers
             };
         }
 
-        public IActionResult Logout()
+        public async Task<IActionResult> Logout()
         {
-            return View();
+            await HttpContext.SignOutAsync();
+            _tokenProvider.ClearToken();
+            //return View();
+            return RedirectToAction("Index", "Home");
         }
 
         private async Task SignInUser(LoginResponseDTO model)
