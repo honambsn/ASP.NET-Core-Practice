@@ -73,6 +73,12 @@ namespace Mango.Services.AuthAPI.Service
                 };
             }
 
+            //if (login.Contains("@"))
+            //    FindByEmailAsync(login);
+            //else
+            //    FindByNameAsync(login);
+
+
             // if user was found, gen jwt token
             var roles = await _userManager.GetRolesAsync(user);
             var token = _jwtTokenGenerator.GenerateToken(user, roles);
