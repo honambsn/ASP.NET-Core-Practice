@@ -54,14 +54,16 @@ namespace Mango.Web.Controllers
             if  (!responseDTO.IsSuccess)
             {
                 ModelState.AddModelError("CustomError", responseDTO.Message ?? "Login failed");
-                TempData["error"] = "Login failed";
+                //TempData["error"] = "Login failed";
+                TempData["error"] = responseDTO.Message;
                 return View(obj);
             }
 
             if (responseDTO.Result == null)
             {
                 ModelState.AddModelError("CustomError", "Login failed: empty result return");
-                TempData["error"] = "Login failed";
+                //TempData["error"] = "Login failed";
+                TempData["error"] = responseDTO.Message;
                 return View(obj);
             }
 
@@ -115,7 +117,7 @@ namespace Mango.Web.Controllers
             {
                 ModelState.AddModelError("", result?.Message ?? "Registration failed");
                 Debug.WriteLine("failed");
-                TempData["error"] = "FAILED";
+                TempData["error"] = result.Message;
                 return View(obj);
             }
 
@@ -127,7 +129,7 @@ namespace Mango.Web.Controllers
             {
                 ModelState.AddModelError("", assginRole?.Message ?? "Assign role failed");
                 Debug.WriteLine("failed");
-                TempData["error"] = "FAILED";
+                TempData["error"] = result.Message;
                 return View(obj);
             }
 
