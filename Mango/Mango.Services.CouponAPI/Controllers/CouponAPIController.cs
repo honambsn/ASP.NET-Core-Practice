@@ -92,6 +92,7 @@ namespace Mango.Services.CouponAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "ADMIN")]
         //[Route("GetByCode/{code}")]
         public ResponseDTO Post([FromBody] CouponDTO couponDTO)
         {
@@ -113,6 +114,7 @@ namespace Mango.Services.CouponAPI.Controllers
 
         [HttpPut]
         //[Route("GetByCode/{code}")]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDTO Put([FromBody] CouponDTO couponDTO)
         {
             try
@@ -134,6 +136,7 @@ namespace Mango.Services.CouponAPI.Controllers
         [HttpDelete]
         //[Route("GetByCode/{code}")]
         [Route("{id:int}")]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDTO Delete(int id)
         {
             try
