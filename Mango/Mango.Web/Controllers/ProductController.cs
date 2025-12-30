@@ -110,6 +110,39 @@ namespace Mango.Web.Controllers
             return View(ProductDTOs);
 		}
 
+		public async Task<IActionResult> ProductEdit(int productID)
+		{
+			ResponseDTO? response = await _productService.GetProductByIDAsync(productID);
 
+			if (response != null && response.IsSuccess)
+			{
+				ProductDTOs? model = JsonConvert.DeserializeObject<ProductDTOs>(Convert.ToString(response.Result));
+				return View(model);
+			}
+			else
+			{
+				TempData["error"] = response?.Message;
+			}
+
+			return NotFound();
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> ProductEdit(ProductDTOs productDTOs)
+		{
+			ResponseDTO? response = await _productService.UpdateProductsAsync(productDTOs);
+
+			if (response != null && response.IsSuccess)
+			{
+				TempData["success"] = "Product updated successfully!!";
+				return RedirectToAction(nameof(ProductIndex));
+			}
+			else
+			{
+				TempData["error"] = response?.Message;
+			}
+
+			return View(productDTOs);
+		}
 	}
 }
