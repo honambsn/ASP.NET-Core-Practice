@@ -54,6 +54,36 @@ namespace Mango.Web.Controllers
             return View(list);
         }
 
+        [Authorize]
+        public async Task<IActionResult> ProductDetails(int productID)
+        {
+            ProductDTOs? model = new();
+            try
+            {
+
+                Console.WriteLine($"Calling API: {SD.ProductAPIBase}/api/ProductAPI"); // Thêm dòng này
+
+                ResponseDTO? response = await _productService.GetProductByIDAsync(productID);
+                Console.WriteLine($"Raw Result: {response.Result}");
+
+                if (response != null && response.IsSuccess)
+                {
+                    model = JsonConvert.DeserializeObject<ProductDTOs>(Convert.ToString(response.Result));
+                }
+                else
+                {
+                    TempData["error"] = response?.Message;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}"); // Sửa dòng này để hiển thị message
+
+            }
+
+            return View(model);
+        }
+
         [Authorize(Roles = SD.RoleAdmin)]
         public IActionResult Privacy()
         {
