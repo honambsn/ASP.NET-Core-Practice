@@ -3,6 +3,7 @@ using Mango.Services.ShoppingCartAPI.Data;
 using Mango.Services.ShoppingCartAPI.Models;
 using Mango.Services.ShoppingCartAPI.Models.DTO;
 using Mango.Services.ShoppingCartAPI.Models.DTOs;
+using Mango.Services.ShoppingCartAPI.Services.IService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -18,13 +19,43 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
         private ResponseDTO _response;
         private IMapper _mapper;
         private readonly AppDbContext _db;
+        private IProductService _productService;
 
         public CartAPIController(AppDbContext db,
-            IMapper mapper)
+            IMapper mapper, IProductService productService)
         {
             _db = db;
             this._response = new ResponseDTO();
             _mapper = mapper;
+        }
+
+        [HttpGet("GetCart/{userID}")]
+        public async Task<ResponseDTO> GetCart(string userID)
+        {
+            try
+            {
+                CartDTOs cart = new()
+                {
+                    CartHeader = _mapper.Map<CartHeaderDTOs>(_db.CartHeaders.First(u => u.UserID == userID))
+                };
+                cart.CartDetails = _mapper.Map<IEnumerable<CartDetailsDTOs>>(_db.CartDetails
+                    .Where(u => u.CartHeaderID == cart.CartHeader.CartHeaderID));
+
+                IEnumerable<ProductDTOs> productDTOs = await _productService.GetProducts();
+
+                foreach (var item in cart.CartDetails)
+                {
+                    item.Product = productDTOs.FirstOrDefault(u => u.ProductID == item.ProductID);
+                    cart.CartHeader.CartTotal += (item.Count * item.Product.Price);
+                }
+                _response.Result = cart;
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+            }
+            return _response;
         }
 
         [HttpPost("CartUpsert")]
