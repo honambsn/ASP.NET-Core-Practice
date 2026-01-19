@@ -25,6 +25,7 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
             IMapper mapper, IProductService productService)
         {
             _db = db;
+            _productService = productService;
             this._response = new ResponseDTO();
             _mapper = mapper;
         }
@@ -32,21 +33,48 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
         [HttpGet("GetCart/{userID}")]
         public async Task<ResponseDTO> GetCart(string userID)
         {
+            ResponseDTO response = new ResponseDTO();
             try
             {
-                CartDTOs cart = new()
+                //CartDTOs cart = new()
+                //{
+                //    CartHeader = _mapper.Map<CartHeaderDTOs>(_db.CartHeaders.FirstOrDefaultAsync(u => u.UserID == userID))
+                //};
+                //cart.CartDetails = _mapper.Map<IEnumerable<CartDetailsDTOs>>(_db.CartDetails
+                //    .Where(u => u.CartHeaderID == cart.CartHeader.CartHeaderID));
+
+                CartDTOs cart = new();
+
+                var cartHeaderFromDb = await _db.CartHeaders
+                    .FirstOrDefaultAsync(u => u.UserID == userID);
+
+                if (cartHeaderFromDb == null)
                 {
-                    CartHeader = _mapper.Map<CartHeaderDTOs>(_db.CartHeaders.First(u => u.UserID == userID))
-                };
-                cart.CartDetails = _mapper.Map<IEnumerable<CartDetailsDTOs>>(_db.CartDetails
-                    .Where(u => u.CartHeaderID == cart.CartHeader.CartHeaderID));
+                    _response.IsSuccess = false;
+                    _response.Message = "Cart not found";
+                    return _response;
+                }
+
+                cart.CartHeader = _mapper.Map<CartHeaderDTOs>(cartHeaderFromDb);
+
+                cart.CartDetails = _mapper.Map<IEnumerable<CartDetailsDTOs>>(
+                    await _db.CartDetails.Where(u => u.CartHeaderID == cart.CartHeader.CartHeaderID)
+                    .ToListAsync()); // add tolistasync() to fix
 
                 IEnumerable<ProductDTOs> productDTOs = await _productService.GetProducts();
 
+                cart.CartHeader.CartTotal = 0;
+
                 foreach (var item in cart.CartDetails)
                 {
-                    item.Product = productDTOs.FirstOrDefault(u => u.ProductID == item.ProductID);
-                    cart.CartHeader.CartTotal += (item.Count * item.Product.Price);
+                    //item.Product = productDTOs.FirstOrDefault(u => u.ProductID == item.ProductID);
+                    //cart.CartHeader.CartTotal += (item.Count * item.Product.Price);
+                    var product = productDTOs.FirstOrDefault(u => u.ProductID == item.ProductID);
+                    if (product != null)
+                    {
+                        item.Product = product;
+                        cart.CartHeader.CartTotal += item.Count * product.Price;
+                    }
                 }
                 _response.Result = cart;
             }
