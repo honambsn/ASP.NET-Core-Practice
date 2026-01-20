@@ -20,10 +20,27 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 //IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 //builder.Services.AddSingleton(mapper); non profile interface in mappingconfig.cs
+
 builder.Services.AddAutoMapper(typeof(MappingConfig));
-builder.Services.AddScoped<IProductService, ProductSerivce>();
-builder.Services.AddHttpClient("Product", u => u.BaseAddress =
-new Uri(builder.Configuration["ServiceUrls:ProductAPI"]));
+//builder.Services.AddScoped<IProductService, ProductSerivce>();
+//builder.Services.AddHttpClient("Product", u => u.BaseAddress =
+//new Uri(builder.Configuration["ServiceUrls:ProductAPI"]));
+//                                //=> bad
+//builder.Services.AddScoped<ICouponService, CouponService>();
+//builder.Services.AddHttpClient("Coupon", u => u.BaseAddress =
+//new Uri(builder.Configuration["ServiceUrls:CouponAPI"]));
+
+builder.Services.AddHttpClient<IProductService, ProductSerivce>(client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["ServiceUrls:ProductAPI"]);
+});
+
+builder.Services.AddHttpClient<ICouponService, CouponService>(client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["ServiceUrls:CouponAPI"]);
+});
+
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
