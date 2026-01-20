@@ -1,6 +1,6 @@
 ﻿namespace Mango.Services.ShoppingCartAPI.Models.DTO
 {
-    public class CouponDTO
+    public class CouponDTOs
     {
         public int CouponID { get; set; }
         public string CouponCode { get; set; }
@@ -8,3 +8,4 @@
         public int MinAmount { get; set; }
     }
 }
+    
