@@ -6,17 +6,17 @@ namespace Mango.Services.ShoppingCartAPI.Services
 {
     public class CouponService : ICouponService
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly HttpClient _httpClient;
 
-        public CouponService(IHttpClientFactory clientFactory)
+        public CouponService(HttpClient httpClient)
         {
-            _httpClientFactory = clientFactory;
+            _httpClient = httpClient;
         }
 
         public async Task<CouponDTOs> GetCoupon(string couponCode)
         {
-            var client = _httpClientFactory.CreateClient("Coupon");
-            var response = await client.GetAsync($"/api/CouponAPI/GetByCode/{couponCode}");
+            //var client = _httpClientFactory.CreateClient("Coupon");
+            var response = await _httpClient.GetAsync($"/api/CouponAPI/GetByCode/{couponCode}");
 
             if (!response.IsSuccessStatusCode)
             {

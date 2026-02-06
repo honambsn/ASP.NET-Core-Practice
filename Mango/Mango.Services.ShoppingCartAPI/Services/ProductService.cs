@@ -7,13 +7,20 @@ using System.Text.Json.Serialization;
 
 namespace Mango.Services.ShoppingCartAPI.Services
 {
-    public class ProductSerivce : IProductService
+    public class ProductService : IProductService
     {
-        private readonly IHttpClientFactory _httpClientFactory;
+        //private readonly IHttpClientFactory _httpClientFactory;
 
-        public ProductSerivce(IHttpClientFactory clientFactory)
+        //public ProductService(IHttpClientFactory clientFactory)
+        //{
+        //    _httpClientFactory = clientFactory;
+        //}
+
+        private readonly HttpClient _httpClient;
+
+        public ProductService(HttpClient httpClient)
         {
-            _httpClientFactory = clientFactory;
+            _httpClient = httpClient;
         }
         //public async Task<IEnumerable<ProductDTOs>> GetProducts()
         //{
@@ -32,8 +39,8 @@ namespace Mango.Services.ShoppingCartAPI.Services
 
         public async Task<IEnumerable<ProductDTOs>> GetProducts()
         {
-            var client = _httpClientFactory.CreateClient("Product");
-            var response = await client.GetAsync("/api/product");
+         //   var client = _httpClientFactory.CreateClient("Product");
+            var response = await _httpClient.GetAsync("/api/product");
 
             
             if (!response.IsSuccessStatusCode)

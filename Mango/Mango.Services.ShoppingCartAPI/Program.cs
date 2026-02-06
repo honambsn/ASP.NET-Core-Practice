@@ -30,7 +30,7 @@ builder.Services.AddAutoMapper(typeof(MappingConfig));
 //builder.Services.AddHttpClient("Coupon", u => u.BaseAddress =
 //new Uri(builder.Configuration["ServiceUrls:CouponAPI"]));
 
-builder.Services.AddHttpClient<IProductService, ProductSerivce>(client =>
+builder.Services.AddHttpClient<IProductService, ProductService>(client =>
 {
     client.BaseAddress = new Uri(builder.Configuration["ServiceUrls:ProductAPI"]);
 });

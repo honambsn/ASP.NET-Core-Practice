@@ -149,6 +149,15 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
         [HttpPost("CartUpsert")]
         public async Task<ResponseDTO> CartUpsert(CartDTOs cartDTO)
         {
+            if (cartDTO?.CartHeader == null || string.IsNullOrEmpty(cartDTO.CartHeader.UserID))
+            {
+                return new ResponseDTO
+                {
+                    IsSuccess = false,
+                    Message = "UserID is required"
+                };
+            }
+
             try
             {
                 var cartHeaderFromDb = await _db.CartHeaders.AsNoTracking().FirstOrDefaultAsync(
@@ -195,6 +204,7 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
             {
                 _response.Message = ex.Message.ToString();
                 _response.IsSuccess = false;
+                Console.WriteLine("cartapicontroller", ex.Message.ToString());
 
             }
 
@@ -207,7 +217,7 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
             try
             {
                 CartDetails cartDetails = _db.CartDetails
-                    .First(u => u.CartHeaderID == cartDetailsID);
+                    .First(u => u.CartDetailsID == cartDetailsID);
 
                 int totalCountofCartItem = _db.CartDetails.Where(u => u.CartHeaderID == cartDetails.CartHeaderID).
                     Count();
