@@ -24,10 +24,23 @@ namespace Mango.Web.Service
 
         public async Task<ResponseDTO?> GetCartByUserIDAsync(string userID)
         {
+            if (string.IsNullOrWhiteSpace(userID))
+            {
+                return new ResponseDTO
+                {
+                    IsSuccess = false,
+                    Message = "UserID không hợp lệ"
+                };
+            }
+
+
+
             return await _baseService.SendAsync(new RequestDTO()
             {
                 APITYype = SD.APIType.GET,
-                URL = SD.ShoppingCartAPIBase + "/api/cart/GetCart/" + userID
+                //URL = SD.ShoppingCartAPIBase + "/api/cart/GetCart/" + userID
+                URL = $"{SD.ShoppingCartAPIBase}/api/cart/GetCart/{Uri.EscapeDataString(userID)}"
+
             });
         }
 

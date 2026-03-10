@@ -6,6 +6,7 @@ using Mango.Services.ProductAPI.Models.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Specialized;
 
 namespace Mango.Services.ProductAPI.Controllers
@@ -145,6 +146,44 @@ namespace Mango.Services.ProductAPI.Controllers
                 Product obj = _db.Products.First(u => u.ProductID == id);
                 _db.Products.Remove(obj);
                 _db.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+            }
+            return _response;
+        }
+
+        [HttpPost("GetProductsByIds")]
+        public async Task<ResponseDTO> GetProductsByIds([FromBody] IEnumerable<int> productIds)
+        {
+            try
+            {
+                var products = await _db.Products
+                    .Where(p => productIds.Contains(p.ProductID))
+                    .ToListAsync();
+
+                Console.WriteLine($"product api controller : {products}");
+
+                Console.WriteLine($"Products count: {products.Count}");
+
+                _response.Result = _mapper.Map<IEnumerable<ProductDTOs>>(products);
+                _response.IsSuccess = true;
+
+                if (productIds == null || !productIds.Any())
+                {
+                    _response.IsSuccess = false;
+                    _response.Message = "ProductIds is empty";
+                    
+                    Console.WriteLine($"Response: {_response}");
+
+                    //return _response;
+                }
+                else
+                {
+                    Console.WriteLine($"Response: {_response}");
+                }
             }
             catch (Exception ex)
             {

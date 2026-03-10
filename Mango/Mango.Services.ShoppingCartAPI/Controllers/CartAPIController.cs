@@ -7,6 +7,7 @@ using Mango.Services.ShoppingCartAPI.Services.IService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System.Net.WebSockets;
 using System.Reflection.PortableExecutable;
 
@@ -33,71 +34,264 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
             _mapper = mapper;
         }
 
+        #region old ver
+        //[HttpGet("GetCart/{userID}")]
+        //public async Task<ResponseDTO> GetCart(string userID)
+        //{
+        //    try
+        //    {
+        //        CartDTOs cart = new()
+        //        {
+        //            CartHeader = _mapper.Map<CartHeaderDTOs>(_db.CartHeaders.FirstOrDefault(u => u.UserID == userID))
+        //        };
+
+        //        cart.CartDetails = _mapper.Map<IEnumerable<CartDetailsDTOs>>(_db.CartDetails.
+        //            Where(u => u.CartHeaderID == cart.CartHeader.CartHeaderID));
+
+        //        IEnumerable<ProductDTOs> productDTOs = await _productService.GetProducts();
+
+        //        foreach (var item in cart.CartDetails)
+        //        {
+        //            item.Product = productDTOs.FirstOrDefault(u => u.ProductID == item.ProductID);
+        //            cart.CartHeader.CartTotal += (item.Count * item.Product.Price);
+        //        }
+
+        //        if (!string.IsNullOrEmpty(cart.CartHeader.CouponCode))
+        //        {
+        //            CouponDTOs coupon = await _couponService.GetCoupon(cart.CartHeader.CouponCode);
+
+        //            if (coupon != null && cart.CartHeader.CartTotal > coupon.MinAmount)
+        //            {
+        //                cart.CartHeader.CartTotal -= coupon.DiscountAmount;
+        //                cart.CartHeader.Discount = coupon.DiscountAmount;
+        //            }
+        //        }
+
+        //        _response.Result = cart;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _response.IsSuccess = false;
+        //        _response.Message = ex.Message;
+        //    }
+        //    return _response;
+        //}
+
+        //[HttpGet("GetCart/{userID}")]
+        //public async Task<ResponseDTO> GetCart(string userID)
+        //{
+        //    try
+        //    {
+        //        // Lấy CartHeader
+        //        var cartHeaderFromDb = await _db.CartHeaders
+        //            .AsNoTracking()
+        //            .FirstOrDefaultAsync(u => u.UserID == userID);
+
+        //        if (cartHeaderFromDb == null)
+        //        {
+        //            _response.IsSuccess = false;
+        //            _response.Message = "Cart not found";
+        //            return _response;
+        //        }
+
+        //        CartDTOs cart = new()
+        //        {
+        //            CartHeader = _mapper.Map<CartHeaderDTOs>(cartHeaderFromDb),
+        //            CartDetails = new List<CartDetailsDTOs>()
+        //        };
+
+        //        // Lấy CartDetails
+        //        cart.CartDetails = _mapper.Map<List<CartDetailsDTOs>>(
+        //            await _db.CartDetails
+        //                .AsNoTracking()
+        //                .Where(u => u.CartHeaderID == cart.CartHeader.CartHeaderID)
+        //                .ToListAsync()
+        //        );
+
+        //        if (!cart.CartDetails.Any())
+        //        {
+        //            _response.Result = cart;
+        //            return _response;
+        //        }
+
+        //        // Lấy Product theo ID (tối ưu)
+        //        var productIds = cart.CartDetails
+        //            .Select(d => d.ProductID)
+        //            .Distinct()
+        //            .ToList();
+
+        //        IEnumerable<ProductDTOs> products = await _productService
+        //            .GetProductsByIds(productIds);
+
+        //        Console.WriteLine("Products from service:");
+        //        Console.WriteLine(JsonConvert.SerializeObject(products));
+
+
+        //        cart.CartHeader.CartTotal = 0;
+
+        //        // Map Product + tính tổng
+        //        foreach (var item in cart.CartDetails)
+        //        {
+        //            var product = products.FirstOrDefault(p => p.ProductID == item.ProductID);
+        //            if (product == null)
+        //            {
+        //                continue; // phòng thủ
+        //            }
+
+        //            item.Product = product;
+        //            cart.CartHeader.CartTotal += item.Count * product.Price;
+        //        }
+
+        //        // Apply coupon
+        //        if (!string.IsNullOrEmpty(cart.CartHeader.CouponCode))
+        //        {
+        //            CouponDTOs coupon = await _couponService
+        //                .GetCoupon(cart.CartHeader.CouponCode);
+
+        //            if (coupon != null && cart.CartHeader.CartTotal > coupon.MinAmount)
+        //            {
+        //                cart.CartHeader.Discount = coupon.DiscountAmount;
+        //                cart.CartHeader.CartTotal -= coupon.DiscountAmount;
+        //            }
+        //        }
+
+        //        _response.Result = cart;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _response.IsSuccess = false;
+        //        _response.Message = ex.Message;
+        //        Console.WriteLine("GetCart Error: " + ex.Message);
+        //    }
+
+        //    return _response;
+        //}
+
+
+        //[HttpGet("GetCart/{userId}")]
+        //public async Task<ResponseDTO> GetCart(string userId)
+        //{
+        //    try
+        //    {
+        //        CartDTOs cart = new()
+        //        {
+        //            CartHeader = _mapper.Map<CartHeaderDTOs>(_db.CartHeaders.First(u => u.UserID == userId))
+        //        };
+        //        cart.CartDetails = _mapper.Map<IEnumerable<CartDetailsDTOs>>(_db.CartDetails
+        //            .Where(u => u.CartHeaderID == cart.CartHeader.CartHeaderID));
+
+        //        IEnumerable<ProductDTOs> productDtos = await _productService.GetProducts();
+
+        //        foreach (var item in cart.CartDetails)
+        //        {
+        //            item.Product = productDtos.FirstOrDefault(u => u.ProductID == item.ProductID);
+        //            cart.CartHeader.CartTotal += (item.Count * item.Product.Price);
+        //        }
+
+        //        //apply coupon if any
+        //        if (!string.IsNullOrEmpty(cart.CartHeader.CouponCode))
+        //        {
+        //            CouponDTOs coupon = await _couponService.GetCoupon(cart.CartHeader.CouponCode);
+        //            if (coupon != null && cart.CartHeader.CartTotal > coupon.MinAmount)
+        //            {
+        //                cart.CartHeader.CartTotal -= coupon.DiscountAmount;
+        //                cart.CartHeader.Discount = coupon.DiscountAmount;
+        //            }
+        //        }
+
+        //        _response.Result = cart;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _response.IsSuccess = false;
+        //        _response.Message = ex.Message;
+        //    }
+        //    return _response;
+        //}
+        #endregion
+
+        // fix to json
         [HttpGet("GetCart/{userID}")]
         public async Task<ResponseDTO> GetCart(string userID)
         {
-            ResponseDTO response = new ResponseDTO();
             try
             {
-                //CartDTOs cart = new()
-                //{
-                //    CartHeader = _mapper.Map<CartHeaderDTOs>(_db.CartHeaders.FirstOrDefaultAsync(u => u.UserID == userID))
-                //};
-                //cart.CartDetails = _mapper.Map<IEnumerable<CartDetailsDTOs>>(_db.CartDetails
-                //    .Where(u => u.CartHeaderID == cart.CartHeader.CartHeaderID));
-
-                CartDTOs cart = new();
-
-                var cartHeaderFromDb = await _db.CartHeaders
+                var cartHeader = await _db.CartHeaders
                     .FirstOrDefaultAsync(u => u.UserID == userID);
 
-                if (cartHeaderFromDb == null)
+                if (cartHeader == null)
                 {
-                    _response.IsSuccess = false;
-                    _response.Message = "Cart not found";
+                    _response.Result = null;
+                    _response.IsSuccess = true;
                     return _response;
                 }
 
-                cart.CartHeader = _mapper.Map<CartHeaderDTOs>(cartHeaderFromDb);
-
-                cart.CartDetails = _mapper.Map<IEnumerable<CartDetailsDTOs>>(
-                    await _db.CartDetails.Where(u => u.CartHeaderID == cart.CartHeader.CartHeaderID)
-                    .ToListAsync()); // add tolistasync() to fix
-
-                IEnumerable<ProductDTOs> productDTOs = await _productService.GetProducts();
-
-                cart.CartHeader.CartTotal = 0;
-
-                foreach (var item in cart.CartDetails)
+                CartDTOs cartDTOs = new CartDTOs()
                 {
-                    //item.Product = productDTOs.FirstOrDefault(u => u.ProductID == item.ProductID);
-                    //cart.CartHeader.CartTotal += (item.Count * item.Product.Price);
-                    var product = productDTOs.FirstOrDefault(u => u.ProductID == item.ProductID);
-                    if (product != null)
+                    CartHeader = _mapper.Map<CartHeaderDTOs>(cartHeader),
+                };
+
+                var cartDetails = await _db.CartDetails
+                    .Where(u => u.CartHeaderID == cartHeader.CartHeaderID)
+                    .ToListAsync();
+
+
+                cartDTOs.CartDetails = _mapper
+                    .Map<IEnumerable<CartDetailsDTOs>>(cartDetails);
+
+                Console.WriteLine($"Mapped CartDetails count: {cartDTOs.CartDetails.Count()}");
+
+                //IEnumerable<ProductDTOs> products = new List<ProductDTOs>();
+                var productIds = cartDTOs.CartDetails
+                               .Select(cd => cd.ProductID)
+                               .Distinct()
+                               .ToList();
+
+                //IEnumerable<ProductDTOs> products = await _productService.GetProductsByIds(productIds);
+
+                Console.WriteLine($"ProductIDs: {string.Join(", ", productIds)}");
+
+
+                //cartDTOs.CartHeader.CartTotal = 0;
+                IEnumerable<ProductDTOs> products = await _productService.GetProductsByIds(productIds);
+
+                Console.WriteLine($"Products from service: {products?.Count() ?? 0}");
+
+
+
+                foreach (var item in cartDTOs.CartDetails)
+                {
+                    item.Product = products?.FirstOrDefault(p => p.ProductID == item.ProductID);
+                    item.CartHeader = null;
+
+                    if (item.Product != null)
                     {
-                        item.Product = product;
-                        cart.CartHeader.CartTotal += item.Count * product.Price;
+                        Console.WriteLine($"Product {item.ProductID}: {item.Product.Name} - ${item.Product.Price}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Product {item.ProductID}: NOT FOUND");
                     }
                 }
 
-                // apply coupon if any
-                if (!string.IsNullOrEmpty(cart.CartHeader.CouponCode))
-                {
-                    CouponDTOs coupon = await _couponService.GetCoupon(cart.CartHeader.CouponCode);
-                    if (coupon != null && cart.CartHeader.CartTotal > coupon.MinAmount)
-                    {
-                        cart.CartHeader.CartTotal -= coupon.DiscountAmount;
-                        cart.CartHeader.Discount = coupon.DiscountAmount;
-                    }
-                }
+                cartDTOs.CartHeader.CartTotal = cartDTOs.CartDetails
+                            .Where(d => d.Product != null)
+                            .Sum(d => d.Product.Price * d.Count);
 
-                _response.Result = cart;
+                cartDTOs.CartHeader.CartTotal -= cartDTOs.CartHeader.Discount;
+
+                Console.WriteLine($"CartTotal: ${cartDTOs.CartHeader.CartTotal}");
+
+
+                _response.Result = cartDTOs;
+                _response.IsSuccess = true;
             }
             catch (Exception ex)
             {
                 _response.IsSuccess = false;
                 _response.Message = ex.Message;
             }
+
             return _response;
         }
 

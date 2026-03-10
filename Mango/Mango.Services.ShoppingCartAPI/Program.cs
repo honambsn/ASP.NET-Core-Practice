@@ -4,6 +4,7 @@ using Mango.Services.ShoppingCartAPI.Data;
 using Mango.Services.ShoppingCartAPI.Extensions;
 using Mango.Services.ShoppingCartAPI.Services;
 using Mango.Services.ShoppingCartAPI.Services.IService;
+using Mango.Services.ShoppingCartAPI.Utility;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -30,6 +31,7 @@ builder.Services.AddAutoMapper(typeof(MappingConfig));
 //builder.Services.AddHttpClient("Coupon", u => u.BaseAddress =
 //new Uri(builder.Configuration["ServiceUrls:CouponAPI"]));
 
+builder.Services.AddScoped<IBaseService, BaseService>();
 builder.Services.AddHttpClient<IProductService, ProductService>(client =>
 {
     client.BaseAddress = new Uri(builder.Configuration["ServiceUrls:ProductAPI"]);
@@ -40,6 +42,14 @@ builder.Services.AddHttpClient<ICouponService, CouponService>(client =>
     client.BaseAddress = new Uri(builder.Configuration["ServiceUrls:CouponAPI"]);
 });
 
+//builder.Services.AddHttpClient<ICouponService, CouponService>(client =>
+//{
+//    client.BaseAddress = new Uri(builder.Configuration["ServiceUrls:CouponAPI"]);
+//});
+
+SD.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
+
+builder.Services.AddHttpContextAccessor();
 
 
 builder.Services.AddControllers();

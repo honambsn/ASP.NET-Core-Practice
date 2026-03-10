@@ -1,9 +1,11 @@
-﻿using Mango.Web.Models;
+﻿using Mango.Web.Extensions;
+using Mango.Web.Models;
 using Mango.Web.Service.IService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
+
 
 namespace Mango.Web.Controllers
 {
@@ -18,8 +20,65 @@ namespace Mango.Web.Controllers
         [Authorize]
         public async Task<IActionResult> CartIndex()
         {
-            return View(LoadCartDTOBasedOnLoggedInUser());
+            return View(await LoadCartDTOBasedOnLoggedInUser());
         }
+
+        public async Task<IActionResult> Remove(int cartDetailsID)
+        {
+            var userID = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?
+                .FirstOrDefault()?.Value;
+
+            ResponseDTO? response = await _cartService.RemoveFromCartAsync(cartDetailsID);
+            if (response != null && response.IsSuccess)
+            {
+                TempData["success"] = "Cart updated successfully";
+                return RedirectToAction(nameof(CartIndex));
+            }
+
+            return View();
+        }
+
+        [HttpPost]        
+        public async Task<IActionResult> ApplyCoupon(CartDTOs cartDTO)
+        {
+            //var userID = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?
+            //    .FirstOrDefault()?.Value;
+
+            ResponseDTO? response = await _cartService.ApplyCouponAsync(cartDTO);
+            
+            if (response != null && response.IsSuccess)
+            {
+                TempData["success"] = "Cart updated successfully";
+                return RedirectToAction(nameof(CartIndex));
+            }
+
+            return View();
+        }
+
+        
+        [HttpPost]
+        public async Task<IActionResult> RemoveCoupon(CartDTOs cartDTO)
+        {
+            cartDTO.CartHeader.CouponCode = "";
+
+            ResponseDTO? response = await _cartService.ApplyCouponAsync(cartDTO);
+            
+            if (response != null && response.IsSuccess)
+            {
+                //TempData["info"] = "Coupon removed";
+                //TempData["success"] = "Cart updated successfully";
+                this.Success("Cart updated successfully");
+                this.Info("Coupon removed");
+                
+
+                return RedirectToAction(nameof(CartIndex));
+            }
+
+            this.Error("Failed to update cart");
+
+            return View();
+        }
+
 
         private async Task<CartDTOs> LoadCartDTOBasedOnLoggedInUser()
         {

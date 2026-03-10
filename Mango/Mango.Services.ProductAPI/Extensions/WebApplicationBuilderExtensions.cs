@@ -8,11 +8,16 @@ namespace Mango.Services.ProductAPI.Extensions
     {
         public static WebApplicationBuilder AddAppAuthentication(this WebApplicationBuilder builder)
         {
-            var jwtSettings = builder.Configuration.GetSection("ApiSettings");
+            var jwtSettings = builder.Configuration.GetSection("ApiSettings:JWTOptions");
 
             var secret = jwtSettings.GetValue<string>("Secret");
             var issuer = jwtSettings.GetValue<string>("Issuer");
             var audience = jwtSettings.GetValue<string>("Audience");
+
+            if (string.IsNullOrEmpty(secret))
+            {
+                throw new Exception("JWT Secret is missing in ProductAPI appsettings.json");
+            }
 
             var key = Encoding.UTF8.GetBytes(secret);
 
