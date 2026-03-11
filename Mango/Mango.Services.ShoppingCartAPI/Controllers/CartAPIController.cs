@@ -278,7 +278,33 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
                             .Where(d => d.Product != null)
                             .Sum(d => d.Product.Price * d.Count);
 
-                cartDTOs.CartHeader.CartTotal -= cartDTOs.CartHeader.Discount;
+                cartDTOs.CartHeader.Discount = 0;
+
+
+                // Apply Coupon
+                if (!string.IsNullOrEmpty(cartDTOs.CartHeader.CouponCode))
+                {
+                    try
+                    {
+                        Console.WriteLine("coupon calculate....");
+                        CouponDTOs coupon = await _couponService.GetCoupon(cartDTOs.CartHeader.CouponCode);
+
+                        if (coupon != null && cartDTOs.CartHeader.CartTotal >= coupon.MinAmount)
+                        {
+                            cartDTOs.CartHeader.Discount = coupon.DiscountAmount;
+                            cartDTOs.CartHeader.CartTotal -= coupon.DiscountAmount;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Coupon error: " + ex.Message);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("no coupon");
+                }
+
 
                 Console.WriteLine($"CartTotal: ${cartDTOs.CartHeader.CartTotal}");
 

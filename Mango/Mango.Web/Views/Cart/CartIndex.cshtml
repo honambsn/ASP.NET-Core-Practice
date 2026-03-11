@@ -4,9 +4,9 @@
 @{
 }
 @model CartDTOs
-@* <pre>
+<pre>
     @System.Text.Json.JsonSerializer.Serialize(Model)
-</pre> *@
+</pre>
 
 @if (Model?.CartHeader != null && Model.CartDetails != null && Model.CartDetails.Any())
 {
