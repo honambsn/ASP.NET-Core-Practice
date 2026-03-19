@@ -1,4 +1,5 @@
 using AutoMapper;
+using Mango.MessageBus;
 using Mango.Services.ShoppingCartAPI;
 using Mango.Services.ShoppingCartAPI.Data;
 using Mango.Services.ShoppingCartAPI.Extensions;
@@ -35,21 +36,25 @@ builder.Services.AddScoped<IBaseService, BaseService>();
 builder.Services.AddHttpClient<IProductService, ProductService>(client =>
 {
     client.BaseAddress = new Uri(builder.Configuration["ServiceUrls:ProductAPI"]);
-});
+})
+.AddHttpMessageHandler<BackendApiAuthenticationHttpClientHandler>();
 
 builder.Services.AddHttpClient<ICouponService, CouponService>(client =>
 {
     client.BaseAddress = new Uri(builder.Configuration["ServiceUrls:CouponAPI"]);
-});
+})
+.AddHttpMessageHandler<BackendApiAuthenticationHttpClientHandler>();
 
 //builder.Services.AddHttpClient<ICouponService, CouponService>(client =>
 //{
 //    client.BaseAddress = new Uri(builder.Configuration["ServiceUrls:CouponAPI"]);
 //});
+builder.Services.AddSingleton<IMessageBus, MessageBus>();
 
 SD.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
 
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddTransient<BackendApiAuthenticationHttpClientHandler>();
 
 
 builder.Services.AddControllers();
@@ -73,7 +78,8 @@ builder.Services.AddSwaggerGen(option =>
                 Reference = new OpenApiReference
                 {
                     Type = ReferenceType.SecurityScheme,
-                    Id = JwtBearerDefaults.AuthenticationScheme
+                    //Id = JwtBearerDefaults.AuthenticationScheme
+                    Id = "Bearer"
                 }
             },
             new string[] {}

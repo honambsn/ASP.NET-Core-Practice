@@ -54,6 +54,24 @@ namespace Mango.Web.Controllers
 
             return View();
         }
+        
+        [HttpPost]        
+        public async Task<IActionResult> EmailCart(CartDTOs cartDTO)
+        {
+            //var userID = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?
+            //    .FirstOrDefault()?.Value;
+
+            ResponseDTO? response = await _cartService.EmailCart(cartDTO);
+            
+            if (response != null && response.IsSuccess)
+            {
+                TempData["success"] = "Email will be proccessed and sent shortly.";
+                return RedirectToAction(nameof(CartIndex));
+            }
+
+            TempData["warning"] = "Something failed";
+            return View();
+        }
 
         
         [HttpPost]
