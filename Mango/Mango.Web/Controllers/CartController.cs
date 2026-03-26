@@ -60,8 +60,10 @@ namespace Mango.Web.Controllers
         {
             //var userID = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?
             //    .FirstOrDefault()?.Value;
+            CartDTOs cart = await LoadCartDTOBasedOnLoggedInUser();
+            cart.CartHeader.Email = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Email)?.FirstOrDefault()?.Value;
 
-            ResponseDTO? response = await _cartService.EmailCart(cartDTO);
+            ResponseDTO? response = await _cartService.EmailCart(cart);
             
             if (response != null && response.IsSuccess)
             {
