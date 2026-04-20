@@ -49,7 +49,8 @@ builder.Services.AddHttpClient<ICouponService, CouponService>(client =>
 //{
 //    client.BaseAddress = new Uri(builder.Configuration["ServiceUrls:CouponAPI"]);
 //});
-builder.Services.AddSingleton<IMessageBus, MessageBus>();
+//builder.Services.AddSingleton<IMessageBus, MessageBus>();
+builder.Services.AddScoped<IMessageBus, MessageBus>();
 
 SD.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
 

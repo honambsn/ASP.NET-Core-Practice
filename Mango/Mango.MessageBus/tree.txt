@@ -1,0 +1,45 @@
+Folder PATH listing for volume New Volume
+Volume serial number is D428-1106
+D:.
+|   appsettings.json
+|   IMessageBus.cs
+|   Mango.MessageBus.csproj
+|   MessageBus.cs
+|   tree.txt
+|   
++---bin
+|   \---Debug
+|       \---net8.0
+|               Mango.MessageBus.deps.json
+|               Mango.MessageBus.dll
+|               Mango.MessageBus.pdb
+|               
+\---obj
+    |   Mango.MessageBus.csproj.nuget.dgspec.json
+    |   Mango.MessageBus.csproj.nuget.g.props
+    |   Mango.MessageBus.csproj.nuget.g.targets
+    |   project.assets.json
+    |   project.nuget.cache
+    |   
+    \---Debug
+        \---net8.0
+            |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+            |   Mango.MessageBus.AssemblyInfo.cs
+            |   Mango.MessageBus.AssemblyInfoInputs.cache
+            |   Mango.MessageBus.assets.cache
+            |   Mango.MessageBus.csproj.AssemblyReference.cache
+            |   Mango.MessageBus.csproj.BuildWithSkipAnalyzers
+            |   Mango.MessageBus.csproj.CoreCompileInputs.cache
+            |   Mango.MessageBus.csproj.FileListAbsolute.txt
+            |   Mango.MessageBus.dll
+            |   Mango.MessageBus.GeneratedMSBuildEditorConfig.editorconfig
+            |   Mango.MessageBus.GlobalUsings.g.cs
+            |   Mango.MessageBus.pdb
+            |   Mango.MessageBus.sourcelink.json
+            |   
+            +---ref
+            |       Mango.MessageBus.dll
+            |       
+            \---refint
+                    Mango.MessageBus.dll
+                    
