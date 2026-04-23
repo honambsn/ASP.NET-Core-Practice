@@ -35,7 +35,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.AccessDeniedPath = "/Auth/AccessDenied";
     });
 
-var jwtKey = builder.Configuration["Jwt:Key"];
+var jwtKey = builder.Configuration["ApiSettings:JWTOptions:Secret"];
 if (string.IsNullOrEmpty(jwtKey))
 {
     throw new Exception("JWT Key is not configured in appsettings.json!");
@@ -49,10 +49,10 @@ builder.Services.AddSingleton(new TokenValidationParameters
     ValidateLifetime = true,
     ValidateIssuerSigningKey = true,
 
-    ValidIssuer = builder.Configuration["Jwt:Issuer"],
-    ValidAudience = builder.Configuration["Jwt:Audience"],
+    ValidIssuer = builder.Configuration["ApiSettings:JWTOptions:Issuer"],
+    ValidAudience = builder.Configuration["ApiSettings:JWTOptions:Audience"],
     IssuerSigningKey = new SymmetricSecurityKey(
-        Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])
+        Encoding.UTF8.GetBytes(builder.Configuration["ApiSettings:JWTOptions:Secret"])
     ),
     ClockSkew = TimeSpan.Zero
 });

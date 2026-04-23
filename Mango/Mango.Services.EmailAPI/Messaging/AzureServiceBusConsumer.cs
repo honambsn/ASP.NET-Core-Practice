@@ -185,7 +185,8 @@ namespace Mango.Services.EmailAPI.Messaging
                 var emailService = scope.ServiceProvider.GetRequiredService<IEmailService>();
 
                 await emailService.EmailCartAndLog(objMessage);
-                await args.CompleteMessageAsync(args.Message);
+                await args.CompleteMessageAsync(args.Message); //-> comment to display msg on servicesbus explorer
+                Console.WriteLine(body);
             }
             catch (Exception ex)
             {

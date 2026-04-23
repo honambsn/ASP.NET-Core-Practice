@@ -1,4 +1,5 @@
 using AutoMapper;
+using Azure.Messaging.ServiceBus;
 using Mango.MessageBus;
 using Mango.Services.ShoppingCartAPI;
 using Mango.Services.ShoppingCartAPI.Data;
@@ -49,7 +50,9 @@ builder.Services.AddHttpClient<ICouponService, CouponService>(client =>
 //{
 //    client.BaseAddress = new Uri(builder.Configuration["ServiceUrls:CouponAPI"]);
 //});
-//builder.Services.AddSingleton<IMessageBus, MessageBus>();
+builder.Services.AddSingleton(x =>
+    new ServiceBusClient(
+        builder.Configuration.GetConnectionString("ServiceBusConnectionString")));
 builder.Services.AddScoped<IMessageBus, MessageBus>();
 
 SD.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
